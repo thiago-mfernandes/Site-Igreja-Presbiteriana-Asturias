@@ -13,8 +13,6 @@ export function Hero() {
   const { width } = useWindowSize();
   const [showMenu, setSHowMenu] = useState(false);
 
-  console.log(width);
-
   function handleNavigationMenu() {
     setSHowMenu(!showMenu);
   }

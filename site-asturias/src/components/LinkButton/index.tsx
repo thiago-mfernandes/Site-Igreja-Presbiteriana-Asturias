@@ -5,16 +5,18 @@ import { StyledAnchor } from "./styles";
 interface LinkButtonProps {
   href: string;
   children: string;
-  activeBackgroundColor?: string;
-  applyBorder?: boolean;
+  variantColorLetter?: string;
+  variantBackgroundColor?: 'transparent' | 'cinza' | 'verde';
+  variantApplyBorder?: boolean;
 }
 
-export function LinkButton({ href, activeBackgroundColor, applyBorder, children }: LinkButtonProps) {
+export function LinkButton({ href, variantBackgroundColor, variantApplyBorder, variantColorLetter, children }: LinkButtonProps) {
   return (
     <StyledAnchor 
       href={href}
-      applyBorder={applyBorder} 
-      bgColor={activeBackgroundColor} 
+      applyBorder={variantApplyBorder} 
+      bgColor={variantBackgroundColor} 
+      colorLetter={variantColorLetter}
     >
         {children}
     </StyledAnchor>

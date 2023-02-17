@@ -98,7 +98,7 @@ export const NavigationLinks = styled.nav<ShowMenuProps>`
         opacity: 0.8;
         transition: all 0.3s ease-in-out;
         &:hover {
-          color: ${props => props.theme.colors.greenDefault};
+          color: ${props => props.theme.colors["gray-300-d"]};
           opacity: 1;
         }
       }
@@ -120,6 +120,6 @@ export const MenuHamburguer = styled.button<MenuHamburguerProps>`
   
   svg {
     opacity: 0.8;
-    color: ${(props) => props.showMenu ? props.theme.colors.greenDefault : props.theme.colors["gray-900"]};
+    color: ${(props) => props.showMenu ? props.theme.colors["green-300-d"] : props.theme.colors["gray-900"]};
   }
 `;

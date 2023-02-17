@@ -21,6 +21,7 @@ export const TitleContainer = styled.div<TitleContainerProps>`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 5rem;
 
   h1 {
     font-size: 2.5rem;
@@ -47,4 +48,5 @@ export const TitleContainer = styled.div<TitleContainerProps>`
 export const CallToAction = styled.div`
   display: flex;
   flex-direction: column;
+  margin-top: 5rem;
 `;

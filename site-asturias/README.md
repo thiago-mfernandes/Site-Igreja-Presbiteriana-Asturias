@@ -1,17 +1,19 @@
 # Asturias
 Site da Igreja Presbiteriana Asturias
 
-[] - componente de botao generico(muda cor, borda, bg)
+[x] - componente de botao generico(muda cor, borda, bg)
 [] - componente de agenda culto da home
 [] - componente de evento (titulo, descricao, data, horario, local)
-[] - componente de versículo ()
+[] - componente de versículo
 [] - componente avatar
 [] - componente membro
 [] - componente rede social
 [] - componente de paginacao
 
+[] - checar o direcionamento de todos os botoes e links
+
 ### home
-[] - sobre nós com chamada rápida
+[x] - sobre nós com chamada rápida
 [] - agenda semanal -> cards laterais
 [] - faca parte de um grupo -> saiba mais
 [] - proximos eventos -> card com titulo, descricao, e os icones

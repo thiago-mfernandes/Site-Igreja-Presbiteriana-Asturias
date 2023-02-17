@@ -36,8 +36,8 @@ export function Welcome({ onShowMenu} : WelcomeProps){
         </h1>
 
         <CallToAction>
-          <LinkButton applyBorder href="#">Eventos</LinkButton>
-          <LinkButton applyBorder href="#">Sobre Nós</LinkButton>
+          <LinkButton variantApplyBorder href="#">Eventos</LinkButton>
+          <LinkButton variantApplyBorder href="#">Sobre Nós</LinkButton>
         </CallToAction>
       </TitleContainer> 
     </WelcomeContainer> 
