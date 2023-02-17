@@ -1,6 +1,8 @@
 export const defaultTheme = {
   colors: {
     white: '#fff',
+    'white-opacity-80%': 'rgba(255,255,255,0.80)',
+    
     black: '#000000',
 
     greenDefault: '#86c091',
@@ -13,6 +15,8 @@ export const defaultTheme = {
     'gray-700': '#29292E',
     'gray-800': '#202024',
     'gray-900': '#121214',
+    'gray-900-opacity-20%': 'rgba(18,18,18,0.2)',
+    'gray-900-opacity-90%': 'rgba(18,18,18,0.95)',
   
     'green-300': '#00B37E',
     'green-500': '#00875F',

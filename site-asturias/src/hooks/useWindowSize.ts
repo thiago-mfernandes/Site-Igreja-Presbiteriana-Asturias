@@ -17,8 +17,8 @@ export function useWindowSize() {
     function handleResize() {
       // Set window width/height to state
       setWindowSize({
-        width: window.innerWidth,
-        height: window.innerHeight,
+        width: document.body.clientWidth,
+        height: document.body.clientHeight,
       });
     }
     // Add event listener

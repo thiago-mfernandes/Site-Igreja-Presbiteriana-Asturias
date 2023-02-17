@@ -1,61 +1,45 @@
-import { useWindowSize } from "@/hooks/useWindowSize";
+import { LinkButton } from "../../LinkButton";
+import { useWindowSize } from "../../../hooks/useWindowSize";
 import { CallToAction, FollowUs, TitleContainer, WelcomeContainer } from "./styles";
 
-export function Welcome(){
+interface WelcomeProps {
+  onShowMenu: boolean;
+}
+
+export function Welcome({ onShowMenu} : WelcomeProps){
 
   const { width } = useWindowSize();
   
   return(
-    <WelcomeContainer>
-      <section
-        data-parallax="scroll"
-        data-image-src="images/hero-bg-3000.jpg"
-        data-natural-width={3000}
-        data-natural-height={2000}
-        data-position-y="center" 
-      >
+    <WelcomeContainer>  
+      {width > 500 &&
+        <FollowUs className="aqui tem uma classe com um estilo: hero-left-bar">
+          <ul> {/**aqui vai o card lateral com o siga-nos */}
+            <li>Siga-nos</li>
+            <li>
+              <a href="#0" title="">Facebook</a>
+            </li>
+            <li>
+              <a href="#0" title="">YouTube</a>
+            </li>
+            <li>
+              <a href="#0" title="">Instagram</a>
+            </li>
+          </ul> 
+        </FollowUs>
+      }
 
-        {
-          width > 500 &&
-          <FollowUs className="aqui tem uma classe com um estilo: hero-left-bar">
-            <ul> {/**aqui vai o card lateral com o siga-nos */}
-              <li>Siga-nos</li>
-              <li>
-                <a href="#0" title="">Facebook</a>
-              </li>
-              <li>
-                <a href="#0" title="">YouTube</a>
-              </li>
-              <li>
-                <a href="#0" title="">Instagram</a>
-              </li>
-            </ul> 
-          </FollowUs>
-        }
+      <TitleContainer showMenu={onShowMenu} >
+        <h1>
+          Existimos para a<br />
+          Glória de Deus.            
+        </h1>
 
-        
-        <TitleContainer>
-          <h1>
-            We Exist To <br />
-            Honor God And <br />
-            Make Disciples
-          </h1>
-
-          <CallToAction>
-            <a href="events.html">Upcoming Events</a>
-            <a href="about.html">About Us</a>
-          </CallToAction>
-        </TitleContainer> 
-        
-
-        
-
-        <div> {/**aqui vai o scroll for more do desktop */}
-          <a href="#about" >
-            Scroll For More
-          </a>
-        </div> 
-      </section> 
+        <CallToAction>
+          <LinkButton applyBorder href="#">Eventos</LinkButton>
+          <LinkButton applyBorder href="#">Sobre Nós</LinkButton>
+        </CallToAction>
+      </TitleContainer> 
     </WelcomeContainer> 
   );
 }
