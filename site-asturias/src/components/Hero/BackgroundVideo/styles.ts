@@ -9,10 +9,9 @@ export const Container = styled.div`
   background-size: cover;
   background-position: center;
   overflow: hidden;
-  will-change: "transform, opacity, filter";
+  will-change: transform, opacity, filter;
   background-repeat: no-repeat;
-  z-index: 0;
-  object-fit: cover;
+  z-index: 0; 
 
   video {
     position: absolute; 
@@ -23,6 +22,7 @@ export const Container = styled.div`
     object-fit: cover;
     height: 100%;
     min-width: 100%;
+    overflow: hidden;
   }
 `;
 

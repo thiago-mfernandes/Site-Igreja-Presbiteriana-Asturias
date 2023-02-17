@@ -10,6 +10,74 @@ export default function Home() {
       </Head>      
       <Hero />
       
+      
+      <section style={{display: 'flex', flexDirection: 'column'}}>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+        <button>teste</button>
+      </section>
     </>
   )
 }
