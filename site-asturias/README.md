@@ -3,20 +3,23 @@ Site da Igreja Presbiteriana Asturias
 
 [x] - componente de botao generico(muda cor, borda, bg)
 [] - componente de agenda culto da home
-[] - componente de evento (titulo, descricao, data, horario, local)
+[x] - componente de evento (titulo, descricao, data, horario, local)
 [] - componente de versículo
 [] - componente avatar
 [] - componente membro
 [] - componente rede social
 [] - componente de paginacao
+[] - componente titulo
+[] - componente subtitulo
+[] - componente text
 
 [] - checar o direcionamento de todos os botoes e links
 
 ### home
 [x] - sobre nós com chamada rápida
-[] - agenda semanal -> cards laterais
-[] - faca parte de um grupo -> saiba mais
-[] - proximos eventos -> card com titulo, descricao, e os icones
+[x] - agenda semanal -> cards laterais
+[x] - faca parte de um grupo -> saiba mais
+[x] - proximos eventos -> card com titulo, descricao, e os icones
 [] - estudo do portas abertas
 [] - redes sociais -> facebook, instagram, whatsapp, yutube
 [] - localizacao

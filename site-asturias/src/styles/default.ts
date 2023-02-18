@@ -40,6 +40,6 @@ export const defaultTheme = {
 
   fonts: {
     montserrat: '"Montserrat", sans-serif',
-    lora: '"Lora", serif',
+    roboto: '"Roboto", sans-serif',
   }
 } as const

@@ -26,10 +26,11 @@ export const GlobalStyle = createGlobalStyle`
       background-color: ${props => props.theme.colors['gray-900']};
       color: ${props => props.theme.colors.black};
       -webkit-font-smoothing: antialiased;
+      word-wrap: break-word;
     }
 
     body, input, textarea, button {
-      font: 400 1rem "Roboto", sans-serif;
+      font: 400 1rem "Lora", serif;
     }
     
     a {

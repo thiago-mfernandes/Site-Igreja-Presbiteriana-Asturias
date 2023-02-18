@@ -1,12 +1,13 @@
+import { ReactNode } from "react";
 import { StyledAnchor } from "./styles";
 
 //componente de botao generico(muda cor, borda, bg)
 
 interface LinkButtonProps {
   href: string;
-  children: string;
+  children: ReactNode;
   variantColorLetter?: string;
-  variantBackgroundColor?: 'transparent' | 'cinza' | 'verde';
+  variantBackgroundColor?: 'gray' | 'green';
   variantApplyBorder?: boolean;
 }
 

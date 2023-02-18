@@ -24,7 +24,9 @@ export const TitleContainer = styled.div<TitleContainerProps>`
   margin-top: 5rem;
 
   h1 {
-    font-size: 2.5rem;
+    font-family: ${props => props.theme.fonts.montserrat};
+    font-weight: 700;
+    font-size: 3rem;
     color: ${props => props.theme.colors["gray-900"]};
     text-align: center;
     text-transform: uppercase;

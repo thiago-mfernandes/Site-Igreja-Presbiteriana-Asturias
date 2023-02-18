@@ -1,7 +1,16 @@
+import { Event } from "../Event";
+import { Subtitle } from "../Subtitle";
+import { ScheduleSection } from "./styles";
+
 export function Schedule() {
   return (
-    <section style={{display: 'flex', flexDirection: 'column'}}>
-      <h2>agenda semanal</h2>
-    </section>
+    <ScheduleSection>
+      <Subtitle>Próximos Eventos</Subtitle>
+
+      <Event />
+      <Event />
+      <Event />
+      <Event />
+    </ScheduleSection>
   );
 }

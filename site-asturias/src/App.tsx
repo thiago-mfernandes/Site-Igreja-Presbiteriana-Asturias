@@ -17,8 +17,8 @@ export function App() {
 
       <Hero />        
       <About />
-      <Schedule />
       <JoinUs />
+      <Schedule />
       <UpComingEvents />
       <BibleStudy />
       <SocialMedia />

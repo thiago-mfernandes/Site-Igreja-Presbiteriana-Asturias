@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ContainerSection = styled.section`
   padding: 55rem 1.25rem 10rem;
   background-color: ${props => props.theme.colors["green-300-d"]};
-  color: ${props => props.theme.colors["white-opacity-80%"]};  
+  color: ${props => props.theme.colors.white};  
 `;
 
 export const WelcomeWords = styled.div`
@@ -11,29 +11,10 @@ export const WelcomeWords = styled.div`
   flex-direction: column;
   margin-bottom: 5rem;
 
-  h2 {
-    color: ${props => props.theme.colors["gray-900"]};
-    font-family: ${props => props.theme.fonts.montserrat};
-    text-transform: uppercase;
-    font-size: 1.6rem;
-    font-weight: 700;
-    line-height: 1.5;
-    letter-spacing: .3rem;
-    margin-bottom: 1rem;
-  }
-
-  p {
-    font-family: ${props => props.theme.fonts.lora};
-    color: ${props => props.theme.colors["white-opacity-80%"]};
-    font-weight: 500;
-    line-height: 1.250;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    text-align: justify;
-  }
-
   a {
     margin-bottom: 1rem;
+    font-size: 1rem;
+    color: ${props => props.theme.colors["gray-900"]};
   }
 `;
 
@@ -52,18 +33,7 @@ export const Service = styled.li`
   padding-top: 2rem;
   padding-bottom: 2rem;
 
-  h3 {
-    font-size: 1.125rem;
-    line-height: 1.333;
-    margin-bottom: 1.25rem;
-    text-transform: uppercase;
-    letter-spacing: .3rem;
-    color: ${props => props.theme.colors.white};
-    font-weight: 700;
-  }
-
   span {
-    font-family: ${props => props.theme.fonts.lora};
     color: ${props => props.theme.colors["white-opacity-80%"]};
     line-height: 1.8;
     font-size: 1.35rem;
