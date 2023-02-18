@@ -6,6 +6,7 @@ export const defaultTheme = {
     'white-opacity-005%': 'rgba(255,255,255,0.05)',
     
     black: '#000000',
+    'black-opacity-60%': 'rgba(0,0,0,0.60)',
 
     'green-50': '#e8f4eb',
     'green-100': '#c9e3ce',

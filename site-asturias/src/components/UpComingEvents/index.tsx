@@ -1,7 +1,15 @@
+import { Event } from "../Event";
+import { Subtitle } from "../Subtitle";
+import { UpcomingSection } from "./styles";
+
 export function UpComingEvents() {
   return (
-    <section style={{display: 'flex', flexDirection: 'column'}}>
-      <h2>proximos eventos</h2>
-    </section>
+    <UpcomingSection>
+      <Subtitle>Próximos Eventos</Subtitle>
+      <Event />
+      <Event />
+      <Event />
+      <Event />
+    </UpcomingSection>
   );
 }

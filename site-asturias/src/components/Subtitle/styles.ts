@@ -12,6 +12,7 @@ export const StyledSubtitle = styled.h3<StyledTextProps>`
   text-transform: uppercase;
   letter-spacing: 0.15rem;
   margin-bottom: 1.5rem;
+  position: relative;
 
   ${props => props.textColor === 'white' && css`
     color: ${props => props.theme.colors.white}
@@ -22,7 +23,7 @@ export const StyledSubtitle = styled.h3<StyledTextProps>`
   `}
 
   ${props => props.textColor === 'green' && css`
-    color: ${props => props.theme.colors["green-900"]}
+    color: ${props => props.theme.colors["green-500"]}
   `}
 
 `;

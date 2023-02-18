@@ -9,9 +9,9 @@ Site da Igreja Presbiteriana Asturias
 [] - componente membro
 [] - componente rede social
 [] - componente de paginacao
-[] - componente titulo
-[] - componente subtitulo
-[] - componente text
+[x] - componente titulo
+[x] - componente subtitulo
+[x] - componente text
 
 [] - checar o direcionamento de todos os botoes e links
 
@@ -20,7 +20,7 @@ Site da Igreja Presbiteriana Asturias
 [x] - agenda semanal -> cards laterais
 [x] - faca parte de um grupo -> saiba mais
 [x] - proximos eventos -> card com titulo, descricao, e os icones
-[] - estudo do portas abertas
+[x] - estudo do portas abertas
 [] - redes sociais -> facebook, instagram, whatsapp, yutube
 [] - localizacao
 [] - footer
@@ -61,10 +61,10 @@ https://pagseguro.uol.com.br/checkout/nc/nl/donation/sender-identification.jhtml
 ### FAQ
 [] --Não sou presbiteriano ou de origem presbiteriana, posso ir junto?
 [] --Tudo bem se eu aparecer para dar uma olhada em algum domingo?
-[] --Por que vocês se encontram na igreja fisicamente?
+[] --Por que vocês se encontram na igreja fisicamente e não online?
 [] --Não tenho certeza se acredito em Deus, mas estou tentando encontrar sentido na vida. Posso ir à igreja mesmo assim?
 [] --O que acontece aos domingos?
-[] --Alguém pode me cchamar no pulpito para dizer algo se eu aparecer?
+[] --Alguém pode me chamar no pulpito para dizer algo se eu aparecer?
 [] --Meus filhos são bem-vindos? 
 [] --Não sou muito religioso ou santo, sou bem-vindo na Igreja?
 [] --Eu não posso ir aos domingos. Existe alguma outra maneira de me conectar com a Igreja? 
@@ -74,3 +74,6 @@ https://pagseguro.uol.com.br/checkout/nc/nl/donation/sender-identification.jhtml
 [] - localizacao
 
 ### login
+
+
+//pixabay

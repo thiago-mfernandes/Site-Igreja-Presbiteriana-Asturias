@@ -18,11 +18,11 @@ export function App() {
       <Hero />        
       <About />
       <JoinUs />
-      <Schedule />
       <UpComingEvents />
       <BibleStudy />
       <SocialMedia />
       <Footer />
+      {/* <Schedule /> */}
     </ThemeProvider>
   )
 }
