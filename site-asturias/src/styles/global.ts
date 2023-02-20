@@ -30,7 +30,9 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body, input, textarea, button {
-      font: 400 1rem "Lora", serif;
+      font-family: "Lora", serif;
+      font-weight: 400;
+      font-size: 1rem;
     }
     
     a {

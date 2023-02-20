@@ -7,7 +7,7 @@ interface StyledAnchorProps {
 }
  
 
-export const StyledAnchor = styled.a<StyledAnchorProps>`
+export const StyledAnchor = styled.button<StyledAnchorProps>`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,6 +27,7 @@ export const StyledAnchor = styled.a<StyledAnchorProps>`
   text-align: center;
   white-space: nowrap;
 
+  border: 0;
   background-color: transparent;
 
   transition: all .3s ease-in-out;

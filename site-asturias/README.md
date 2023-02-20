@@ -7,7 +7,7 @@ Site da Igreja Presbiteriana Asturias
 [] - componente de versículo
 [] - componente avatar
 [] - componente membro
-[] - componente rede social
+[x] - componente rede social
 [] - componente de paginacao
 [x] - componente titulo
 [x] - componente subtitulo
@@ -21,9 +21,9 @@ Site da Igreja Presbiteriana Asturias
 [x] - faca parte de um grupo -> saiba mais
 [x] - proximos eventos -> card com titulo, descricao, e os icones
 [x] - estudo do portas abertas
-[] - redes sociais -> facebook, instagram, whatsapp, yutube
+[x] - redes sociais -> facebook, instagram, whatsapp, yutube
 [] - localizacao
-[] - footer
+[x] - footer
 
 
 ### sobre

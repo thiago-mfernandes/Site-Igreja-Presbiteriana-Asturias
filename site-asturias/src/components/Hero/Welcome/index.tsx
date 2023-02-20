@@ -1,6 +1,7 @@
 import { LinkButton } from "../../LinkButton";
 import { useWindowSize } from "../../../hooks/useWindowSize";
 import { CallToAction, FollowUs, TitleContainer, WelcomeContainer } from "./styles";
+import { NavLink } from 'react-router-dom'
 
 interface WelcomeProps {
   onShowMenu: boolean;
@@ -36,8 +37,12 @@ export function Welcome({ onShowMenu} : WelcomeProps){
         </h1>
 
         <CallToAction>
-          <LinkButton variantApplyBorder href="#">Eventos</LinkButton>
-          <LinkButton variantApplyBorder href="#">Sobre Nós</LinkButton>
+          <NavLink to="">
+            <LinkButton variantApplyBorder>Eventos</LinkButton>
+          </NavLink>
+          <NavLink to="/about">
+            <LinkButton variantApplyBorder >Sobre Nós</LinkButton>
+          </NavLink>
         </CallToAction>
       </TitleContainer> 
     </WelcomeContainer> 
