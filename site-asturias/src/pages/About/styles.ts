@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { TextBlock } from "../../components/TextBlock/styles";
 
 export const AboutContainer = styled.section`
   padding: 10rem 1.5rem;
@@ -9,14 +10,6 @@ export const AboutContainer = styled.section`
   }
 `;
 
-export const TextBlock = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin-bottom: 5rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid ${props => props.theme.colors["gray-900-opacity-20%"]};
-`;
 
 export const SectionTextBlock = styled(TextBlock)`
   &:last-child {
