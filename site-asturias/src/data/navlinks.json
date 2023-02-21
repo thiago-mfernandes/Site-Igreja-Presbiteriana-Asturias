@@ -1,34 +1,42 @@
 [
   {
     "id": 1,
-    "title": "Home"
+    "title": "Home",
+    "href": "/"
   },
   {
     "id": 2,
-    "title": "Sobre"
+    "title": "Sobre",
+    "href": "/about"
   },
   {
     "id": 3,
-    "title": "Agenda"
+    "title": "Agenda",
+    "href": "/schedule"
   },
   {
     "id": 4,
-    "title": "Dízimo Online"
+    "title": "Dízimo Online",
+    "href": "/giving"
   },
   {
     "id": 5,
-    "title": "Ministérios"
+    "title": "Ministérios",
+    "href": "/ministries"
   },
   {
     "id": 6,
-    "title": "FAQ"
+    "title": "FAQ",
+    "href": "/faq"
   },
   {
     "id": 7,
-    "title": "Contato"
+    "title": "Contato",
+    "href": "/contact"
   },
   {
     "id": 8,
-    "title": "Login"
+    "title": "Login",
+    "href": "/"
   }
 ]

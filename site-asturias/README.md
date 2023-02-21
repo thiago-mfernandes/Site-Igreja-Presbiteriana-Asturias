@@ -14,6 +14,7 @@ Site da Igreja Presbiteriana Asturias
 [x] - componente text
 
 [] - checar o direcionamento de todos os botoes e links
+[] - implementar o dowload de arquivos no sobre/catecismos
 
 ### home
 [x] - sobre nós com chamada rápida
@@ -27,16 +28,16 @@ Site da Igreja Presbiteriana Asturias
 
 
 ### sobre
-[] - Nossa história
-[] - A igreja Presbiteriana do Brasil
-[] - Pastor Robson Leandro Binotto
-[] - No que nós cremos?
-[] - o que fazemos?
-[] -- ebd
-[] -- culto
-[] -- culto infantil
-[] -- reuniao de oracao
-[] -- estudo biblico
+[x] - Nossa história
+[x] - A igreja Presbiteriana do Brasil
+[x] - Pastor Robson Leandro Binotto
+[x] - No que nós cremos?
+[x] - o que fazemos?
+[x] -- ebd
+[x] -- culto
+[x] -- culto infantil
+[x] -- reuniao de oracao
+[x] -- estudo biblico
 
 ### agenda / blog
 [] - exibir nossos eventos do mes inteiro com paginacao
@@ -50,13 +51,13 @@ https://pagseguro.uol.com.br/checkout/nc/nl/donation/sender-identification.jhtml
 ### modelo -> https://www.donabatepc.org/giving
 
 ### ministerios
-[] - Uniao de presbiteriana de homens
-[] - Sociedades Auxiliadoras Femininas
-[] - Uniao da mocidade presbiteriana
-[] - upa
-[] - Uniao de crianças presbiterianas
-[] - Ministerio de Louvor
-[] - Ministerio de comunicacao
+[x] - Uniao de presbiteriana de homens
+[x] - Sociedades Auxiliadoras Femininas
+[x] - Uniao da mocidade presbiteriana
+[x] - upa
+[x] - Uniao de crianças presbiterianas
+[x] - Ministerio de Louvor
+[x] - Ministerio de comunicacao
 
 ### FAQ
 [] --Não sou presbiteriano ou de origem presbiteriana, posso ir junto?

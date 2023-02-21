@@ -7,14 +7,13 @@ import logoBlack from "../../assets/logo/logo-black.png"
 import logoWhite from "../../assets/logo/logo-white.png"
 
 import data from "../../data/navlinks.json";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export function NavigationHeader() {
 
-  const { showMenu, handleNavigationMenu } = useMenuHamburguer();
+  const { showMenu, handleNavigationMenu, setShowMenu } = useMenuHamburguer();
   const { width } = useWindowSize();
   let { pathname } = useLocation();
-  console.log(showMenu)
 
   return (
     <>
@@ -31,7 +30,8 @@ export function NavigationHeader() {
       </LogoContainer>
 
       {/** When MenuHamburguer Icon is visible or Not */}
-      { width < 500 ?
+      { width < 500 
+        ?
           <MenuHamburguer 
             inShowMenuChangeColor={pathname}
             showMenu={showMenu} 
@@ -45,21 +45,24 @@ export function NavigationHeader() {
         : <></> 
       }
           
-      {width > 500 || showMenu?
+      {width > 500 || showMenu
+        ?
           <NavigationLinks showMenu={showMenu}>
             <ul>
               {
                 data.map((link) => (
                   <li key={link.id}>
-                    <a href="#" title={link.title}>
+                    <Link to={link.href} title={link.title} onClick={() => setShowMenu(false)}>
                       {link.title}
-                    </a>
+                    </Link>
                   </li>
                 ))
               }
             </ul>
           </NavigationLinks>
-        : <></>}    
+        : 
+          <></>
+      }    
     </>
   );
 }
