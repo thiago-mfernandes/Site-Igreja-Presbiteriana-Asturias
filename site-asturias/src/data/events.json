@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "title": "Retiro de Carnaval 2023",
+    "description": "Et consequatur nihil odio odit voluptatem qui. Dolores doloribus cupiditate totam esse dolores quod. Magni aut incidunt fugiat labore est ut non ipsam nihil. Voluptate rerum dolores unde voluptas. Et similique praesentium dolor. Et quod eius sint at quae est dolores. Beatae quo facere hic.",
+    "date": "20 de Fevereiro de 2023",
+    "time": "8:00 | 18:00",
+    "address": "Av. Luiz Pereira Leite, 775 Jd. Astúrias"
+  },
+  {
+    "id": 2,
+    "title": "Reunião de Oração",
+    "description": "Et consequatur nihil odio odit voluptatem qui. Dolores doloribus cupiditate totam esse dolores quod. Magni aut incidunt fugiat labore est ut non ipsam nihil. Voluptate rerum dolores unde voluptas. Et similique praesentium dolor. Et quod eius sint at quae est dolores. Beatae quo facere hic.",
+    "date": "20 de Fevereiro de 2023",
+    "time": "19:30 | 21:30",
+    "address": "Av. Luiz Pereira Leite, 775 Jd. Astúrias"
+  },
+  {
+    "id": 3,
+    "title": "Estudo Bíblico Portas Abertas",
+    "description": "Et consequatur nihil odio odit voluptatem qui. Dolores doloribus cupiditate totam esse dolores quod. Magni aut incidunt fugiat labore est ut non ipsam nihil. Voluptate rerum dolores unde voluptas. Et similique praesentium dolor. Et quod eius sint at quae est dolores. Beatae quo facere hic.",
+    "date": "23 de Fevereiro de 2023",
+    "time": "19:30 | 20:30",
+    "address": "Av. Luiz Pereira Leite, 775 Jd. Astúrias"
+  },
+  {
+    "id": 4,
+    "title": "EBD - Escola Bíblica Dominical",
+    "description": "Et consequatur nihil odio odit voluptatem qui. Dolores doloribus cupiditate totam esse dolores quod. Magni aut incidunt fugiat labore est ut non ipsam nihil. Voluptate rerum dolores unde voluptas. Et similique praesentium dolor. Et quod eius sint at quae est dolores. Beatae quo facere hic.",
+    "date": "26 de Fevereiro de 2023",
+    "time": "9:00 | 10:30",
+    "address": "Av. Luiz Pereira Leite, 775 Jd. Astúrias"
+  },
+  {
+    "id": 5,
+    "title": "Culto de Adoração",
+    "description": "Et consequatur nihil odio odit voluptatem qui. Dolores doloribus cupiditate totam esse dolores quod. Magni aut incidunt fugiat labore est ut non ipsam nihil. Voluptate rerum dolores unde voluptas. Et similique praesentium dolor. Et quod eius sint at quae est dolores. Beatae quo facere hic.",
+    "date": "26 de Fevereiro de 2023",
+    "time": "18:00 | 20:00",
+    "address": "Av. Luiz Pereira Leite, 775 Jd. Astúrias"
+  },
+  {
+    "id": 6,
+    "title": "Reunião de Oração",
+    "description": "Et consequatur nihil odio odit voluptatem qui. Dolores doloribus cupiditate totam esse dolores quod. Magni aut incidunt fugiat labore est ut non ipsam nihil. Voluptate rerum dolores unde voluptas. Et similique praesentium dolor. Et quod eius sint at quae est dolores. Beatae quo facere hic.",
+    "date": "27 de Fevereiro de 2023",
+    "time": "19:30 | 21:30",
+    "address": "Av. Luiz Pereira Leite, 775 Jd. Astúrias"
+  },
+  {
+    "id": 7,
+    "title": "Estudo Bíblico Portas Abertas",
+    "description": "Et consequatur nihil odio odit voluptatem qui. Dolores doloribus cupiditate totam esse dolores quod. Magni aut incidunt fugiat labore est ut non ipsam nihil. Voluptate rerum dolores unde voluptas. Et similique praesentium dolor. Et quod eius sint at quae est dolores. Beatae quo facere hic.",
+    "date": "02 de Março de 2023",
+    "time": "19:30 | 20:30",
+    "address": "Av. Luiz Pereira Leite, 775 Jd. Astúrias"
+  },
+  {
+    "id": 8,
+    "title": "Multirão de limpeza Diaconia e Almoço UPH",
+    "description": "Et consequatur nihil odio odit voluptatem qui. Dolores doloribus cupiditate totam esse dolores quod. Magni aut incidunt fugiat labore est ut non ipsam nihil. Voluptate rerum dolores unde voluptas. Et similique praesentium dolor. Et quod eius sint at quae est dolores. Beatae quo facere hic.",
+    "date": "04 de Março de 2023",
+    "time": "8:00 | 15:00",
+    "address": "Av. Luiz Pereira Leite, 775 Jd. Astúrias"
+  }
+]

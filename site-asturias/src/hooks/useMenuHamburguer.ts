@@ -2,7 +2,7 @@ import { useState } from "react";
 
 interface useMenuHamburguerProps {
   showMenu: boolean;
-  setShowMenu?: () => void;
+  setShowMenu?: (isOpen?: boolean) => void;
   handleNavigationMenu: () => void;
 }
 

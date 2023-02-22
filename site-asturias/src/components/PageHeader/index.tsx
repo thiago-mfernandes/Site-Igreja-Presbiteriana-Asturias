@@ -1,14 +1,17 @@
 import { useLocation } from "react-router-dom";
+import { usePageHeaderTitle } from "../../hooks/usePageHeaderTitle";
 import { Title } from "../Title";
 import { PageHeaderContainer } from "./styles";
 
 export function PageHeader() {
-  let { pathname } = useLocation(); 
+
+  let pageTitle = usePageHeaderTitle();
+  let { pathname } = useLocation();
 
   return (
     <PageHeaderContainer path={pathname}>
       <Title>
-        Somos a Igreja Presbiteriana Astúrias
+        {pageTitle}
       </Title>
     </PageHeaderContainer>
   );

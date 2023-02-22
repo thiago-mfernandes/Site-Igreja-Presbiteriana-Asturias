@@ -42,6 +42,7 @@ export const MenuHamburguer = styled.button<MenuHamburguerProps>`
   position: absolute;
   right: 1.25rem;
   top: 1.5rem;
+  color: ${props => props.theme.colors.black};
   
   svg {
     opacity: 0.8;
@@ -49,11 +50,9 @@ export const MenuHamburguer = styled.button<MenuHamburguerProps>`
     ${(props) => props.showMenu && css`
       color: ${props => props.theme.colors["green-300-d"]}
     ` };
-    ${(props) => props.inShowMenuChangeColor === '/about' && css`
+    ${(props) => props.inShowMenuChangeColor != '/' && css`
       color: ${props => props.theme.colors.white}
     ` };
-
-
   }
 `;
 

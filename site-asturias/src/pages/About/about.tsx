@@ -1,12 +1,13 @@
 import { PageHeader } from "../../components/PageHeader";
 import { Subtitle } from "../../components/Subtitle";
 import { Text } from "../../components/Text";
-import { AboutContainer, SectionTextBlock, TextBlock } from "./styles";
+import { AboutContainer, SectionTextBlock } from "./styles";
 import { Title } from "../../components/Title";
 
 import imgPreacher from '../../assets/preacher.webp'
 import logoIpb from '../../assets/logo_ipb.png'
 import { FileArrowDown } from "phosphor-react";
+import { TextBlock } from "../../components/TextBlock/styles";
 
 
 export function About() {

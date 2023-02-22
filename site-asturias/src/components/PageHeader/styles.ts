@@ -1,22 +1,21 @@
 import styled, { css } from "styled-components";
 
 import imgBible from '../../assets/bible.jpg'
-
+import ministries from '../../assets/ministries-bg.jpg'
+import calendar from '../../assets/calendar.jpg'
 
 interface PageHeaderContainerProps {
   path?: string;
 }
 
-// case '/schedule':
 // case '/giving':
-// case '/ministries':
 // case '/faq':
 // case '/contact':
    
 
 
 export const PageHeaderContainer = styled.header<PageHeaderContainerProps>`
-  padding: 24rem 1.25rem 8rem;
+  padding: 10rem 1.25rem 20rem;
   min-height: 25rem;
   text-align: center;
   background-color: ${props => props.theme.colors["gray-900"]};
@@ -28,6 +27,14 @@ export const PageHeaderContainer = styled.header<PageHeaderContainerProps>`
 
   ${({ path }) => path === '/about' && css`
     background-image: url(${imgBible});
+  `}
+
+  ${({ path }) => path === '/schedule' && css`
+    background-image: url(${calendar});
+  `}
+
+  ${({ path }) => path === '/ministries' && css`
+    background-image: url(${ministries});
   `}
 
   &::before {

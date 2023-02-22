@@ -2,7 +2,7 @@
 Site da Igreja Presbiteriana Asturias
 
 [x] - componente de botao generico(muda cor, borda, bg)
-[] - componente de agenda culto da home
+[x] - componente de agenda culto da home
 [x] - componente de evento (titulo, descricao, data, horario, local)
 [] - componente de versículo
 [] - componente avatar
@@ -77,4 +77,5 @@ https://pagseguro.uol.com.br/checkout/nc/nl/donation/sender-identification.jhtml
 ### login
 
 
-//pixabay
+//pixabay videos
+//unsplash photos

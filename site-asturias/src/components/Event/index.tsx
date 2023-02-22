@@ -3,28 +3,47 @@ import { Title } from "../Title";
 import { Text } from "../Text";
 import { EventContainer } from "./styles";
 
-export function Event() {
+interface EventProps {
+  address: string;
+  date: string;
+  description: string;
+  id: number;
+  title: string;
+  time: string;
+}
+
+export function Event({ address, date, description, id, time, title }: EventProps) {
   return(
     <EventContainer>
-      <Title>2023 Kids Church Camp.</Title>
-      <Text>
-        Et consequatur nihil odio odit voluptatem qui. Dolores doloribus cupiditate totam esse dolores quod. Magni aut incidunt fugiat labore est ut non ipsam nihil. Voluptate rerum dolores unde voluptas. Et similique praesentium dolor. Et quod eius sint at quae est dolores. Beatae quo facere hic.
-      </Text>
+      <div key={id}>
+        <Title >
+          {title}
+        </Title>
+        <Text>
+          {description}
+        </Text>
 
-      <ul>
-        <li>
-          <CalendarCheck  size={24} />
-          <span>20 de Fevereiro de 2023</span>
-        </li>
-        <li>
-          <Clock size={24} />
-          <span>8:00 | 18:00</span>
-        </li>
-        <li>
-          <MapPin size={38} />
-          <span>Av. Luiz Pereira Leite, 775 Jd. Astúrias</span>
-        </li>
-      </ul>
+        <ul>
+          <li>
+            <CalendarCheck  size={24} />
+            <span>
+              {date}
+            </span>
+          </li>
+          <li>
+            <Clock size={24} />
+            <span>
+              {time}
+            </span>
+          </li>
+          <li>
+            <MapPin size={38} />
+            <span>
+              {address}
+            </span>
+          </li>
+        </ul>          
+      </div>
     </EventContainer>
   );
 }

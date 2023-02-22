@@ -13,7 +13,6 @@ export const EventContainer = styled.div`
     text-transform: uppercase;
     letter-spacing: 0.25rem;
     color: ${props => props.theme.colors["gray-900"]};
-    margin-left: 0;
     border-top: 1px solid ${props => props.theme.colors["gray-900-opacity-20%"]};
   }
 
