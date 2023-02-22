@@ -4,7 +4,7 @@ Site da Igreja Presbiteriana Asturias
 [x] - componente de botao generico(muda cor, borda, bg)
 [x] - componente de agenda culto da home
 [x] - componente de evento (titulo, descricao, data, horario, local)
-[] - componente de versículo
+[x] - componente de versículo
 [] - componente avatar
 [] - componente membro
 [x] - componente rede social
@@ -44,10 +44,10 @@ Site da Igreja Presbiteriana Asturias
 
 
 ### dizimo online -> aponta pra uma pagina do pagseguro: 
+[x] - versiculo 2 corintios 8:7
+[x] - O que a Biblia diz sobre os dizimos?
+[] - numero da nossa conta
 https://pagseguro.uol.com.br/checkout/nc/nl/donation/sender-identification.jhtml?t=8d3ce5bed408edf512492882a345b4fbd334f4e3c564f10c637ed95995f4f540&e=true#rmcl
-- versiculo 2 corintios 8:7
-- O que a Biblia diz sobre os dizimos?
-- numero da nossa conta
 ### modelo -> https://www.donabatepc.org/giving
 
 ### ministerios

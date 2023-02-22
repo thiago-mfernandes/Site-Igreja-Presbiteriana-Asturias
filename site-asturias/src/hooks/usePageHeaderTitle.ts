@@ -10,7 +10,14 @@ export function usePageHeaderTitle() {
         return 'Somos a Igreja Presbiteriana Astúrias';
       case '/ministries':
         return 'Conheça nossos Ministérios';
-  
+      case '/schedule':
+        return 'Nossa Agenda';
+      case '/giving':
+        return 'Oferte a casa do Senhor';
+      case '/faq':
+        return 'Perguntas Frequentes';
+      case '/contact':
+        return 'Fale Conosco';
     }
   }
   

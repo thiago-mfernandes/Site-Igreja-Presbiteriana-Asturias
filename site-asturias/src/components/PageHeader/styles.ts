@@ -3,16 +3,11 @@ import styled, { css } from "styled-components";
 import imgBible from '../../assets/bible.jpg'
 import ministries from '../../assets/ministries-bg.jpg'
 import calendar from '../../assets/calendar.jpg'
+import offering from '../../assets/offering.jpg'
 
 interface PageHeaderContainerProps {
   path?: string;
 }
-
-// case '/giving':
-// case '/faq':
-// case '/contact':
-   
-
 
 export const PageHeaderContainer = styled.header<PageHeaderContainerProps>`
   padding: 10rem 1.25rem 20rem;
@@ -33,9 +28,14 @@ export const PageHeaderContainer = styled.header<PageHeaderContainerProps>`
     background-image: url(${calendar});
   `}
 
+  ${({ path }) => path === '/giving' && css`
+    background-image: url(${offering});
+  `}
+  
   ${({ path }) => path === '/ministries' && css`
     background-image: url(${ministries});
   `}
+
 
   &::before {
     display: block;

@@ -52,7 +52,12 @@ export function NavigationHeader() {
               {
                 data.map((link) => (
                   <li key={link.id}>
-                    <Link to={link.href} title={link.title} onClick={() => setShowMenu(false)}>
+                    <Link 
+                      to={link.href} 
+                      target={link.target}
+                      title={link.title} 
+                      onClick={() => setShowMenu(false)}
+                    >
                       {link.title}
                     </Link>
                   </li>
