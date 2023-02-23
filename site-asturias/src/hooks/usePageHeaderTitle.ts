@@ -9,7 +9,7 @@ export function usePageHeaderTitle() {
       case '/about':
         return 'Somos a Igreja Presbiteriana Astúrias';
       case '/ministries':
-        return 'Conheça nossos Ministérios';
+        return 'Junte-se a nós';
       case '/schedule':
         return 'Nossa Agenda';
       case '/giving':

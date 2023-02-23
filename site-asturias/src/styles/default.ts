@@ -7,6 +7,7 @@ export const defaultTheme = {
     
     black: '#000000',
     'black-opacity-60%': 'rgba(0,0,0,0.60)',
+    'black-opacity-40%': 'rgba(0,0,0,0.40)',
 
     'green-50': '#e8f4eb',
     'green-100': '#c9e3ce',

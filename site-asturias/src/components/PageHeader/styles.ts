@@ -1,16 +1,12 @@
-import styled, { css } from "styled-components";
-
-import imgBible from '../../assets/bible.jpg'
-import ministries from '../../assets/ministries-bg.jpg'
-import calendar from '../../assets/calendar.jpg'
-import offering from '../../assets/offering.jpg'
+import styled from "styled-components";
+import { handleBackroundImage } from "../../utils/handleBackgroundImage";
 
 interface PageHeaderContainerProps {
   path?: string;
 }
 
 export const PageHeaderContainer = styled.header<PageHeaderContainerProps>`
-  padding: 10rem 1.25rem 20rem;
+  padding: 15rem 1.25rem 15rem;
   min-height: 25rem;
   text-align: center;
   background-color: ${props => props.theme.colors["gray-900"]};
@@ -20,22 +16,7 @@ export const PageHeaderContainer = styled.header<PageHeaderContainerProps>`
   position: relative;
   color: ${props => props.theme.colors.white};
 
-  ${({ path }) => path === '/about' && css`
-    background-image: url(${imgBible});
-  `}
-
-  ${({ path }) => path === '/schedule' && css`
-    background-image: url(${calendar});
-  `}
-
-  ${({ path }) => path === '/giving' && css`
-    background-image: url(${offering});
-  `}
-  
-  ${({ path }) => path === '/ministries' && css`
-    background-image: url(${ministries});
-  `}
-
+  ${({ path }) => handleBackroundImage(path)}
 
   &::before {
     display: block;

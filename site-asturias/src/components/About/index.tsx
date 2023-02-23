@@ -10,7 +10,7 @@ export function About() {
       <WelcomeWords>
         <Subtitle textColor="green">Seja Bem Vindo</Subtitle>
         <Text>Somos uma igreja que valoriza os relacionamentos. É assim que podemos nos definir. Mas não qualquer tipo... Valorizamos os relacionamentos em Cristo Jesus, pois é assim que pretendemos alcançar um ambiente onde cada vez mais o verdadeiro amor de Deus possa ser manifestado. Procuramos viver nossos relacionamentos através da Bíblia, que é a única regra de fé e prática de nossa comunidade. Somos, acima de tudo, um grupo de pessoas buscando, através de um ambiente acolhedor, viver para testemunhar do amor de Cristo.</Text>
-        <LinkButton href="#" variantBackgroundColor={"gray"}>
+        <LinkButton variantBackgroundColor={"gray"}>
           Saiba Mais
         </LinkButton>
       </WelcomeWords>
