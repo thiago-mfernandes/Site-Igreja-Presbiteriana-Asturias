@@ -18,7 +18,6 @@ export const StyledAnchor = styled.button<StyledAnchorProps>`
   ${({isGivingPage}) => isGivingPage && css`
     
   `}
-  //padding: 0 0.5rem;
   margin: 1rem 0;
 
   font-family: ${props => props.theme.fonts.montserrat};
@@ -30,11 +29,10 @@ export const StyledAnchor = styled.button<StyledAnchorProps>`
   text-transform: uppercase;
   text-align: center;
   white-space: nowrap;
-
   border: 0;
   background-color: transparent;
-
   transition: all .3s ease-in-out;
+
   &:hover {
     background-color: ${props => props.theme.colors["gray-900-opacity-20%"]};
   }
@@ -56,6 +54,7 @@ export const StyledAnchor = styled.button<StyledAnchorProps>`
   `}
 
   //for page Giving, button to make a offer
+  
   ${({isGivingPage}) => isGivingPage && css`
     padding: 0 2rem;
   `}

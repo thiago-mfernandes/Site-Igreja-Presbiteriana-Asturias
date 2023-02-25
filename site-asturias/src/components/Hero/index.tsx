@@ -1,17 +1,18 @@
 import { BackgroundVideo } from './BackgroundVideo'
-import { HeaderContainer, HeroContainer } from './styles';
+import { HeaderContainer } from './styles';
 import { Welcome } from './Welcome';
 import { useMenuHamburguer } from "../../hooks/useMenuHamburguer";
+import { SectionContainer } from '../Section/styles';
 
 export function Hero() {
   const { showMenu } = useMenuHamburguer();  
 
   return (
-    <HeroContainer>
+    <SectionContainer>
       <HeaderContainer>
         <BackgroundVideo />
         <Welcome onShowMenu={showMenu} />
       </HeaderContainer>
-    </HeroContainer>
+    </SectionContainer>
   );
 }

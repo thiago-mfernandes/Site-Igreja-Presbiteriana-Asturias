@@ -5,10 +5,16 @@ import dataFaq from '../../data/faq.json'
 import { Subtitle } from "../../components/Subtitle";
 import { Text } from "../../components/Text";
 import { SocialMedia } from "../../components/SocialMedia";
+import { motion } from "framer-motion"
 
 export function Faq() {
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0}}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 1 }}
+    >
       <PageHeader />
       <FaqContainer>
         <Subtitle>O que você pode esperar:</Subtitle>
@@ -22,6 +28,6 @@ export function Faq() {
         </Text>
       </FaqContainer>
       <SocialMedia />
-    </>
+    </motion.div>
   );
 }

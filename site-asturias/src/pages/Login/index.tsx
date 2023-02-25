@@ -3,10 +3,16 @@ import { Subtitle } from "../../components/Subtitle";
 import { Text } from "../../components/Text";
 import { Verse } from "../../components/Verse";
 import { ContainerLogin } from "./styles";
+import { motion } from "framer-motion"
 
 export function Login(){
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0}}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 1 }}
+    >
       <PageHeader />
       <ContainerLogin>
         <Subtitle>
@@ -23,6 +29,6 @@ export function Login(){
             Deus seja louvado!
         </Text>
       </ContainerLogin>
-    </>
+    </motion.div>
   )
 }

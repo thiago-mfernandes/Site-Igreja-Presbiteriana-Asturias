@@ -5,14 +5,25 @@ import { AboutContainer, SectionTextBlock } from "./styles";
 import { Title } from "../../components/Title";
 
 import imgPreacher from '../../assets/preacher.webp'
-import logoIpb from '../../assets/logo_ipb.png'
+import logoIpb from '../../assets/logo/logo_ipb.png'
 import { FileArrowDown } from "phosphor-react";
 import { TextBlock } from "../../components/TextBlock/styles";
+
+import { motion } from "framer-motion"
+
+import westminsterCatecism from '../../assets/books/westminster_catecism.pdf'
+import largerCatecism from '../../assets/books/larger_catecism.pdf'
+import shorterCatecism from '../../assets/books/shorter_catecism.pdf'
 
 
 export function About() {
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0}}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 1 }}
+    >
       <PageHeader />
       <AboutContainer>
 
@@ -145,16 +156,22 @@ export function About() {
           </TextBlock>
 
           <button>
+            <a href={westminsterCatecism} download >
             Confissão de Fé de Westimenter
             <FileArrowDown size={40} />
+            </a>            
           </button>
           <button>
-            Catecismo Maior de Westimenter
-            <FileArrowDown size={40} />
+            <a href={largerCatecism} download>
+              Catecismo Maior de Westimenter
+              <FileArrowDown size={40} />
+            </a>
           </button>
           <button>
-            Breve Catecismo de Westimenter
-            <FileArrowDown size={40} />
+            <a href={shorterCatecism} download>
+              Breve Catecismo de Westimenter
+              <FileArrowDown size={40} />
+            </a>
           </button>
         </SectionTextBlock>
 
@@ -222,6 +239,6 @@ export function About() {
           </TextBlock>
         </SectionTextBlock>
       </AboutContainer>
-    </>
+    </motion.div>
   );
 }

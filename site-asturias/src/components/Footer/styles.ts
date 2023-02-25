@@ -35,14 +35,11 @@ export const TheChurchContainer = styled(GenericContainer)`
 export const AddressContainer = styled(GenericContainer)`
 
   a {
-    
   display: flex;
   align-items: center;
   justify-content: center;
   height: 3.5rem;
   width: 100%;
-
-  //padding: 0 0.5rem;
   margin: 1rem 0;
 
   font-family: ${props => props.theme.fonts.montserrat};

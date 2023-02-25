@@ -4,17 +4,23 @@ import { Text } from "../../components/Text";
 import { MinistriesContainer } from "./styles";
 import { TextBlock } from "../../components/TextBlock/styles";
 
-import ucpLogo from '../../assets/ucp_logo.webp'
-import recepcaoLogo from '../../assets/logo_recepcao.webp'
-import louvorLogo from '../../assets/logo_louvor.webp'
-import comunicacaoLogo from '../../assets/logo_comunicacao.webp'
-import safLogo from '../../assets/logo_saf.png'
-import uphLogo from '../../assets/logo_uph.png'
+import ucpLogo from '../../assets/logo/ucp_logo.webp'
+import recepcaoLogo from '../../assets/logo/logo_recepcao.webp'
+import louvorLogo from '../../assets/logo/logo_louvor.webp'
+import comunicacaoLogo from '../../assets/logo/logo_comunicacao.webp'
+import safLogo from '../../assets/logo/logo_saf.png'
+import uphLogo from '../../assets/logo/logo_uph.png'
 import { PageHeader } from "../../components/PageHeader";
+import { motion } from "framer-motion"
 
 export function Ministries() {
   return(
-    <>
+    <motion.div
+      initial={{ opacity: 0}}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 1 }}
+    >
       <PageHeader />
       <MinistriesContainer>
         <Title>
@@ -88,6 +94,6 @@ export function Ministries() {
           </Text>
         </TextBlock>
       </MinistriesContainer>
-    </>
+    </motion.div>
   );
 }

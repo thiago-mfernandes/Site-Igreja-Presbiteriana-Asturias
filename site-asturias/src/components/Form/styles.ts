@@ -1,12 +1,10 @@
 import styled from "styled-components"
 
 export const FormContainer = styled.form`
-  background-color: ${props => props.theme.colors.white};
   display: flex;
   flex-direction: column;
 
   input, textarea {
-    //display: block;
     height: 3rem;
     padding: 10px;
     border: 0;
@@ -20,5 +18,26 @@ export const FormContainer = styled.form`
 
   textarea {
     height: 10rem;
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.5rem;
+    width: 100%;
+    margin: 1rem 0;
+    font-family: ${props => props.theme.fonts.montserrat};
+    color: ${props => props.theme.colors["gray-900"]};
+    font-weight: 700;
+    font-size: 0.75rem;
+    letter-spacing: .3rem;
+    line-height: 3.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    white-space: nowrap;
+    border: 0;
+    background-color: ${props => props.theme.colors["green-100"]};
+    transition: all .3s ease-in-out;
   }
 `;

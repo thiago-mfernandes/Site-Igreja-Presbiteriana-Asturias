@@ -19,7 +19,7 @@ export function Accordion({ content, id, title }: AccordionProps){
     <Wrapper>
       <AccordionContainer>
         <Item 
-          key={id} 
+          //key={id} 
           onClick={handleAccordion}
         >
           <Title>

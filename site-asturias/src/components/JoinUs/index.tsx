@@ -1,13 +1,13 @@
 import { NavLink } from "react-router-dom";
 import { LinkButton } from "../LinkButton";
+import { SectionContainer } from "../Section/styles";
 import { Text } from "../Text";
 import { Title } from "../Title";
-import { ContainerContent, ScheduleSection } from "./styles";
+import { ContainerContent } from "./styles";
 
 export function JoinUs() {
   return (
-    <ScheduleSection>
-
+    <SectionContainer>
 
       <ContainerContent>
         <Title>Associe-se</Title>
@@ -32,9 +32,6 @@ export function JoinUs() {
       </ContainerContent>
 
 
-    </ScheduleSection>
+    </SectionContainer>
   );
 }
-/**
- * 
- */

@@ -1,13 +1,13 @@
 import { css } from "styled-components"
 
-import imgBible from '../assets/bible.jpg'
-import ministries from '../assets/ministries.jpg'
-import calendar from '../assets/calendar.jpg'
-import offering from '../assets/offering.jpg'
-import faq from '../assets/faq.jpg'
-import contact from '../assets/contact.jpg'
-import login from '../assets/login.jpg'
-import lost from '../assets/lost.jpg'
+import imgBible from '../assets/background/bible.jpg'
+import ministries from '../assets/background/ministries.jpg'
+import calendar from '../assets/background/calendar.jpg'
+import offering from '../assets/background/offering.jpg'
+import faq from '../assets/background/faq.jpg'
+import contact from '../assets/background/contact.jpg'
+import login from '../assets/background/login.jpg'
+import lost from '../assets/background/lost.jpg'
 
 export function handleBackroundImage(pathname: string) {
   switch(pathname){

@@ -7,10 +7,16 @@ import { Text } from "../../components/Text";
 import { TextBlock } from "../../components/TextBlock/styles";
 import { Title } from "../../components/Title";
 import { ContactContainer } from "./styles";
+import { motion } from "framer-motion"
 
 export function Contact(){
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0}}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 1 }}
+    >
       <PageHeader />
       <ContactContainer>
         <TextBlock>
@@ -48,6 +54,6 @@ export function Contact(){
       </ContactContainer>
       <MapLocation />
       <SocialMedia />
-    </>
+    </motion.div>
   );
 }

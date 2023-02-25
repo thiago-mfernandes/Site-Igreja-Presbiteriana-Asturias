@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import bibleBg from "../../assets/bible.jpg"
+import bibleBg from "../../assets/background/bible.jpg"
+import { SectionContainer } from "../Section/styles";
 
-export const StudyContainer = styled.section`
-  padding: 10rem 1.25rem;
+export const StudyContainer = styled(SectionContainer)`
   background-image: url(${bibleBg});
   background-repeat: no-repeat;
   background-position: center center;

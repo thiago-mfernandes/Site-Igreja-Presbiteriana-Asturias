@@ -10,10 +10,13 @@ import { Faq } from './src/pages/Faq'
 import { Contact } from './src/pages/Contact'
 import { Login } from './src/pages/Login'
 import { NotFound } from './src/pages/NotFound'
+import { AnimatePresence } from 'framer-motion'
 
 export function Router() {
+  //const location = useLocation();
+
   return (
-    <>
+    <AnimatePresence>
       <NavigationHeader />
       <Routes>
         <Route path="/" element={ <Home /> } />
@@ -27,6 +30,6 @@ export function Router() {
         <Route path='/*' element={ <NotFound /> } />
       </Routes>      
       <Footer />
-    </>
+    </AnimatePresence>
   )
 }

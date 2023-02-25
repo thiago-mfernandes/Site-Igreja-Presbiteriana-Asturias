@@ -48,5 +48,12 @@ export const SectionTextBlock = styled(TextBlock)`
     background-color: ${props => props.theme.colors["green-300-d"]};
 
     transition: all .3s ease-in-out;
+
+    a {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
   }
 `;
