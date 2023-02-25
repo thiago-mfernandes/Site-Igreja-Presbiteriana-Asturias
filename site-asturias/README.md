@@ -19,4 +19,3 @@ Site da Igreja Presbiteriana Asturias
 
 ## [] - componente de paginacao
 -buscar os dados e guardar num estado
-255 - 89- 138

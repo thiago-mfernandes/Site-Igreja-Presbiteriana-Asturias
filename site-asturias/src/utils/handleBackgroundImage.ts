@@ -7,6 +7,7 @@ import offering from '../assets/offering.jpg'
 import faq from '../assets/faq.jpg'
 import contact from '../assets/contact.jpg'
 import login from '../assets/login.jpg'
+import lost from '../assets/lost.jpg'
 
 export function handleBackroundImage(pathname: string) {
   switch(pathname){
@@ -24,5 +25,7 @@ export function handleBackroundImage(pathname: string) {
       return css`background-image: url(${contact});`
     case '/login':
       return css`background-image: url(${login});`
+    default:
+      return css`background-image: url(${lost});`
   }
 }
