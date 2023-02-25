@@ -54,7 +54,7 @@ export function NavigationHeader() {
                   <li key={link.id}>
                     <Link 
                       to={link.href} 
-                      target={link.target}
+                      //target={link.target}
                       title={link.title} 
                       onClick={() => setShowMenu(false)}
                     >

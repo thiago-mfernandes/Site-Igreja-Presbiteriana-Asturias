@@ -1,4 +1,5 @@
 import { Envelope, FacebookLogo, InstagramLogo, WhatsappLogo, YoutubeLogo } from "phosphor-react";
+import { NavLink } from "react-router-dom";
 import { ContainerSocialMedia } from "./styles";
 
 export function SocialMedia() {
@@ -17,9 +18,9 @@ export function SocialMedia() {
         <a href="https://www.youtube.com/@igrejapresbiterianaasturia6315" target="_blank">
           <YoutubeLogo size={24} />
         </a>
-        <a href="" target="_blank">
+        <NavLink to="/contact">
           <Envelope size={24} />
-        </a>
+        </NavLink>
       </ul>
     </ContainerSocialMedia>
   );

@@ -18,6 +18,8 @@ export function usePageHeaderTitle() {
         return 'Perguntas Frequentes';
       case '/contact':
         return 'Fale Conosco';
+      case '/login':
+        return 'Em breve';
     }
   }
   

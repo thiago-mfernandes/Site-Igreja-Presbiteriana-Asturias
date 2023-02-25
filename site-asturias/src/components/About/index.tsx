@@ -2,6 +2,7 @@ import { LinkButton } from "../LinkButton";
 import { Subtitle } from "../Subtitle";
 import { Text } from "../Text";
 import { ContainerSection, MainServices, Service, WelcomeWords } from "./styles";
+import { NavLink } from 'react-router-dom'
 
 export function About() {
   return (
@@ -10,8 +11,10 @@ export function About() {
       <WelcomeWords>
         <Subtitle textColor="green">Seja Bem Vindo</Subtitle>
         <Text>Somos uma igreja que valoriza os relacionamentos. É assim que podemos nos definir. Mas não qualquer tipo... Valorizamos os relacionamentos em Cristo Jesus, pois é assim que pretendemos alcançar um ambiente onde cada vez mais o verdadeiro amor de Deus possa ser manifestado. Procuramos viver nossos relacionamentos através da Bíblia, que é a única regra de fé e prática de nossa comunidade. Somos, acima de tudo, um grupo de pessoas buscando, através de um ambiente acolhedor, viver para testemunhar do amor de Cristo.</Text>
-        <LinkButton variantBackgroundColor={"gray"}>
-          Saiba Mais
+        <LinkButton variantBackgroundColor="gray">
+          <NavLink to="/about">
+            Saiba Mais
+          </NavLink>        
         </LinkButton>
       </WelcomeWords>
 

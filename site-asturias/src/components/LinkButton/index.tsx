@@ -6,16 +6,18 @@ interface LinkButtonProps {
   variantColorLetter?: string;
   variantBackgroundColor?: 'gray' | 'green';
   variantApplyBorder?: boolean;
+  isGivingPage?: boolean;
 }
 
-export function LinkButton({ variantBackgroundColor, variantApplyBorder, variantColorLetter, children }: LinkButtonProps) {
+export function LinkButton({ isGivingPage, variantBackgroundColor, variantApplyBorder, variantColorLetter, children }: LinkButtonProps) {
   return (
     <StyledAnchor 
+      isGivingPage={isGivingPage}
       applyBorder={variantApplyBorder} 
       bgColor={variantBackgroundColor} 
       colorLetter={variantColorLetter}
     >
-        {children}
+      {children}
     </StyledAnchor>
   )
 }

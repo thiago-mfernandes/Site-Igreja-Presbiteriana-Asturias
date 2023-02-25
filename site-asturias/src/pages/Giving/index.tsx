@@ -1,4 +1,5 @@
 import { ArrowSquareOut, Link } from "phosphor-react";
+import { useLocation } from "react-router-dom";
 import { LinkButton } from "../../components/LinkButton";
 import { PageHeader } from "../../components/PageHeader";
 import { Subtitle } from "../../components/Subtitle";
@@ -7,6 +8,7 @@ import { Verse } from "../../components/Verse";
 import { GivingContainer } from "./styles";
 
 export function Giving() {
+  const { pathname } = useLocation();
   return(
       <>
         <PageHeader />
@@ -23,7 +25,10 @@ export function Giving() {
             <br /><br />
             O dinheiro não é uma coisa má: é neutra, ou seja, com ele podemos fazer coisas boas ou más. Se nós amamos o dinheiro, certamente não amamos a Deus. Assim, quando somos capazes de entregar para Deus parte do nosso dinheiro, estamos confiando n'Ele e quebrando o poder do dinheiro nas nossas vidas.
           </Text>
-          <LinkButton variantBackgroundColor="gray">
+          <LinkButton 
+            isGivingPage={pathname === '/giving' && true}
+            variantBackgroundColor="gray"
+          >
             <a href="https://pagseguro.uol.com.br/checkout/nc/nl/donation/sender-identification.jhtml?t=b4c3ab66f5d098d4a68fa47749890c435ab6398b59ff29bf9544471606c9134b&e=true#rmcl" target="_blank">
               Ofertar
             </a>

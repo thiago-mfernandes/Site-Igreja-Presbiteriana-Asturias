@@ -38,11 +38,11 @@ export const TitleContainer = styled.div<TitleContainerProps>`
       display: block;
       content: "";
       height: 2px;
-      width: 5rem;
+      width: 90%;
       background-color: ${props => props.theme.colors["gray-900"]};
       position: absolute;
       top: 0;
-      left: 37.5%;
+      left: 5%;
     }
   }
 `;
@@ -51,4 +51,9 @@ export const CallToAction = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 5rem;
+  width: 100%;
+
+  a {
+    width: 100%;
+  }
 `;

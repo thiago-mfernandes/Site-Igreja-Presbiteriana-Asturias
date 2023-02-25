@@ -23,7 +23,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
-      background-color: ${props => props.theme.colors['gray-900']};
+      background-color: ${props => props.theme.colors.white};
       color: ${props => props.theme.colors.black};
       -webkit-font-smoothing: antialiased;
       word-wrap: break-word;

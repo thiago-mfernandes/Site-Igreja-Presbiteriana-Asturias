@@ -2,7 +2,7 @@ import { AddressContainer, ContactContainer, ContainerFooter, ContainerLogo, Pre
 import logo from '../../assets/logo/logo-white.png'
 import { Subtitle } from "../Subtitle";
 import { Text } from "../Text";
-import { FacebookLogo, InstagramLogo, WhatsappLogo, Heart } from "phosphor-react";
+import { FacebookLogo, InstagramLogo, WhatsappLogo, Heart, ArrowSquareOut } from "phosphor-react";
 import { LinkButton } from "../LinkButton";
 
 export function Footer() {
@@ -30,9 +30,10 @@ export function Footer() {
         <Text>
           Av. Luiz Pereira Leite, 775 <br /> 
           Jd. Asturias - Piracicaba - SP <br />
-          <LinkButton href="#" variantBackgroundColor="gray" >
+          <a href="https://www.google.com/maps/place/Igreja+Presbiteriana+Astúrias+-+Av.+Luiz+Pereira+Leite,+775+-+Jardim+Asturias+I,+Piracicaba+-+SP,+13426-239/@-22.7597693,-47.6289662,17z/data=!4m6!3m5!1s0x94c6306d970090d9:0xbd3215ce77411e58!8m2!3d-22.7597693!4d-47.6289662!16s%2Fg%2F1ptx7d1rb" target="_blank">
             Ver Localização
-          </LinkButton>
+            <ArrowSquareOut size={24} />
+          </a>
         </Text>
       </AddressContainer>
 

@@ -4,6 +4,7 @@ interface StyledAnchorProps {
   bgColor?: 'gray' | 'green';
   applyBorder?: boolean;
   colorLetter?: string;
+  isGivingPage?: boolean;
 }
  
 
@@ -14,7 +15,10 @@ export const StyledAnchor = styled.button<StyledAnchorProps>`
   height: 3.5rem;
   width: 100%;
 
-  padding: 0 3.2rem;
+  ${({isGivingPage}) => isGivingPage && css`
+    
+  `}
+  //padding: 0 0.5rem;
   margin: 1rem 0;
 
   font-family: ${props => props.theme.fonts.montserrat};
@@ -50,4 +54,17 @@ export const StyledAnchor = styled.button<StyledAnchorProps>`
   ${props => props.applyBorder && css`
     border: 1px solid ${props => props.theme.colors["gray-900"]};
   `}
+
+  //for page Giving, button to make a offer
+  ${({isGivingPage}) => isGivingPage && css`
+    padding: 0 2rem;
+  `}
+
+  a {
+    margin-bottom: 0;
+    width: 100%;
+    ${({isGivingPage}) => isGivingPage && css`
+      width: 60%;
+    `}
+  }
 `;

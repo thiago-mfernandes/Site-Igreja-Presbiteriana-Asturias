@@ -12,7 +12,7 @@ export const WelcomeWords = styled.div`
   margin-bottom: 5rem;
 
   a {
-    margin-bottom: 1rem;
+    //margin-bottom: 1rem;
     font-size: 1rem;
     color: ${props => props.theme.colors["gray-900"]};
   }

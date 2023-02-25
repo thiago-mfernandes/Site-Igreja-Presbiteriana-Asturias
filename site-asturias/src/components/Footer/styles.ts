@@ -34,6 +34,36 @@ export const TheChurchContainer = styled(GenericContainer)`
 
 export const AddressContainer = styled(GenericContainer)`
 
+  a {
+    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem;
+  width: 100%;
+
+  //padding: 0 0.5rem;
+  margin: 1rem 0;
+
+  font-family: ${props => props.theme.fonts.montserrat};
+  color: ${props => props.theme.colors["gray-900"]};
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: .3rem;
+  line-height: 3.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+
+  border: 0;
+  background-color: ${props => props.theme.colors["gray-900-opacity-20%"]};
+
+  transition: all .3s ease-in-out;
+
+  svg {
+    margin-left: 10px;
+  }
+  }
 `;
 
 export const ContactContainer = styled(GenericContainer)`

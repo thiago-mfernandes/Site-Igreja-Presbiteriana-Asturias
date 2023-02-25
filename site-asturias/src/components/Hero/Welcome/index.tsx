@@ -37,11 +37,11 @@ export function Welcome({ onShowMenu} : WelcomeProps){
         </h1>
 
         <CallToAction>
-          <NavLink to="">
+          <NavLink to="/schedule">
             <LinkButton variantApplyBorder>Eventos</LinkButton>
           </NavLink>
           <NavLink to="/about">
-            <LinkButton variantApplyBorder >Sobre Nós</LinkButton>
+            <LinkButton variantApplyBorder>Sobre Nós</LinkButton>
           </NavLink>
         </CallToAction>
       </TitleContainer> 
