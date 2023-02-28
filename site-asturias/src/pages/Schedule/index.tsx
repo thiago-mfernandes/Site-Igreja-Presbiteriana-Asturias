@@ -1,6 +1,6 @@
 import { PageHeader } from "../../components/PageHeader";
-import { UpComingEvents } from "../../components/UpComingEvents";
 import { motion } from "framer-motion"
+import { Pagination } from "../../components/Pagination";
 
 export function Schedule() {
   return (
@@ -11,7 +11,7 @@ export function Schedule() {
       transition={{ duration: 1 }}
     >
       <PageHeader />
-      <UpComingEvents />
+      <Pagination itemsPerPage={5}/>
     </motion.div>
   );
 }

@@ -1,78 +1,77 @@
-import { PaginationItem } from "./PaginationItem/PaginationItem";
-import { PaginationButtons, PaginationContainer, TotalContent } from "./styles";
+import { useState } from 'react';
+import ReactPaginate from 'react-paginate';
+import { Event } from '../Event';
 
-interface PaginationProps {
-  totalCountOfPages: number;
-  registersPerPage?: number;
-  currentPage?: number;
-  onPageChange?: (page: number) => void;
-}
+import data from "../../data/events.json"
+import { Subtitle } from '../Subtitle';
+import { SectionContainer } from '../Section/styles';
+import { ContainerReactPaginate } from './styles';
+import { CaretLeft, CaretRight } from 'phosphor-react';
 
-//se eu passar generatePagesArray(2, 5)
-//5-2=3
-//no map: 2+0+1=3, 2+1+1=4, 2+2+1=5
+//usado na pagina Schedule
+export function Pagination({ itemsPerPage }) {
+  // Here we use item offsets; we could also use page offsets
+  // following the API or data you're working with.
+  const [itemOffset, setItemOffset] = useState(0);
 
-function generatePagesArray(from: number, to: number) {
-  return[...new Array(to - from)]
-    .map((_, index) => {
-      return from + index + 1;
-    })
-    .filter(page => page > 0)
-}
+  // Simulate fetching items from another resources.
+  // (This could be items from props; or items loaded in a local state
+  // from an API endpoint with useEffect and useState)
 
-export function Pagination({ 
-  totalCountOfPages, 
-  currentPage = 1, 
-  registersPerPage = 10, 
-  onPageChange
-}: PaginationProps) {
+  const endOffset = itemOffset + itemsPerPage;
+  //console.log(`Loading items from ${itemOffset} to ${endOffset}`);
+
+  const currentItems = data.slice(itemOffset, endOffset);
+  //console.log(currentItems);
+
+  const pageCount = Math.ceil(data.length / itemsPerPage);
+
+  // Invoke when user click to request another page.
+  const handlePageClick = (event) => {
+    const newOffset = (event.selected * itemsPerPage) % data.length;
+    //console.log(
+      //`User requested page number ${event.selected}, which is offset ${newOffset}`
+    //);
+    setItemOffset(newOffset);
 
   
-  const lastPage = Math.floor(totalCountOfPages / registersPerPage);
-  //quantas paginas antes e depois vou mostrar
-  const siblingsCount = 1; //   1 ...4 5 6 ...22
-  //quais paginas vou carregar antes da pagina atual
-  const previousPages = currentPage > 1
-    ? generatePagesArray(currentPage - 1 - siblingsCount, currentPage - 1)
-    : []
-
-  const nextPages = currentPage < lastPage
-    ? generatePagesArray(currentPage, Math.min(currentPage + siblingsCount, lastPage))
-    : []
+  };
 
   return (
-    <PaginationContainer>
-      <TotalContent>
-        <strong>0</strong> - <strong>10</strong> de <strong>100</strong>
-      </TotalContent>
-      
-      <PaginationButtons>
-
-        {currentPage > (1 + siblingsCount) && (
-          <>
-            <PaginationItem onPageChange={onPageChange} number={1} />
-            { currentPage > (2 + siblingsCount) && <p>...</p> }
-          </>
-        )}
-
-        {previousPages.length > 0 && previousPages.map(page => {
-          return <PaginationItem onPageChange={onPageChange} key={page} number={page} />
-        })}
-
-        <PaginationItem onPageChange={onPageChange} number={currentPage} isCurrent />
-
-        {nextPages.length > 0 && nextPages.map(page => {
-          return <PaginationItem onPageChange={onPageChange} key={page} number={page} />
-        })}
-
-        {(currentPage + siblingsCount) < lastPage && (
-          <>
-            { (currentPage + 1 + siblingsCount) < lastPage && <p>...</p> }
-            <PaginationItem onPageChange={onPageChange} number={lastPage} />
-          </>
-        )}
-
-      </PaginationButtons>
-    </PaginationContainer>
+    <SectionContainer>
+      <Subtitle>Próximos Eventos</Subtitle>
+      {
+        currentItems.map((event) => (
+          <Event 
+            key={event.id}
+            address={event.address} 
+            date={event.date} 
+            description={event.description} 
+            id={event.id} 
+            title={event.title} 
+            time={event.time} 
+          />
+          ))
+        }
+      <ContainerReactPaginate>
+        <ReactPaginate
+          breakLabel="..."
+          nextLabel={ <CaretRight /> }
+          onPageChange={handlePageClick}
+          pageRangeDisplayed={5}
+          pageCount={pageCount}
+          previousLabel={ <CaretLeft /> }
+          renderOnZeroPageCount={null}
+          containerClassName={"paginationsButtons"}
+          previousClassName={"previousButton"}
+          nextClassName={"nextButton"}
+          disabledClassName={"paginationDisabled"}
+          activeClassName={"paginationActive"}
+        />
+      </ContainerReactPaginate>
+    </SectionContainer>
   );
 }
+
+
+

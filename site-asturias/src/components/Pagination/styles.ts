@@ -1,26 +1,71 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
-export const PaginationContainer = styled.div`
+export const ContainerReactPaginate = styled.div`
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-content: center;
-  margin-top: 8px;
-`;
 
-export const TotalContent = styled.div`
-  display: flex;
-  flex-direction: row;
-`;
-
-export const PaginationButtons = styled.div`
-  display: flex;
-  flex-direction: row;
-
-  p {
-    width: 32px;
-    color: gray;
+  .paginationsButtons {
     display: flex;
-    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    
+    font-family: ${props => props.theme.fonts.montserrat};
+    font-size: 1rem;
+    padding: 10px;
+    width: 100%;
+    max-width: 100vw;
+    height: 8rem;
+
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: ${props => props.theme.colors["gray-300"]};
+      border: 0;
+      border-radius: 4px;
+      padding: 6px;
+      margin-right: 10px;
+      width: 40px;
+      height: 40px;
+    }
   }
+  
+  .previousButton, .nextButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: ${props => props.theme.colors["gray-400"]};
+    border: 0;
+    border-radius: 4px;
+    padding: 6px;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+
+    svg {
+      font-size: 1rem;
+    }
+  }
+
+  .paginationsButtons > .paginationActive {
+    
+    background-color: ${props => props.theme.colors["green-300-d"]};    
+    color: ${props => props.theme.colors.white};
+  }
+
+  .paginationDisabled {
+    background-color: ${props => props.theme.colors["gray-300"]};
+  }
+
 `;
+
+/**
+ * containerClassName={"paginationsButtons"}
+   previousClassName={"previousButton"}
+   nextClassName={"nextButton"}
+
+   disabledClassName={"paginationDisabled"}
+   activeClassName={"paginationActive"}
+ */
