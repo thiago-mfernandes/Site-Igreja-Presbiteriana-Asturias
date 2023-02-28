@@ -1,9 +1,16 @@
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 
-export const VerseContent = styled.blockquote`
+interface VerseContentProps {
+  changeColorOfBorderLeft?: boolean;
+}
+
+export const VerseContent = styled.blockquote<VerseContentProps>`
   margin: 4rem 0;
   padding: 2.8rem 2.8rem;
-  border-left: 4px solid black;
+  border-left: 4px solid ${props => props.theme.colors.black};
+  ${({changeColorOfBorderLeft}) => changeColorOfBorderLeft && css`
+  border-left: 4px solid ${props => props.theme.colors.white};
+  `}
   position: relative;
   font-style: italic;
 

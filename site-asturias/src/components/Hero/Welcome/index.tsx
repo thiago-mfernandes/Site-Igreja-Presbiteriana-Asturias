@@ -14,9 +14,8 @@ export function Welcome({ onShowMenu} : WelcomeProps){
   return(
     <WelcomeContainer>  
       {width > 500 &&
-        <FollowUs className="aqui tem uma classe com um estilo: hero-left-bar">
+        <FollowUs>
           <ul> {/**aqui vai o card lateral com o siga-nos */}
-            <li>Siga-nos</li>
             <li>
               <a href="#0" title="">Facebook</a>
             </li>

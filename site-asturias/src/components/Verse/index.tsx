@@ -4,12 +4,13 @@ import { VerseContent } from "./styles";
 interface VerseProps {
   verse: string;
   citation: string;
+  changeColorOfBorderLeft?: boolean;
 }
 
-export function Verse({ citation, verse }: VerseProps){
+export function Verse({ citation, verse, changeColorOfBorderLeft }: VerseProps){
   return (
     
-    <VerseContent>
+    <VerseContent changeColorOfBorderLeft={changeColorOfBorderLeft}>
       <Text>
         {verse}
       </Text>

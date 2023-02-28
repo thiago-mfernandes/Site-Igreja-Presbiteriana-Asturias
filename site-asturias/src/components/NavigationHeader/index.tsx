@@ -30,7 +30,7 @@ export function NavigationHeader() {
       </LogoContainer>
 
       {/** When MenuHamburguer Icon is visible or Not */}
-      { width < 500 
+      { width <= 800 
         ?
           <MenuHamburguer 
             inShowMenuChangeColor={pathname}
@@ -45,7 +45,7 @@ export function NavigationHeader() {
         : <></> 
       }
           
-      {width > 500 || showMenu
+      {width >= 768 || showMenu
         ?
           <NavigationLinks showMenu={showMenu}>
             <ul>
@@ -54,7 +54,6 @@ export function NavigationHeader() {
                   <li key={link.id}>
                     <Link 
                       to={link.href} 
-                      //target={link.target}
                       title={link.title} 
                       onClick={() => setShowMenu(false)}
                     >

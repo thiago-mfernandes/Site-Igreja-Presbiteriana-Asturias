@@ -1,8 +1,18 @@
 import styled, { css } from "styled-components";
+import { device } from "../../styles/default";
 
 interface LogoContainerProps {
   inShowMenuChangeColor: boolean;
   path?: string
+}
+
+interface MenuHamburguerProps {
+  showMenu: boolean;
+  inShowMenuChangeColor?: string;
+}
+
+interface ShowMenuProps {
+  showMenu: boolean;
 }
 
 export const LogoContainer = styled.div<LogoContainerProps>`
@@ -14,23 +24,27 @@ export const LogoContainer = styled.div<LogoContainerProps>`
   left: 1.25rem;
   top: 1.25rem;  
 
+  @media ${device.tablet} {
+    left: 4.25rem;
+    top: 2.25rem;  
+  }
+
   a {
-    height: 36px
+    width: 100%;
+    @media ${device.tablet} {
+      width: 70%;
+    }
   }
 
   img {
-    height: auto;
+    width: 80%;
     transition: all .3s ease-in-out;
     ${({ path, inShowMenuChangeColor }) => inShowMenuChangeColor && path === '/' && css`
       filter: invert(77%) sepia(10%) saturate(1075%) hue-rotate(79deg) brightness(92%) contrast(85%)
     `}
+    
   }
-`
-
-interface MenuHamburguerProps {
-  showMenu: boolean;
-  inShowMenuChangeColor?: string;
-}
+`;
 
 export const MenuHamburguer = styled.button<MenuHamburguerProps>`
   border: 0;
@@ -43,6 +57,13 @@ export const MenuHamburguer = styled.button<MenuHamburguerProps>`
   right: 1.25rem;
   top: 1.5rem;
   color: ${props => props.theme.colors.black};
+
+  @media ${device.tablet} {
+      width: 3rem;
+      height: 3rem;
+      right: 2.25rem;
+      top: 2.5rem;
+    }
   
   svg {
     opacity: 0.8;
@@ -53,12 +74,15 @@ export const MenuHamburguer = styled.button<MenuHamburguerProps>`
     ${(props) => props.inShowMenuChangeColor != '/' && css`
       color: ${props => props.theme.colors.white}
     ` };
+
+    @media ${device.tablet} {
+      width: 4rem;
+      height: 4rem;
+    }
   }
 `;
 
-interface ShowMenuProps {
-  showMenu: boolean;
-}
+
 
 export const NavigationLinks = styled.nav<ShowMenuProps>`
   font-family: ${props => props.theme.fonts.montserrat};
@@ -73,6 +97,10 @@ export const NavigationLinks = styled.nav<ShowMenuProps>`
   overflow: hidden;
   z-index: 100;
 
+  @media ${device.tablet} {
+    padding: 12rem 5.5rem 2.5rem;
+  }
+
   ul {
     display: flex;
     flex-direction: column;
@@ -83,12 +111,18 @@ export const NavigationLinks = styled.nav<ShowMenuProps>`
     text-transform: uppercase;
     line-height: 3rem;
     margin: 0 0 1rem 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    border-top: 1px solid ${props => props.theme.colors["black-opacity-60%"]};
 
     li {
       margin: 0;
       padding: 0;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      border-bottom: 1px solid ${props => props.theme.colors["white-opacity-005%"]};
+      
+      @media ${device.tablet} {
+        display: flex;
+        align-items: center;
+        height: 5rem;
+      }
 
       a {
         padding: 1px 0;

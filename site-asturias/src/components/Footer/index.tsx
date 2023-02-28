@@ -4,6 +4,7 @@ import { Subtitle } from "../Subtitle";
 import { Text } from "../Text";
 import { FacebookLogo, InstagramLogo, WhatsappLogo, Heart, ArrowSquareOut } from "phosphor-react";
 import { LinkButton } from "../LinkButton";
+import { Verse } from "../Verse";
 
 export function Footer() {
   return (
@@ -18,9 +19,10 @@ export function Footer() {
         <Subtitle>
           Igreja Presbiteriana Astúrias
         </Subtitle>
-        <Text>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni alias ad fugit necessitatibus rem corrupti temporibus tempore odio, quia voluptatum eos dicta modi vero, excepturi tenetur eius sunt sint porro!
-        </Text>
+        <Verse 
+          verse="Porque, onde estiverem dois ou três reunidos em meu nome, ali estou no meio deles." citation="MT 18:20"
+          changeColorOfBorderLeft
+        />
       </TheChurchContainer>
 
       <AddressContainer>
