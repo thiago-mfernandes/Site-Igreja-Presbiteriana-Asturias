@@ -1,10 +1,9 @@
 import { Event } from "../Event";
 import { Subtitle } from "../Subtitle";
-import { UpcomingSection } from "./styles";
 import { useLocation } from "react-router-dom";
+import { SectionContainer } from "../Section/styles";
 
 import events from '../../data/events.json';
-
 
 
 export function UpComingEvents() {
@@ -15,25 +14,22 @@ export function UpComingEvents() {
   })
 
   return (
-    <UpcomingSection>
+    <SectionContainer>
       <Subtitle>Próximos Eventos</Subtitle>
-      {
-        pathname === '/' 
-        ?
-        eventsOfHomePage.map((event) => (
-          <Event 
-            key={event.id}
-            address={event.address} 
-            date={event.date} 
-            description={event.description} 
-            id={event.id} 
-            title={event.title} 
-            time={event.time} 
-          />
-          ))
-        :
-          <></>
+        {
+          pathname === '/' &&
+            eventsOfHomePage.map((event) => (
+              <Event 
+                key={event.id}
+                address={event.address} 
+                date={event.date} 
+                description={event.description} 
+                id={event.id} 
+                title={event.title} 
+                time={event.time} 
+              />
+            ))
         }
-    </UpcomingSection>
+    </SectionContainer>
   );
 }

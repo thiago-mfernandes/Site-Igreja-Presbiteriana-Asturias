@@ -41,7 +41,7 @@ export function Giving() {
             <ArrowSquareOut size={24} />
           </LinkButton>
           <Subtitle>
-            PIX
+            TRANSFERÊNCIA POR PIX
           </Subtitle>
           <Text>
             Se preferir, contamos com a opção de transferência por PIX:

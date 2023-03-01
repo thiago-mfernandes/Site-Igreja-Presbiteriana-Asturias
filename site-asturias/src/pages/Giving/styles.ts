@@ -1,8 +1,7 @@
 import styled from "styled-components"
+import { SectionContainer } from "../../components/Section/styles";
 
-export const GivingContainer = styled.section`
-  padding: 10rem 1.5rem;
-  background-color: ${props => props.theme.colors.white};
+export const GivingContainer = styled(SectionContainer)`
   position: relative;
 
   button {

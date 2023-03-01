@@ -22,7 +22,6 @@ export function Home() {
       <BibleStudy />
       <MapLocation />
       <SocialMedia />
-
     </motion.div>
   );
 }

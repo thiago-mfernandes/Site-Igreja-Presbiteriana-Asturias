@@ -14,10 +14,6 @@ export const StyledAnchor = styled.button<StyledAnchorProps>`
   justify-content: center;
   height: 3.5rem;
   width: 100%;
-
-  ${({isGivingPage}) => isGivingPage && css`
-    
-  `}
   margin: 1rem 0;
 
   font-family: ${props => props.theme.fonts.montserrat};

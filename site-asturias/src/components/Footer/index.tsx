@@ -1,10 +1,9 @@
 import { AddressContainer, ContactContainer, ContainerFooter, ContainerLogo, PreacherContainer, ReservedRights, TheChurchContainer } from "./styles";
-import logo from '../../assets/logo/logo-white.png'
 import { Subtitle } from "../Subtitle";
 import { Text } from "../Text";
 import { FacebookLogo, InstagramLogo, WhatsappLogo, Heart, ArrowSquareOut } from "phosphor-react";
-import { LinkButton } from "../LinkButton";
 import { Verse } from "../Verse";
+import logo from '../../assets/logo/logo-white.png';
 
 export function Footer() {
   return (

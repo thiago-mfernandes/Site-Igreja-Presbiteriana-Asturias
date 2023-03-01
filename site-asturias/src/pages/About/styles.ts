@@ -1,10 +1,10 @@
 import styled from "styled-components"
+import { SectionContainer } from "../../components/Section/styles";
 import { TextBlock } from "../../components/TextBlock/styles";
+import { device } from "../../styles/default";
 
-export const AboutContainer = styled.section`
-  padding: 10rem 1.5rem;
-  background-color: ${props => props.theme.colors.white};
-
+export const AboutContainer = styled(SectionContainer)`
+  
   p {
     color: ${props => props.theme.colors.black};
   }
@@ -49,11 +49,18 @@ export const SectionTextBlock = styled(TextBlock)`
 
     transition: all .3s ease-in-out;
 
+    @media ${device.tablet} {
+      justify-content: center;
+    }
+
     a {
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
+      @media ${device.tablet} {
+        width: 80%;
+      }
     }
   }
 `;

@@ -1,9 +1,8 @@
 import styled from "styled-components"
+import { SectionContainer } from "../../components/Section/styles";
 
-export const FaqContainer = styled.section`
-  padding: 10rem 1.5rem;
-  background-color: ${props => props.theme.colors.white};
-
+export const FaqContainer = styled(SectionContainer)`
+  
   p {
     margin-top: 3rem;
   }

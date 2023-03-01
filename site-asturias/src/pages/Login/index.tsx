@@ -2,8 +2,8 @@ import { PageHeader } from "../../components/PageHeader";
 import { Subtitle } from "../../components/Subtitle";
 import { Text } from "../../components/Text";
 import { Verse } from "../../components/Verse";
-import { ContainerLogin } from "./styles";
 import { motion } from "framer-motion"
+import { SectionContainer } from "../../components/Section/styles";
 
 export function Login(){
   return (
@@ -14,7 +14,7 @@ export function Login(){
       transition={{ duration: 1 }}
     >
       <PageHeader />
-      <ContainerLogin>
+      <SectionContainer>
         <Subtitle>
           Software em Construção
         </Subtitle>
@@ -28,7 +28,7 @@ export function Login(){
         <Text>
             Deus seja louvado!
         </Text>
-      </ContainerLogin>
+      </SectionContainer>
     </motion.div>
   )
 }

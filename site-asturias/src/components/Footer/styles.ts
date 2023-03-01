@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "../../styles/default";
 
 export const GenericContainer = styled.div`
   display: flex;
@@ -12,6 +13,10 @@ export const ContainerFooter = styled.footer`
   display: flex;
   flex-direction: column;
   color: ${props => props.theme.colors.white};
+
+  @media ${device.tablet} {
+    padding: 8rem 4rem 3rem;
+  }
 `;
 
 export const ContainerLogo = styled.div`
@@ -21,6 +26,10 @@ export const ContainerLogo = styled.div`
     display: flex;
     width: 50%;
     height: auto;
+
+    @media ${device.tablet} {
+      width: 25%;
+    }
   }
 
   img {
@@ -70,6 +79,9 @@ export const ContactContainer = styled(GenericContainer)`
     align-items: center;
     font-size: 1.3rem;
     color: ${props => props.theme.colors["white-opacity-80%"]};
+    @media ${device.tablet} {
+      margin-bottom: 2rem;
+    }
 
     a {
       opacity: 0.8;

@@ -17,13 +17,13 @@ export function Welcome({ onShowMenu} : WelcomeProps){
         <FollowUs>
           <ul> {/**aqui vai o card lateral com o siga-nos */}
             <li>
-              <a href="#0" title="">Facebook</a>
+              <a href="https://www.youtube.com/@igrejapresbiterianaasturia6315" target="_blank">YouTube</a>
             </li>
             <li>
-              <a href="#0" title="">YouTube</a>
+              <a href="https://www.facebook.com/ipbasturias/" target="_blank">Facebook</a>
             </li>
             <li>
-              <a href="#0" title="">Instagram</a>
+              <a href="https://www.instagram.com/ipbasturias/" target="_blank">Instagram</a>
             </li>
           </ul> 
         </FollowUs>

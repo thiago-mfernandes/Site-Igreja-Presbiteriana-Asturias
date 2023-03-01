@@ -1,12 +1,14 @@
 import { useState } from 'react';
-import ReactPaginate from 'react-paginate';
 import { Event } from '../Event';
-
-import data from "../../data/events.json"
 import { Subtitle } from '../Subtitle';
 import { SectionContainer } from '../Section/styles';
 import { ContainerReactPaginate } from './styles';
 import { CaretLeft, CaretRight } from 'phosphor-react';
+
+import ReactPaginate from 'react-paginate';
+import data from "../../data/events.json";
+
+
 
 //usado na pagina Schedule
 export function Pagination({ itemsPerPage }) {
@@ -32,9 +34,7 @@ export function Pagination({ itemsPerPage }) {
     //console.log(
       //`User requested page number ${event.selected}, which is offset ${newOffset}`
     //);
-    setItemOffset(newOffset);
-
-  
+    setItemOffset(newOffset);  
   };
 
   return (

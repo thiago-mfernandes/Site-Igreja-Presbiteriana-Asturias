@@ -3,8 +3,8 @@ import { LinkButton } from "../../components/LinkButton"
 import { PageHeader } from "../../components/PageHeader"
 import { Subtitle } from "../../components/Subtitle"
 import { Text } from "../../components/Text"
-import { ContainerNotFound } from "./styles"
 import { motion } from "framer-motion"
+import { SectionContainer } from "../../components/Section/styles"
 
 export function NotFound() {
   return (
@@ -15,7 +15,7 @@ export function NotFound() {
       transition={{ duration: 1 }}
     >
       <PageHeader />
-      <ContainerNotFound>
+      <SectionContainer>
         <Subtitle>Oops! Parece que você esta perdido.</Subtitle>
         <Text>Talvez eu possa te ajudar a encontrar o caminho de volta com alguns links:</Text>
         <NavLink to="/">
@@ -24,7 +24,7 @@ export function NotFound() {
         <NavLink to="/contact">
           <LinkButton variantBackgroundColor="green">Contato</LinkButton>
         </NavLink>
-      </ContainerNotFound>
+      </SectionContainer>
     </motion.div>
   )
 }

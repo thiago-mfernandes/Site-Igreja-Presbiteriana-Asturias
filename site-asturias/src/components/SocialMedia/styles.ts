@@ -1,12 +1,18 @@
 import styled from "styled-components";
+import { device } from "../../styles/default";
 
 export const ContainerSocialMedia = styled.section`
-  padding: 8rem 1.25rem;
+  padding: 10rem 1.25rem;
   background-color: ${props => props.theme.colors.black};
+
+  @media ${device.tablet} {
+    padding: 8rem 8rem;
+  }
 
   ul {
     display: flex;
     align-items: center;
+    justify-content: center;
     justify-content: space-around;
   }
 

@@ -28,7 +28,7 @@ export const FollowUs = styled.div`
 
   @media ${device.tablet} {
     height: 100vh;
-    width: 5.5rem;
+    width: 3.5rem;
     background-color: #000000;
     opacity: .9;
     position: absolute;
@@ -41,17 +41,11 @@ export const FollowUs = styled.div`
       align-items: center;
       justify-content: center;
       transform: rotate(-90deg) translate3d(0, 5.8rem, 0);
-      list-style: none;
-      font-family: ${props => props.theme.fonts.montserrat};
-      font-size: .9rem;
-      line-height: 0.8rem;
-      text-transform: uppercase;
-      letter-spacing: .4rem;
-      color: #ffffff;
+      list-style: none;      
       margin: 0;
       position: absolute;
       bottom: 4.8rem;
-      left: -40px;
+      left: -65px;
       -webkit-transform: rotate(-90deg) translate3d(0, 6.2rem, 0);
       transform: rotate(-90deg) translate3d(0, 6.2rem, 0);
       -webkit-transform-origin: left bottom;
@@ -59,18 +53,18 @@ export const FollowUs = styled.div`
 
       li {
         padding-left: 0.4rem;
-        font-weight: 700;
-        font-size: 1.2rem;
-        text-transform: none;
-        letter-spacing: 0;
         padding-right: 4rem;
         margin-right: 0.8rem;
         position: relative;
         display: inline-block;
-        margin-right: 1.2rem;
 
         a {
-
+          font-family: ${props => props.theme.fonts.montserrat};
+          font-size: .8rem;
+          line-height: 0.8rem;
+          letter-spacing: .4rem;
+          text-transform: uppercase;
+          color: ${props => props.theme.colors["white-opacity-40%"]};
         }
       }
     }
@@ -87,7 +81,7 @@ export const TitleContainer = styled.div<TitleContainerProps>`
 
   @media ${device.tablet} {
     width: 80%;
-    margin-left: 5rem;
+    margin-left: 4rem;
   }
 
   h1 {
@@ -123,8 +117,15 @@ export const CallToAction = styled.div`
   flex-direction: column;
   margin-top: 5rem;
   width: 100%;
+  @media ${device.tablet} {
+    align-items: center;
+  }
 
   a {
     width: 100%;
+
+    @media ${device.tablet} {
+      width: 60%;
+    }
   }
 `;

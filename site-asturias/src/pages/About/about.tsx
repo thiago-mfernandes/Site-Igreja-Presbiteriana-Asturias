@@ -238,6 +238,7 @@ export function About() {
             </Text>
           </TextBlock>
         </SectionTextBlock>
+        
       </AboutContainer>
     </motion.div>
   );
