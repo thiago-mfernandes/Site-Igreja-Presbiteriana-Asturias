@@ -1,7 +1,7 @@
 import { Event } from "../Event";
 import { Subtitle } from "../Subtitle";
 import { useLocation } from "react-router-dom";
-import { SectionContainer } from "../Section/styles";
+import { ContainerUpcomingEvents } from "./styles";
 
 import events from '../../data/events.json';
 
@@ -14,7 +14,7 @@ export function UpComingEvents() {
   })
 
   return (
-    <SectionContainer>
+    <ContainerUpcomingEvents>
       <Subtitle>Próximos Eventos</Subtitle>
         {
           pathname === '/' &&
@@ -30,6 +30,6 @@ export function UpComingEvents() {
               />
             ))
         }
-    </SectionContainer>
+    </ContainerUpcomingEvents>
   );
 }

@@ -7,7 +7,7 @@ import { Text } from "../../components/Text";
 import { TextBlock } from "../../components/TextBlock/styles";
 import { Title } from "../../components/Title";
 import { motion } from "framer-motion"
-import { SectionContainer } from "../../components/Section/styles";
+import { ContactContainer } from "./styles";
 
 export function Contact(){
   return (
@@ -18,7 +18,7 @@ export function Contact(){
       transition={{ duration: 1 }}
     >
       <PageHeader />
-      <SectionContainer>
+      <ContactContainer>
         <TextBlock>
           <Subtitle>
             Ficaremos felizes em atendê-lo
@@ -51,7 +51,7 @@ export function Contact(){
 
 
         <Form />
-      </SectionContainer>
+      </ContactContainer>
       <MapLocation />
       <SocialMedia />
     </motion.div>

@@ -20,7 +20,12 @@ export function Faq() {
         <Subtitle>O que você pode esperar:</Subtitle>
         {
           dataFaq.map((item) => (
-            <Accordion id={item.id} title={item.title} content={item.content} />
+            <Accordion 
+              key={item.id}  
+              id={item.id} 
+              title={item.title} 
+              content={item.content} 
+            />
           ))
         }
         <Text>

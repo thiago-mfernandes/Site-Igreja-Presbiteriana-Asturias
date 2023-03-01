@@ -8,6 +8,14 @@ export const AboutContainer = styled(SectionContainer)`
   p {
     color: ${props => props.theme.colors.black};
   }
+
+  @media ${device.laptop} {
+    flex-direction: column;
+
+    div img {
+      width: 50%;
+    }
+  }
 `;
 
 
@@ -16,11 +24,16 @@ export const SectionTextBlock = styled(TextBlock)`
     border-bottom: 0;
     margin-bottom: 0;
   }
-
+  
   img {
     align-self: center;
     width: 50%;
     margin-bottom: 2.5rem;
+    
+    @media ${device.laptop} {
+      width: 20% !important;
+      margin-bottom: 5rem;
+    }
   }
 
   button {
@@ -53,11 +66,17 @@ export const SectionTextBlock = styled(TextBlock)`
       justify-content: center;
     }
 
+    @media ${device.laptop} {
+      width: 40%;
+      align-self: center;
+    }
+
     a {
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
+      
       @media ${device.tablet} {
         width: 80%;
       }

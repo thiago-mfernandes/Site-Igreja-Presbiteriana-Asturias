@@ -17,6 +17,12 @@ export const ContainerFooter = styled.footer`
   @media ${device.tablet} {
     padding: 8rem 4rem 3rem;
   }
+
+  @media ${device.laptop} {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 `;
 
 export const ContainerLogo = styled.div`
@@ -30,15 +36,25 @@ export const ContainerLogo = styled.div`
     @media ${device.tablet} {
       width: 25%;
     }
+    @media ${device.laptop} {
+      width: 10%;
+    }
   }
 
   img {
+    width: 100%;
+  }
+
+  @media ${device.laptop} {
     width: 100%;
   }
 `;
 
 export const TheChurchContainer = styled(GenericContainer)`
 
+  @media ${device.laptop} {
+    width: 47.5%;
+  }
 `;
 
 export const AddressContainer = styled(GenericContainer)`
@@ -66,9 +82,18 @@ export const AddressContainer = styled(GenericContainer)`
 
   transition: all .3s ease-in-out;
 
-  svg {
-    margin-left: 10px;
+  &:hover {
+    background-color: ${props => props.theme.colors["green-600"]};
+    color: ${props => props.theme.colors.white}
   }
+
+    svg {
+      margin-left: 10px;
+    }
+  }
+
+  @media ${device.laptop} {
+    width: 47.5%;
   }
 `;
 
@@ -105,6 +130,10 @@ export const PreacherContainer = styled(GenericContainer)`
     display: flex;
     justify-content: space-between;
   }
+
+  @media ${device.tablet} {
+    width: 47.5%;
+  }
 `;
 
 export const ReservedRights = styled(GenericContainer)`
@@ -130,5 +159,9 @@ export const ReservedRights = styled(GenericContainer)`
     a {
       color: ${props => props.theme.colors["red-700"]};
     }
+  }
+
+  @media ${device.tablet} {
+    width: 100%;
   }
 `;

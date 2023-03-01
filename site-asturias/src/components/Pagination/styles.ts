@@ -1,9 +1,20 @@
 import styled from "styled-components"
+import { device } from "../../styles/default";
+import { SectionContainer } from "../Section/styles";
+
+
+export const SectionContainerPagination = styled(SectionContainer)`
+
+  @media ${device.laptop} {
+    flex-direction: column;
+  }
+`;
 
 export const ContainerReactPaginate = styled.div`
   width: 100%;
   display: flex;
 
+  
   .paginationsButtons {
     display: flex;
     flex-direction: row;

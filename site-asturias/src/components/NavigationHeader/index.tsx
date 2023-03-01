@@ -1,3 +1,4 @@
+import { Link, useLocation } from "react-router-dom";
 import { useMenuHamburguer } from "../../hooks/useMenuHamburguer"
 import { useWindowSize } from "../../hooks/useWindowSize";
 import { LogoContainer, MenuHamburguer, NavigationLinks } from "./styles"
@@ -5,9 +6,8 @@ import { List, X } from "phosphor-react";
 
 import logoBlack from "../../assets/logo/logo-black.png"
 import logoWhite from "../../assets/logo/logo-white.png"
-
 import data from "../../data/navlinks.json";
-import { Link, useLocation } from "react-router-dom";
+
 
 export function NavigationHeader() {
 
@@ -47,14 +47,13 @@ export function NavigationHeader() {
           
       {width >= 768 || showMenu
         ?
-          <NavigationLinks showMenu={showMenu}>
+          <NavigationLinks showMenu={showMenu} isHomePage={pathname}>
             <ul>
               {
                 data.map((link) => (
                   <li key={link.id}>
                     <Link 
                       to={link.href} 
-                      title={link.title} 
                       onClick={() => setShowMenu(false)}
                     >
                       {link.title}

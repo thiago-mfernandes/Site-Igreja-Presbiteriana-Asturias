@@ -3,7 +3,7 @@ import { Subtitle } from "../../components/Subtitle";
 import { Text } from "../../components/Text";
 import { Verse } from "../../components/Verse";
 import { motion } from "framer-motion"
-import { SectionContainer } from "../../components/Section/styles";
+import { LoginContainer } from "./styles";
 
 export function Login(){
   return (
@@ -14,7 +14,7 @@ export function Login(){
       transition={{ duration: 1 }}
     >
       <PageHeader />
-      <SectionContainer>
+      <LoginContainer>
         <Subtitle>
           Software em Construção
         </Subtitle>
@@ -28,7 +28,7 @@ export function Login(){
         <Text>
             Deus seja louvado!
         </Text>
-      </SectionContainer>
+      </LoginContainer>
     </motion.div>
   )
 }

@@ -13,6 +13,7 @@ interface MenuHamburguerProps {
 
 interface ShowMenuProps {
   showMenu: boolean;
+  isHomePage?: string;
 }
 
 export const LogoContainer = styled.div<LogoContainerProps>`
@@ -29,10 +30,39 @@ export const LogoContainer = styled.div<LogoContainerProps>`
     top: 2.25rem;  
   }
 
+  @media ${device.laptop} {
+    width: 20%;
+    justify-content: flex-start;
+  }
+
+  @media ${device.laptop} {
+    &::before {
+      display: block;
+      content: "";
+      height: 2px;
+      width: 50%;
+      background-color: ${props => props.theme.colors["gray-900"]};
+      position: absolute;
+      top: 25px;
+      left: -30%;
+
+      @media ${device.laptop} {
+        width: 40%;
+        left: -35%;
+        ${({ path }) => path !== '/' && css`
+          background-color: ${props => props.theme.colors.white};
+        `}
+      }
+    }
+  }
+
   a {
     width: 100%;
     @media ${device.tablet} {
       width: 70%;
+    }
+    @media ${device.laptop} {
+      width: 100%;
     }
   }
 
@@ -43,6 +73,9 @@ export const LogoContainer = styled.div<LogoContainerProps>`
       filter: invert(77%) sepia(10%) saturate(1075%) hue-rotate(79deg) brightness(92%) contrast(85%)
     `}
     
+    @media ${device.laptop} {
+      width: 40%;
+    }
   }
 `;
 
@@ -82,11 +115,9 @@ export const MenuHamburguer = styled.button<MenuHamburguerProps>`
   }
 `;
 
-
-
 export const NavigationLinks = styled.nav<ShowMenuProps>`
   font-family: ${props => props.theme.fonts.montserrat};
-  display: ${({showMenu}) => showMenu ? 'block' : 'none'};
+  display: ${({ showMenu }) => showMenu ? 'block' : 'none'};
   background-color: ${props => props.theme.colors["gray-900-opacity-90%"]};
   height: auto;
   width: 100%;
@@ -101,10 +132,19 @@ export const NavigationLinks = styled.nav<ShowMenuProps>`
     padding: 12rem 5.5rem 2.5rem;
   }
 
+  @media ${device.laptop} {
+    display: block;
+    top: 1.5rem;
+    left: 25%;
+    background-color: transparent;
+    padding: 0;  
+    width: 70%;
+  }
+
   ul {
     display: flex;
     flex-direction: column;
-    height: auto;
+    //height: auto;
     width: 100%;
     font-size: 0.75rem;
     letter-spacing: 0.35rem;
@@ -112,6 +152,12 @@ export const NavigationLinks = styled.nav<ShowMenuProps>`
     line-height: 3rem;
     margin: 0 0 1rem 0;
     border-top: 1px solid ${props => props.theme.colors["black-opacity-60%"]};
+
+    @media ${device.laptop} {
+      flex-direction: row;
+      justify-content: space-between;
+      border-top: 0;
+    }
 
     li {
       margin: 0;
@@ -124,15 +170,34 @@ export const NavigationLinks = styled.nav<ShowMenuProps>`
         height: 5rem;
       }
 
+      @media ${device.laptop} {
+        border-bottom: 0;
+      }
+
       a {
         padding: 1px 0;
         line-height: 16px;
         color: ${props => props.theme.colors.white};
         opacity: 0.8;
         transition: all 0.3s ease-in-out;
+
+        @media ${device.laptop} {
+          font-weight: 700;
+          font-size: 0.65rem;
+          cursor: pointer;
+          ${({ isHomePage }) => isHomePage === '/' && css`
+            color: ${props => props.theme.colors.black};          
+          `}
+
+        }
+
         &:hover {
-          color: ${props => props.theme.colors["gray-300-d"]};
+          color: ${props => props.theme.colors.black};
           opacity: 1;
+
+          @media ${device.laptop} {
+            color: ${props => props.theme.colors["green-300-d"]};
+          }
         }
       }
     } 

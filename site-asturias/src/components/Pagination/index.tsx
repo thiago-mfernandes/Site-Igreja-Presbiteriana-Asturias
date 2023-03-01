@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Event } from '../Event';
 import { Subtitle } from '../Subtitle';
 import { SectionContainer } from '../Section/styles';
-import { ContainerReactPaginate } from './styles';
+import { ContainerReactPaginate, SectionContainerPagination } from './styles';
 import { CaretLeft, CaretRight } from 'phosphor-react';
 
 import ReactPaginate from 'react-paginate';
@@ -38,7 +38,7 @@ export function Pagination({ itemsPerPage }) {
   };
 
   return (
-    <SectionContainer>
+    <SectionContainerPagination>
       <Subtitle>Próximos Eventos</Subtitle>
       {
         currentItems.map((event) => (
@@ -69,7 +69,7 @@ export function Pagination({ itemsPerPage }) {
           activeClassName={"paginationActive"}
         />
       </ContainerReactPaginate>
-    </SectionContainer>
+    </SectionContainerPagination>
   );
 }
 

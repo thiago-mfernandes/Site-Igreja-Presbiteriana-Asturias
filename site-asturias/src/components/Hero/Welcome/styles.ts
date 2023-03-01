@@ -50,6 +50,11 @@ export const FollowUs = styled.div`
       transform: rotate(-90deg) translate3d(0, 6.2rem, 0);
       -webkit-transform-origin: left bottom;
       transform-origin: left bottom;
+      
+      //1024
+      @media ${device.laptop} {
+        bottom: 2.8rem;
+      }
 
       li {
         padding-left: 0.4rem;
@@ -58,6 +63,10 @@ export const FollowUs = styled.div`
         position: relative;
         display: inline-block;
 
+        @media ${device.laptop} {
+          padding-right: 1rem;
+        }
+
         a {
           font-family: ${props => props.theme.fonts.montserrat};
           font-size: .8rem;
@@ -65,6 +74,14 @@ export const FollowUs = styled.div`
           letter-spacing: .4rem;
           text-transform: uppercase;
           color: ${props => props.theme.colors["white-opacity-40%"]};
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            color: ${props => props.theme.colors.white};
+          }
+
+          @media ${device.laptop} {
+            font-size: .5rem;
+          }
         }
       }
     }
@@ -117,8 +134,14 @@ export const CallToAction = styled.div`
   flex-direction: column;
   margin-top: 5rem;
   width: 100%;
+
   @media ${device.tablet} {
     align-items: center;
+  }
+
+  @media ${device.laptop} {
+    flex-direction: row;
+    justify-content: center;
   }
 
   a {
@@ -126,6 +149,13 @@ export const CallToAction = styled.div`
 
     @media ${device.tablet} {
       width: 60%;
+    }
+
+    @media ${device.laptop} {
+      width: 25%;
+      &:first-of-type{
+        margin-right: 24px;
+      }
     }
   }
 `;
