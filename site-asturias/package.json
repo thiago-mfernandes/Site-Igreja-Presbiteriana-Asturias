@@ -1,30 +1,30 @@
 {
   "name": "site-asturias",
+  "version": "0.1.0",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "@formspree/react": "^2.4.1",
+    "@types/node": "18.14.4",
+    "@types/react": "18.0.28",
+    "@types/react-dom": "18.0.11",
+    "@types/styled-components": "^5.1.26",
+    "babel-preset-next": "^1.4.0",
     "framer-motion": "^10.0.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "next": "13.2.3",
+    "phosphor-react": "^1.4.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "react-paginate": "^8.1.4",
-    "react-router-dom": "^6.8.1"
+    "styled-components": "^5.3.6",
+    "typescript": "4.9.5"
   },
   "devDependencies": {
-    "@types/node": "^18.13.0",
-    "@types/react": "^18.0.27",
-    "@types/react-dom": "^18.0.10",
-    "@types/styled-components": "^5.1.26",
-    "@vitejs/plugin-react": "^3.1.0",
-    "phosphor-react": "^1.4.1",
-    "styled-components": "^5.3.6",
-    "typescript": "^4.9.3",
-    "vite": "^4.1.0"
+    "babel-plugin-styled-components": "^2.0.7"
   }
 }

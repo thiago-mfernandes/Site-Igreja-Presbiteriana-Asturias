@@ -1,12 +1,5 @@
 import styled, { css } from "styled-components";
-
-interface StyledAnchorProps {
-  bgColor?: 'gray' | 'green';
-  applyBorder?: boolean;
-  colorLetter?: string;
-  isGivingPage?: boolean;
-}
- 
+import { StyledAnchorProps } from "./interfaces";
 
 export const StyledAnchor = styled.button<StyledAnchorProps>`
   display: flex;

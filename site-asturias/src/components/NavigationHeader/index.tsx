@@ -1,19 +1,21 @@
-import { Link, useLocation } from "react-router-dom";
-import { useMenuHamburguer } from "../../hooks/useMenuHamburguer"
-import { useWindowSize } from "../../hooks/useWindowSize";
+import Link from "next/link";
+import Image from "next/image";
+import { useMenuHamburguer } from "@/hooks/useMenuHamburguer"
+import { useWindowSize } from "@/hooks/useWindowSize";
 import { LogoContainer, MenuHamburguer, NavigationLinks } from "./styles"
 import { List, X } from "phosphor-react";
-
-import logoBlack from "../../assets/logo/logo-black.png"
-import logoWhite from "../../assets/logo/logo-white.png"
-import data from "../../data/navlinks.json";
+import data from "@/data/navlinks.json";
+import { useRouter } from "next/router";
+import logoBlack from "public/assets/logo/logo-black.png"
+import logoWhite from "public/assets/logo/logo-white.png"
 
 
 export function NavigationHeader() {
 
   const { showMenu, handleNavigationMenu, setShowMenu } = useMenuHamburguer();
   const { width } = useWindowSize();
-  let { pathname } = useLocation();
+  let { pathname } = useRouter();
+  console.log(pathname);
 
   return (
     <>
@@ -21,12 +23,23 @@ export function NavigationHeader() {
         path={pathname} 
         inShowMenuChangeColor={showMenu}
       > 
-        <a href='#'>
-          <img 
-            src={pathname === '/' ? logoBlack : logoWhite} 
-            alt="Logotipo da Igreja Presbiteriana Astúrias" 
-            width={90} />
-        </a>
+        <Link href='/'>
+          {
+            pathname === '/' 
+              ? 
+                <Image 
+                  src={logoBlack} alt="Logotipo da Igreja Presbiteriana Astúrias" 
+                  height={78}
+                  width={195} 
+                />
+              :
+                <Image 
+                  src={logoWhite} alt="Logotipo da Igreja Presbiteriana Astúrias" 
+                  height={78}
+                  width={195} 
+                />
+          }
+        </Link>
       </LogoContainer>
 
       {/** When MenuHamburguer Icon is visible or Not */}
@@ -53,7 +66,7 @@ export function NavigationHeader() {
                 data.map((link) => (
                   <li key={link.id}>
                     <Link 
-                      to={link.href} 
+                      href={link.href} 
                       onClick={() => setShowMenu(false)}
                     >
                       {link.title}

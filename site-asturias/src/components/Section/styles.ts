@@ -1,9 +1,7 @@
 import styled, { css } from "styled-components";
-import { device } from "../../styles/default";
+import { device } from "@/styles/default";
+import { SectionContainerProps } from "./interfaces";
 
-interface SectionContainerProps {
-  pathname?: string;
-}
 
 export const SectionContainer = styled.section<SectionContainerProps>`
   padding: 10rem 1.5rem;

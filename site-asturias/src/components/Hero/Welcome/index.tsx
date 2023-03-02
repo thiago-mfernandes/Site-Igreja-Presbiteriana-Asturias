@@ -1,11 +1,8 @@
-import { LinkButton } from "../../LinkButton";
-import { useWindowSize } from "../../../hooks/useWindowSize";
-import { CallToAction, FollowUs, TitleContainer, WelcomeContainer } from "./styles";
-import { NavLink } from 'react-router-dom'
-
-interface WelcomeProps {
-  onShowMenu: boolean;
-}
+import { LinkButton } from "@/components/LinkButton";
+import { useWindowSize } from "@/hooks/useWindowSize";
+import Link from "next/link";
+import { WelcomeProps } from "./interfaces";
+import { WelcomeContainer, FollowUs, TitleContainer, CallToAction } from "./styles";
 
 export function Welcome({ onShowMenu} : WelcomeProps){
 
@@ -15,15 +12,15 @@ export function Welcome({ onShowMenu} : WelcomeProps){
     <WelcomeContainer>  
       {width > 500 &&
         <FollowUs>
-          <ul> {/**aqui vai o card lateral com o siga-nos */}
+          <ul>
             <li>
-              <a href="https://www.youtube.com/@igrejapresbiterianaasturia6315" target="_blank">YouTube</a>
+              <Link href="https://www.youtube.com/@igrejapresbiterianaasturia6315" target="_blank">YouTube</Link>
             </li>
             <li>
-              <a href="https://www.facebook.com/ipbasturias/" target="_blank">Facebook</a>
+              <Link href="https://www.facebook.com/ipbasturias/" target="_blank">Facebook</Link>
             </li>
             <li>
-              <a href="https://www.instagram.com/ipbasturias/" target="_blank">Instagram</a>
+              <Link href="https://www.instagram.com/ipbasturias/" target="_blank">Instagram</Link>
             </li>
           </ul> 
         </FollowUs>
@@ -36,12 +33,12 @@ export function Welcome({ onShowMenu} : WelcomeProps){
         </h1>
 
         <CallToAction>
-          <NavLink to="/schedule">
+          <Link href="/schedule">
             <LinkButton variantApplyBorder>Eventos</LinkButton>
-          </NavLink>
-          <NavLink to="/about">
+          </Link>
+          <Link href="/about">
             <LinkButton variantApplyBorder>Sobre Nós</LinkButton>
-          </NavLink>
+          </Link>
         </CallToAction>
       </TitleContainer> 
     </WelcomeContainer> 

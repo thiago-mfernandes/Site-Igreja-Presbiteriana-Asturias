@@ -1,8 +1,6 @@
 import styled, { css } from "styled-components"
+import { VerseContentProps } from "./interfaces"
 
-interface VerseContentProps {
-  changeColorOfBorderLeft?: boolean;
-}
 
 export const VerseContent = styled.blockquote<VerseContentProps>`
   margin: 4rem 0;

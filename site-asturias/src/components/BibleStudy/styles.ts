@@ -1,10 +1,9 @@
 import styled from "styled-components";
-import bibleBg from "../../assets/background/bible.jpg"
-import { device } from "../../styles/default";
-import { SectionContainer } from "../Section/styles";
+import { device } from "@/styles/default";
+import { SectionContainer } from "@/components/Section/styles";
 
 export const StudyContainer = styled(SectionContainer)`
-  background-image: url(${bibleBg});
+  background-image: url("/assets/background/bible.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

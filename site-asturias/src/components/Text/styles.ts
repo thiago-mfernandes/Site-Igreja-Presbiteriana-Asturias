@@ -1,8 +1,6 @@
 import styled, { css } from "styled-components"
+import { StyledTextProps } from "./interfaces";
 
-interface StyledTextProps {
-  textColor: 'white' | 'black';
-}
 
 export const StyledText = styled.p<StyledTextProps>`
   margin-bottom: 1.75rem;

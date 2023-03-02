@@ -1,15 +1,15 @@
-import { Form } from "../../components/Form";
-import { MapLocation } from "../../components/MapLocation";
-import { PageHeader } from "../../components/PageHeader";
-import { SocialMedia } from "../../components/SocialMedia";
-import { Subtitle } from "../../components/Subtitle";
-import { Text } from "../../components/Text";
-import { TextBlock } from "../../components/TextBlock/styles";
-import { Title } from "../../components/Title";
+import { Form } from "@/components/Form";
+import { MapLocation } from "@/components/MapLocation";
+import { PageHeader } from "@/components/PageHeader";
+import { SocialMedia } from "@/components/SocialMedia";
+import { Subtitle } from "@/components/Subtitle";
+import { Text } from "@/components/Text";
+import { TextBlock } from "@/components/TextBlock/styles";
+import { Title } from "@/components/Title";
 import { motion } from "framer-motion"
 import { ContactContainer } from "./styles";
 
-export function Contact(){
+export default function Contact(){
   return (
     <motion.div
       initial={{ opacity: 0}}

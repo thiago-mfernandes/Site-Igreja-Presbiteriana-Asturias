@@ -1,8 +1,5 @@
 import styled, { css } from "styled-components"
-
-interface StyledTitleProps {
-  textColor: 'white' | 'green';
-}
+import { StyledTitleProps } from "./interfaces";
 
 export const StyledTitle = styled.h2<StyledTitleProps>`
   font-family: ${props => props.theme.fonts.montserrat};

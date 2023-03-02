@@ -1,11 +1,11 @@
-import { PageHeader } from "../../components/PageHeader";
-import { Subtitle } from "../../components/Subtitle";
-import { Text } from "../../components/Text";
-import { Verse } from "../../components/Verse";
+import { PageHeader } from "@/components/PageHeader";
+import { Subtitle } from "@/components/Subtitle";
+import { Text } from "@/components/Text";
+import { Verse } from "@/components/Verse";
 import { motion } from "framer-motion"
 import { LoginContainer } from "./styles";
 
-export function Login(){
+export default function Login(){
   return (
     <motion.div
       initial={{ opacity: 0}}

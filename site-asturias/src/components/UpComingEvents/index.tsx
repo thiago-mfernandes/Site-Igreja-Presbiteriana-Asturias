@@ -1,14 +1,14 @@
-import { Event } from "../Event";
-import { Subtitle } from "../Subtitle";
-import { useLocation } from "react-router-dom";
+import { useRouter } from "next/router";
+import { Event } from "@/components/Event";
+import { Subtitle } from "@/components/Subtitle";
 import { ContainerUpcomingEvents } from "./styles";
 
-import events from '../../data/events.json';
+import events from '@/data/events.json';
 
 
 export function UpComingEvents() {
 
-  const { pathname } = useLocation();
+  const { pathname } = useRouter();
   const eventsOfHomePage = events.filter((event, index) => {
     return index < 4;
   })

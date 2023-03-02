@@ -1,13 +1,13 @@
-import { Accordion } from "../../components/Accordion";
-import { PageHeader } from "../../components/PageHeader";
+import { Accordion } from "@/components/Accordion";
+import { PageHeader } from "@/components/PageHeader";
 import { FaqContainer } from "./styles";
-import dataFaq from '../../data/faq.json'
-import { Subtitle } from "../../components/Subtitle";
-import { Text } from "../../components/Text";
-import { SocialMedia } from "../../components/SocialMedia";
+import dataFaq from '@/data/faq.json'
+import { Subtitle } from "@/components/Subtitle";
+import { Text } from "@/components/Text";
+import { SocialMedia } from "@/components/SocialMedia";
 import { motion } from "framer-motion"
 
-export function Faq() {
+export default function Faq() {
   return (
     <motion.div
       initial={{ opacity: 0}}

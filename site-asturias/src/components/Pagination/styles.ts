@@ -1,6 +1,6 @@
 import styled from "styled-components"
-import { device } from "../../styles/default";
-import { SectionContainer } from "../Section/styles";
+import { device } from "@/styles/default";
+import { SectionContainer } from "@/components/Section/styles";
 
 
 export const SectionContainerPagination = styled(SectionContainer)`
@@ -71,12 +71,3 @@ export const ContainerReactPaginate = styled.div`
   }
 
 `;
-
-/**
- * containerClassName={"paginationsButtons"}
-   previousClassName={"previousButton"}
-   nextClassName={"nextButton"}
-
-   disabledClassName={"paginationDisabled"}
-   activeClassName={"paginationActive"}
- */

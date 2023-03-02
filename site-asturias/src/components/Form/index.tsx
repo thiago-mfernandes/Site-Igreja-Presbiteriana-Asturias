@@ -1,8 +1,7 @@
-
-import { Title } from "../Title";
+import { Title } from "@/components/Title";
 import { FormContainer } from "./styles";
 import { useForm, ValidationError } from '@formspree/react';
-import { Text } from "../Text";
+import { Text } from "@/components/Text";
 
 
 export function Form() {

@@ -1,6 +1,6 @@
-import { Subtitle } from "../Subtitle";
-import { Text } from "../Text";
-import { Title } from "../Title";
+import { Subtitle } from "@/components/Subtitle";
+import { Text } from "@/components/Text";
+import { Title } from "@/components/Title";
 import { StudyContainer } from "./styles";
 
 export function BibleStudy() {

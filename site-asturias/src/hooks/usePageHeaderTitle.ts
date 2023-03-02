@@ -1,8 +1,8 @@
-import { useLocation } from "react-router-dom";
+import { useRouter } from "next/router";
 
 export function usePageHeaderTitle() {
 
-  let { pathname } = useLocation(); 
+  let { pathname } = useRouter(); 
   
   function changeTitle(pathname: string): String {
     switch(pathname) {

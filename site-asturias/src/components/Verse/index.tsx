@@ -1,11 +1,7 @@
 import { Text } from "../Text";
+import { VerseProps } from "./interfaces";
 import { VerseContent } from "./styles";
 
-interface VerseProps {
-  verse: string;
-  citation: string;
-  changeColorOfBorderLeft?: boolean;
-}
 
 export function Verse({ citation, verse, changeColorOfBorderLeft }: VerseProps){
   return (

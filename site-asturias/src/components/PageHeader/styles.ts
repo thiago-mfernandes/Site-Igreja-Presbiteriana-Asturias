@@ -1,9 +1,6 @@
 import styled from "styled-components";
-import { handleBackroundImage } from "../../utils/handleBackgroundImage";
-
-interface PageHeaderContainerProps {
-  path?: string;
-}
+import { handleBackroundImage } from "@/utils/handleBackgroundImage";
+import { PageHeaderContainerProps } from "./interfaces";
 
 export const PageHeaderContainer = styled.header<PageHeaderContainerProps>`
   padding: 15rem 1.25rem 15rem;

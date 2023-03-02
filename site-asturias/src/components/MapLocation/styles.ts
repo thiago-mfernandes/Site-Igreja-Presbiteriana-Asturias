@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { device } from "../../styles/default";
+import { device } from "@/styles/default";
 
 export const ContainerMap = styled.div`
   iframe {

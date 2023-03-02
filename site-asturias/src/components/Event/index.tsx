@@ -1,16 +1,9 @@
 import { CalendarCheck, Clock, MapPin } from "phosphor-react";
-import { Title } from "../Title";
-import { Text } from "../Text";
+import { Title } from "@/components/Title";
+import { Text } from "@/components/Text";
 import { EventContainer } from "./styles";
+import { EventProps } from "./interfaces";
 
-interface EventProps {
-  address: string;
-  date: string;
-  description: string;
-  id: number;
-  title: string;
-  time: string;
-}
 
 export function Event({ address, date, description, id, time, title }: EventProps) {
   return(

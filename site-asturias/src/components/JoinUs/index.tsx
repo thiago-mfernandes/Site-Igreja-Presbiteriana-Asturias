@@ -1,8 +1,8 @@
-import { NavLink } from "react-router-dom";
-import { LinkButton } from "../LinkButton";
-import { SectionContainer } from "../Section/styles";
-import { Text } from "../Text";
-import { Title } from "../Title";
+import Link from "next/link";
+import { LinkButton } from "@/components/LinkButton";
+import { SectionContainer } from "@/components/Section/styles";
+import { Title } from "@/components/Title";
+import { Text } from "@/components/Text";
 import { ContainerContent } from "./styles";
 
 export function JoinUs() {
@@ -12,11 +12,11 @@ export function JoinUs() {
       <ContainerContent>
         <Title>Associe-se</Title>
         <Text>A igreja primitiva era distinta não por ser o centro de todos os esportes e passatempos e funcionar essencialmente como um clube social, mas por orar fervorosamente e pregar a Palavra de Deus. Reunir-se ao redor do trono da graça e da Palavra de Deus é o coração da comunhão cristã. Esses aspectos estão no centro dos nossos ministérios.</Text>
-        <NavLink to="/ministries">
+        <Link href="/ministries">
           <LinkButton variantBackgroundColor="green">
             Estou Interessado
           </LinkButton>
-        </NavLink> 
+        </Link> 
       </ContainerContent>
 
       
@@ -24,11 +24,11 @@ export function JoinUs() {
       <ContainerContent>
         <Title>Junte-se a nós</Title>
         <Text>Nosso ministério de Louvor busca adorar a Deus segundo Ele nos ordenou, visando sua aprovação e deleite Nossa base para isto é a palavra de Deus.</Text>
-        <NavLink to="/ministries">
+        <Link href="/ministries">
           <LinkButton variantBackgroundColor="green">
             Saber mais
           </LinkButton>
-        </NavLink>
+        </Link>
       </ContainerContent>
 
 

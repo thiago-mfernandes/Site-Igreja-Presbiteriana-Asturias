@@ -1,13 +1,5 @@
-import { ReactNode } from "react";
+import { LinkButtonProps } from "./interfaces";
 import { StyledAnchor } from "./styles";
-
-interface LinkButtonProps {
-  children: ReactNode;
-  variantColorLetter?: string;
-  variantBackgroundColor?: 'gray' | 'green';
-  variantApplyBorder?: boolean;
-  isGivingPage?: boolean;
-}
 
 export function LinkButton({ isGivingPage, variantBackgroundColor, variantApplyBorder, variantColorLetter, children }: LinkButtonProps) {
   return (

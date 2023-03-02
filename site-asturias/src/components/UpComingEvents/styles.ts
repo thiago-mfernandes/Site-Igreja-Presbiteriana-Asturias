@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { device } from "../../styles/default";
-import { SectionContainer } from "../Section/styles";
+import { device } from "@/styles/default";
+import { SectionContainer } from "@/components/Section/styles";
 
 export const ContainerUpcomingEvents = styled(SectionContainer)`
 

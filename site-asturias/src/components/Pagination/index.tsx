@@ -1,13 +1,11 @@
 import { useState } from 'react';
-import { Event } from '../Event';
-import { Subtitle } from '../Subtitle';
-import { SectionContainer } from '../Section/styles';
+import { Event } from '@/components/Event';
+import { Subtitle } from '@/components/Subtitle';
 import { ContainerReactPaginate, SectionContainerPagination } from './styles';
 import { CaretLeft, CaretRight } from 'phosphor-react';
 
 import ReactPaginate from 'react-paginate';
-import data from "../../data/events.json";
-
+import data from "@/data/events.json";
 
 
 //usado na pagina Schedule

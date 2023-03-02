@@ -1,12 +1,13 @@
-import { NavLink } from "react-router-dom"
-import { LinkButton } from "../../components/LinkButton"
-import { PageHeader } from "../../components/PageHeader"
-import { Subtitle } from "../../components/Subtitle"
-import { Text } from "../../components/Text"
+
+import { LinkButton } from "@/components/LinkButton"
+import { PageHeader } from "@/components/PageHeader"
+import { Subtitle } from "@/components/Subtitle"
+import { Text } from "@/components/Text"
 import { motion } from "framer-motion"
+import Link from "next/link"
 import { NotFoundContainer } from "./styles"
 
-export function NotFound() {
+export default function NotFound() {
   return (
     <motion.div
       initial={{ opacity: 0}}
@@ -18,12 +19,12 @@ export function NotFound() {
       <NotFoundContainer>
         <Subtitle>Oops! Parece que você esta perdido.</Subtitle>
         <Text>Talvez eu possa te ajudar a encontrar o caminho de volta com alguns links:</Text>
-        <NavLink to="/">
+        <Link href="/">
           <LinkButton variantBackgroundColor="green">Home</LinkButton>
-        </NavLink>
-        <NavLink to="/contact">
+        </Link>
+        <Link href="/contact">
           <LinkButton variantBackgroundColor="green">Contato</LinkButton>
-        </NavLink>
+        </Link>
       </NotFoundContainer>
     </motion.div>
   )

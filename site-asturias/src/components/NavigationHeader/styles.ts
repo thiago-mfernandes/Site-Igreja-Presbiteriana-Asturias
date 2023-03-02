@@ -1,20 +1,7 @@
 import styled, { css } from "styled-components";
 import { device } from "../../styles/default";
+import { LogoContainerProps, MenuHamburguerProps, ShowMenuProps } from "./interfaces";
 
-interface LogoContainerProps {
-  inShowMenuChangeColor: boolean;
-  path?: string
-}
-
-interface MenuHamburguerProps {
-  showMenu: boolean;
-  inShowMenuChangeColor?: string;
-}
-
-interface ShowMenuProps {
-  showMenu: boolean;
-  isHomePage?: string;
-}
 
 export const LogoContainer = styled.div<LogoContainerProps>`
   display: flex;
@@ -67,7 +54,8 @@ export const LogoContainer = styled.div<LogoContainerProps>`
   }
 
   img {
-    width: 80%;
+    width: 90%;
+    height: 100%;
     transition: all .3s ease-in-out;
     ${({ path, inShowMenuChangeColor }) => inShowMenuChangeColor && path === '/' && css`
       filter: invert(77%) sepia(10%) saturate(1075%) hue-rotate(79deg) brightness(92%) contrast(85%)

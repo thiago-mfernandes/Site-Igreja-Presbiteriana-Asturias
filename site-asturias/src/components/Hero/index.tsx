@@ -1,8 +1,8 @@
 import { BackgroundVideo } from './BackgroundVideo'
 import { HeaderContainer } from './styles';
 import { Welcome } from './Welcome';
-import { useMenuHamburguer } from "../../hooks/useMenuHamburguer";
-import { SectionContainer } from '../Section/styles';
+import { useMenuHamburguer } from "@/hooks/useMenuHamburguer";
+import { SectionContainer } from '@/components/Section/styles';
 
 export function Hero() {
   const { showMenu } = useMenuHamburguer();  

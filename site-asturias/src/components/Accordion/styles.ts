@@ -1,6 +1,5 @@
-
 import styled, { css } from "styled-components";
-
+import { AccordionContentProps, AccordionProps } from "./interfaces";
 
 export const Wrapper = styled.div`
   display: flex;
@@ -16,7 +15,6 @@ export const AccordionContainer = styled.div`
   width: 100%;
 `;
 
-
 export const Item = styled.div`
   display: block;
   justify-content: center;
@@ -25,10 +23,6 @@ export const Item = styled.div`
   cursor: pointer;
   padding: 1rem;
 `;
-
-interface AccordionProps {
-  isActive: boolean;
-}
 
 export const Title = styled.div`
   display: flex;
@@ -44,7 +38,7 @@ export const Title = styled.div`
   }
 `;
 
-export const Content = styled.div<AccordionProps>`
+export const Content = styled.div<AccordionContentProps>`
   overflow: hidden;
   height: auto;
   max-height: 0;
@@ -52,7 +46,7 @@ export const Content = styled.div<AccordionProps>`
   transition: all 0.5s cubic-bezier(1,0,1,0);
   
   ${({ isActive }) => isActive && css`
-  max-height: 9999px;
+    max-height: 9999px;
   `};  
 `;
 

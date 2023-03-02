@@ -1,22 +1,17 @@
-import { PageHeader } from "../../components/PageHeader";
-import { Subtitle } from "../../components/Subtitle";
-import { Text } from "../../components/Text";
-import { AboutContainer, SectionTextBlock } from "./styles";
-import { Title } from "../../components/Title";
-
-import imgPreacher from '../../assets/preacher.webp'
-import logoIpb from '../../assets/logo/logo_ipb.png'
 import { FileArrowDown } from "phosphor-react";
-import { TextBlock } from "../../components/TextBlock/styles";
-
 import { motion } from "framer-motion"
+import Image from 'next/image'
 
-import westminsterCatecism from '../../assets/books/westminster_catecism.pdf'
-import largerCatecism from '../../assets/books/larger_catecism.pdf'
-import shorterCatecism from '../../assets/books/shorter_catecism.pdf'
+import { PageHeader } from "@/components/PageHeader";
+import { Subtitle } from "@/components/Subtitle";
+import { Text } from "@/components/Text";
+import { Title } from "@/components/Title";
+import { TextBlock } from "@/components/TextBlock/styles";
 
+import { AboutContainer, SectionTextBlock } from "./styles";
+import Link from "next/link";
 
-export function About() {
+export default function About() {
   return (
     <motion.div
       initial={{ opacity: 0}}
@@ -50,11 +45,11 @@ export function About() {
             Ordenado a Pastor Presbiteriano, exerceu durante 2 anos seu ministério em Campinas; no ano de 2016 chegou na Igreja Presbiteriana Astúrias e hoje exerce suas funções em nossa comunidade que receptivamente os acolheu.
             Agradecemos a Deus por essa família que muito nos alegra com sua presença.
           </Text>
-          <img src={imgPreacher} alt="Foto da esposa, filho e do Pastor Robson Binnoto" />
+          <Image src="/assets/preacher.webp" alt="Foto da esposa, filho e do Pastor Robson Binnoto" />
         </TextBlock>     
 
         <SectionTextBlock>
-          <img src={logoIpb} alt="Logotipo da Igreja Presbiteriana do Brasil" />
+          <Image src="/assets/logo/logo_ipb.png" alt="Logotipo da Igreja Presbiteriana do Brasil" />
           <Title>
             O Que é a Igreja Presbiteriana do Brasil?
           </Title>
@@ -157,22 +152,22 @@ export function About() {
           </TextBlock>
 
           <button>
-            <a href={westminsterCatecism} download >
+            <Link href="/assets/books/westminster_catecism.pdf" download >
             Confissão de Fé de Westimenter
             <FileArrowDown size={40} />
-            </a>            
+            </Link>            
           </button>
           <button>
-            <a href={largerCatecism} download>
+            <Link href="/assets/books/larger_catecism.pdf" download>
               Catecismo Maior de Westimenter
               <FileArrowDown size={40} />
-            </a>
+            </Link>
           </button>
           <button>
-            <a href={shorterCatecism} download>
+            <Link href="/assets/books/shorter_catecism.pdf" download>
               Breve Catecismo de Westimenter
               <FileArrowDown size={40} />
-            </a>
+            </Link>
           </button>
         </SectionTextBlock>
 

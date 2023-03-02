@@ -1,12 +1,12 @@
-import { useLocation } from "react-router-dom";
-import { usePageHeaderTitle } from "../../hooks/usePageHeaderTitle";
-import { Title } from "../Title";
+import { useRouter } from "next/router";
+import { usePageHeaderTitle } from "@/hooks/usePageHeaderTitle";
+import { Title } from "@/components/Title";
 import { PageHeaderContainer } from "./styles";
 
 export function PageHeader() {
 
   let pageTitle = usePageHeaderTitle();
-  let { pathname } = useLocation();
+  let { pathname } = useRouter();
 
   return (
     <PageHeaderContainer path={pathname}>

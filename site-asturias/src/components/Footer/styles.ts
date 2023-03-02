@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { device } from "../../styles/default";
+import { device } from "@/styles/default";
 
 export const GenericContainer = styled.div`
   display: flex;
@@ -46,11 +46,13 @@ export const ContainerLogo = styled.div`
   }
 
   img {
-    width: 100%;
+    width: 90%;
+    height: 100%
   }
 
   @media ${device.laptop} {
     width: 100%;
+    height: 100%;
   }
 `;
 

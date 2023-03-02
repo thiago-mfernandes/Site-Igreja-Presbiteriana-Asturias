@@ -1,13 +1,14 @@
-import { LinkButton } from "../LinkButton";
-import { Subtitle } from "../Subtitle";
-import { Text } from "../Text";
+import { LinkButton } from "@/components/LinkButton";
+import { Subtitle } from "@/components/Subtitle";
+import { Text } from "@/components/Text";
 import { MainServices, Service, WelcomeWords } from "./styles";
-import { NavLink, useLocation } from 'react-router-dom'
-import { SectionContainer } from "../Section/styles";
+import Link from "next/link"
+import { SectionContainer } from "@/components/Section/styles";
+import { useRouter } from "next/router";
 
 export function About() {
 
-  const { pathname } = useLocation();
+  const { pathname } = useRouter();
 
   return (
     <SectionContainer pathname={pathname}>
@@ -17,9 +18,9 @@ export function About() {
         <Text>
           Somos uma igreja que valoriza os relacionamentos. É assim que podemos nos definir. Mas não qualquer tipo... Valorizamos os relacionamentos em Cristo Jesus, pois é assim que pretendemos alcançar um ambiente onde cada vez mais o verdadeiro amor de Deus possa ser manifestado. Procuramos viver nossos relacionamentos através da Bíblia, que é a única regra de fé e prática de nossa comunidade. Somos, acima de tudo, um grupo de pessoas buscando, através de um ambiente acolhedor, viver para testemunhar do amor de Cristo.</Text>
         <LinkButton variantBackgroundColor="gray">
-          <NavLink to="/about">
+          <Link href="/about">
             Saiba Mais
-          </NavLink>        
+          </Link>        
         </LinkButton>
       </WelcomeWords>
 

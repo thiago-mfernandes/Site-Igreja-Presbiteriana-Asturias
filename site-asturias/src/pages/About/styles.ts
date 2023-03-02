@@ -1,7 +1,7 @@
 import styled from "styled-components"
-import { SectionContainer } from "../../components/Section/styles";
-import { TextBlock } from "../../components/TextBlock/styles";
-import { device } from "../../styles/default";
+import { SectionContainer } from "@/components/Section/styles";
+import { TextBlock } from "@/components/TextBlock/styles";
+import { device } from "@/styles/default";
 
 export const AboutContainer = styled(SectionContainer)`
   

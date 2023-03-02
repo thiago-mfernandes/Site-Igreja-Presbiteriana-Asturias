@@ -1,9 +1,6 @@
 import styled from "styled-components"
-import { device } from "../../../styles/default";
-
-interface TitleContainerProps {
-  showMenu: boolean;
-}
+import { device } from "@/styles/default";
+import { TitleContainerProps } from "./interfaces";
 
 export const WelcomeContainer = styled.div`
   width: 80%;

@@ -1,12 +1,7 @@
 import { useState } from "react";
 import { Wrapper, AccordionContainer, Content, Item, Title } from "./styles";
 import { CaretDown, CaretUp } from "phosphor-react";
-
-interface AccordionProps {
-  id: number;
-  title: string;
-  content: string;
-}
+import { AccordionProps } from "./interfaces";
 
 export function Accordion({ content, id, title }: AccordionProps){
 
@@ -19,7 +14,7 @@ export function Accordion({ content, id, title }: AccordionProps){
     <Wrapper>
       <AccordionContainer>
         <Item 
-          //key={id} 
+          key={id} 
           onClick={handleAccordion}
         >
           <Title>

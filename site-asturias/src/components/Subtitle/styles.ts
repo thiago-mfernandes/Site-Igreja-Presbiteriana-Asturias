@@ -1,8 +1,5 @@
 import styled, { css } from "styled-components"
-
-interface StyledTextProps {
-  textColor: 'white' | 'black' | 'green';
-}
+import { StyledTextProps } from "./interfaces";
 
 export const StyledSubtitle = styled.h3<StyledTextProps>`
   font-size: 1rem;

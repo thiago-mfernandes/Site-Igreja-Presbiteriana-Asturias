@@ -1,31 +1,22 @@
 import { css } from "styled-components"
 
-import imgBible from '../assets/background/bible.jpg'
-import ministries from '../assets/background/ministries.jpg'
-import calendar from '../assets/background/calendar.jpg'
-import offering from '../assets/background/offering.jpg'
-import faq from '../assets/background/faq.jpg'
-import contact from '../assets/background/contact.jpg'
-import login from '../assets/background/login.jpg'
-import lost from '../assets/background/lost.jpg'
-
 export function handleBackroundImage(pathname: string) {
   switch(pathname){
     case '/about':
-      return css`background-image: url(${imgBible});`
+      return css`background-image: url("/assets/background/bible.jpg");`
     case '/schedule':
-      return css`background-image: url(${calendar});`
+      return css`background-image: url("/assets/background/calendar.jpg");`
     case '/giving':
-      return css`background-image: url(${offering});`
+      return css`background-image: url("/assets/background/offering.jpg");`
     case '/ministries':
-      return css`background-image: url(${ministries});`
+      return css`background-image: url("/assets/background/ministries.jpg");`
     case '/faq':
-      return css`background-image: url(${faq});`
+      return css`background-image: url("/assets/background/faq.jpg");`
     case '/contact':
-      return css`background-image: url(${contact});`
+      return css`background-image: url("/assets/background/contact.jpg");`
     case '/login':
-      return css`background-image: url(${login});`
+      return css`background-image: url("/assets/background/login.jpg");`
     default:
-      return css`background-image: url(${lost});`
+      return css`background-image: url("/assets/background/lost.jpg");`
   }
 }

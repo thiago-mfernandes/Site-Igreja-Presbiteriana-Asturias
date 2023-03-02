@@ -1,15 +1,16 @@
-import { ArrowSquareOut, Link } from "phosphor-react";
-import { useLocation } from "react-router-dom";
-import { LinkButton } from "../../components/LinkButton";
-import { PageHeader } from "../../components/PageHeader";
-import { Subtitle } from "../../components/Subtitle";
-import { Text } from "../../components/Text";
-import { Verse } from "../../components/Verse";
+import { ArrowSquareOut } from "phosphor-react";
+import { LinkButton } from "@/components/LinkButton";
+import { PageHeader } from "@/components/PageHeader";
+import { Subtitle } from "@/components/Subtitle";
+import { Text } from "@/components/Text";
+import { Verse } from "@/components/Verse";
 import { GivingContainer } from "./styles";
 import { motion } from "framer-motion"
+import { useRouter } from "next/router";
+import Link from "next/link";
 
-export function Giving() {
-  const { pathname } = useLocation();
+export default function Giving() {
+  const { pathname } = useRouter();
 
   return(
       <motion.div      
@@ -36,9 +37,9 @@ export function Giving() {
             isGivingPage={pathname === '/giving' && true}
             variantBackgroundColor="gray"
           >
-            <a href="https://pagseguro.uol.com.br/checkout/nc/nl/donation/sender-identification.jhtml?t=b4c3ab66f5d098d4a68fa47749890c435ab6398b59ff29bf9544471606c9134b&e=true#rmcl" target="_blank">
+            <Link href="https://pagseguro.uol.com.br/checkout/nc/nl/donation/sender-identification.jhtml?t=b4c3ab66f5d098d4a68fa47749890c435ab6398b59ff29bf9544471606c9134b&e=true#rmcl" target="_blank">
               Ofertar
-            </a>
+            </Link>
             <ArrowSquareOut size={24} />
           </LinkButton>
           <Subtitle>

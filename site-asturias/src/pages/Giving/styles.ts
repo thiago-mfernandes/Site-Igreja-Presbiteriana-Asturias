@@ -1,6 +1,6 @@
 import styled from "styled-components"
-import { SectionContainer } from "../../components/Section/styles";
-import { device } from "../../styles/default";
+import { SectionContainer } from "@/components/Section/styles";
+import { device } from "@/styles/default";
 
 export const GivingContainer = styled(SectionContainer)`
   position: relative;

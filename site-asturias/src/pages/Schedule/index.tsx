@@ -1,8 +1,8 @@
-import { PageHeader } from "../../components/PageHeader";
+import { PageHeader } from "@/components/PageHeader";
 import { motion } from "framer-motion"
-import { Pagination } from "../../components/Pagination";
+import { Pagination } from "@/components/Pagination";
 
-export function Schedule() {
+export default function Schedule() {
   return (
     <motion.div
       initial={{ opacity: 0}}
