@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { device } from "../../../styles/default";
 
 export const Container = styled.div`
   position: absolute;
@@ -12,6 +13,10 @@ export const Container = styled.div`
   will-change: transform, opacity, filter;
   background-repeat: no-repeat;
   z-index: 0; 
+
+  @media ${device.laptop} {
+    width: 100%;
+  }
 
   video {
     position: absolute; 

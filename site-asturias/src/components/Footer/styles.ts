@@ -23,6 +23,10 @@ export const ContainerFooter = styled.footer`
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
+  @media ${device.laptopL} {
+    padding: 8rem 7.5rem 3rem;
+  }
 `;
 
 export const ContainerLogo = styled.div`

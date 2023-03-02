@@ -101,6 +101,10 @@ export const TitleContainer = styled.div<TitleContainerProps>`
     margin-left: 4rem;
   }
 
+  @media ${device.laptopL} {
+    margin-top: 10rem;
+  }
+
   h1 {
     font-family: ${props => props.theme.fonts.montserrat};
     font-weight: 700;

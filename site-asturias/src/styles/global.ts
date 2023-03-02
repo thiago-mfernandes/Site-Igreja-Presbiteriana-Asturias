@@ -27,6 +27,9 @@ export const GlobalStyle = createGlobalStyle`
       color: ${props => props.theme.colors.black};
       -webkit-font-smoothing: antialiased;
       word-wrap: break-word;
+      @media (min-width: 1024px) {
+        overflow-x: hidden;
+      }
     }
 
     body, input, textarea, button {

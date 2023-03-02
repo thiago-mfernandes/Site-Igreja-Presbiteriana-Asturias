@@ -9,6 +9,10 @@ export const ContainerSocialMedia = styled.section`
     padding: 8rem 8rem;
   }
 
+  @media ${device.laptopL} {
+    padding: 8rem 20rem;
+  }
+
   ul {
     display: flex;
     align-items: center;

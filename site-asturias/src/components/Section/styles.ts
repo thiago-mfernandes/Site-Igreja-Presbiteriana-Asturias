@@ -17,7 +17,13 @@ export const SectionContainer = styled.section<SectionContainerProps>`
     justify-content: space-between;
   }
 
- 
+  @media ${device.laptop} {
+    padding: 10rem 7.5rem;
+  }
+
+  /**
+   * Css for Homepage
+  */
 
   ${({pathname}) => pathname === '/' && css`
     padding: 40rem 1.25rem 10rem;
@@ -31,6 +37,10 @@ export const SectionContainer = styled.section<SectionContainerProps>`
     @media ${device.laptop} {
       padding: 35rem 5rem 10rem;
       display: flex;
+    }
+
+    @media ${device.laptopL} {
+      padding: 45rem 7.5rem 10rem;
     }
   `}
 `;
