@@ -24,7 +24,8 @@ export function About() {
       exit={{ opacity: 0 }}
       transition={{ duration: 1 }}
     >
-      <PageHeader />
+      
+      <PageHeader />      
       <AboutContainer>
 
         <TextBlock>

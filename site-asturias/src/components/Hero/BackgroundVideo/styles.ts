@@ -13,12 +13,13 @@ export const Container = styled.div`
   will-change: transform, opacity, filter;
   background-repeat: no-repeat;
   z-index: 0; 
-
+  
   @media ${device.laptop} {
     width: 100%;
   }
-
+  
   video {
+    background-attachment: fixed;
     position: absolute; 
     display: block; 
     z-index: -1;

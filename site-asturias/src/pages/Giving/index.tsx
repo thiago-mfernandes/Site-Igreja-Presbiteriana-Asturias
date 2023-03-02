@@ -10,6 +10,7 @@ import { motion } from "framer-motion"
 
 export function Giving() {
   const { pathname } = useLocation();
+
   return(
       <motion.div      
         initial={{ opacity: 0}}
