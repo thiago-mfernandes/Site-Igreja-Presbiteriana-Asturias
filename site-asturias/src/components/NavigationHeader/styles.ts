@@ -28,7 +28,7 @@ export const LogoContainer = styled.div<LogoContainerProps>`
       content: "";
       height: 2px;
       width: 50%;
-      background-color: ${props => props.theme.colors["gray-900"]};
+      background-color: ${props => props.theme.colors.black};
       position: absolute;
       top: 25px;
       left: -30%;

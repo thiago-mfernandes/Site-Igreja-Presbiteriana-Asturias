@@ -12,7 +12,7 @@ export const EventContainer = styled.div`
     line-height: 1.6;
     text-transform: uppercase;
     letter-spacing: 0.25rem;
-    color: ${props => props.theme.colors["gray-900"]};
+    color: ${props => props.theme.colors.black};
     border-top: 1px solid ${props => props.theme.colors["gray-900-opacity-20%"]};
   }
 
@@ -34,7 +34,7 @@ export const EventContainer = styled.div`
     line-height: 1.6;
     text-transform: uppercase;
     letter-spacing: .20rem;
-    color: ${props => props.theme.colors["gray-900"]};
+    color: ${props => props.theme.colors.black};
     padding-left: 12px;
   }
 `;

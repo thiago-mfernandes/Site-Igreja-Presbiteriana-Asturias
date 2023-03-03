@@ -1,5 +1,9 @@
 
-[] - procurar pelas ancoras
+[] - ssr - aplicado na pagina de agenda - na chamada pra api, os dados da agenda precisam esta pre carregados
+[] - ssg -
+[] - performance
+[] - refatoracao
+[] - testes
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).

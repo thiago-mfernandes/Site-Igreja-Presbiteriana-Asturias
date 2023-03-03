@@ -30,7 +30,7 @@ export const Title = styled.div`
   align-items: center;
   width: 100%;
   margin: 0.5rem 0;
-  color: ${props => props.theme.colors["gray-900"]};
+  color: ${props => props.theme.colors.black};
   overflow: hidden;
 
   span {

@@ -48,7 +48,7 @@ export const SectionTextBlock = styled(TextBlock)`
     margin: 1rem 0;
 
     font-family: ${props => props.theme.fonts.montserrat};
-    color: ${props => props.theme.colors["gray-900"]};
+    color: ${props => props.theme.colors["gray-800"]};
     font-weight: 700;
     font-size: 0.75rem;
     letter-spacing: .3rem;

@@ -14,7 +14,7 @@ export const WelcomeWords = styled.div`
 
   a {
     font-size: 1rem;
-    color: ${props => props.theme.colors["gray-900"]};
+    color: ${props => props.theme.colors.black};
   }
 `;
 

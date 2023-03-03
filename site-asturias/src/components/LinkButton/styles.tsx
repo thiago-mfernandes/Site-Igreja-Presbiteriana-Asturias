@@ -10,7 +10,7 @@ export const StyledAnchor = styled.button<StyledAnchorProps>`
   margin: 1rem 0;
 
   font-family: ${props => props.theme.fonts.montserrat};
-  color: ${props => props.theme.colors["gray-900"]};
+  color: ${props => props.theme.colors.black};
   font-weight: 700;
   font-size: 0.75rem;
   letter-spacing: .3rem;
@@ -39,7 +39,7 @@ export const StyledAnchor = styled.button<StyledAnchorProps>`
   //for border change:
 
   ${props => props.applyBorder && css`
-    border: 1px solid ${props => props.theme.colors["gray-900"]};
+    border: 1px solid ${props => props.theme.colors.black};
   `}
 
   //for page Giving, button to make a offer

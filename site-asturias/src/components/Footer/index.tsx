@@ -2,6 +2,7 @@ import { AddressContainer, ContactContainer, ContainerFooter, ContainerLogo, Pre
 import { Subtitle } from "@/components/Subtitle";
 import { Text } from "@/components/Text";
 import { FacebookLogo, InstagramLogo, WhatsappLogo, Heart, ArrowSquareOut } from "phosphor-react";
+import logoWhite from "public/assets/logo/logo-white.png"
 import { Verse } from "@/components/Verse";
 import Link from "next/link";
 import Image from 'next/image'
@@ -14,7 +15,7 @@ export function Footer() {
           <Image 
             height={78}
             width={195}
-            src="/assets/logo/logo-white.png" 
+            src={logoWhite} 
             alt="Logotipo da Igreja Presbiteriana Astúrias" 
           />
         </Link>
@@ -78,7 +79,7 @@ export function Footer() {
           Todos os Direitos Reservados
         </Text>
         <Text>
-          Feito com <Heart size={22} weight="fill" /> por <a href="https://wa.me/5519984009105" target="_blank">&nbsp;Thiago Fernandes</a>
+          Feito com <Heart size={22} weight="fill" /> por <Link href="https://wa.me/5519984009105" target="_blank">&nbsp;Thiago Fernandes</Link>
         </Text>
       </ReservedRights>
 

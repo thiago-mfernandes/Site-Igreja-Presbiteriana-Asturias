@@ -9,6 +9,7 @@ import { useRouter } from "next/router";
 export function About() {
 
   const { pathname } = useRouter();
+  
 
   return (
     <SectionContainer pathname={pathname}>

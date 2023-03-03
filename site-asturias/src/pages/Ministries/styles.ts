@@ -15,6 +15,7 @@ export const MinistriesContainer = styled(SectionContainer)`
   img {
     align-self: center;
     width: 100%;
+    height: auto;
     margin: 2.5rem 0;
 
     @media ${device.tablet} {

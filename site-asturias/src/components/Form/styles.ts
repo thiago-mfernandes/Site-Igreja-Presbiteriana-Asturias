@@ -9,7 +9,7 @@ export const FormContainer = styled.form`
     padding: 10px;
     border: 0;
     outline: none;
-    color: ${props => props.theme.colors["gray-900"]};
+    color: ${props => props.theme.colors.black};
     font-size: 1.25rem;
     line-height: 3.2rem;
     border-bottom: 1px solid ${props => props.theme.colors["black-opacity-40%"]};
@@ -28,7 +28,7 @@ export const FormContainer = styled.form`
     width: 100%;
     margin: 1rem 0;
     font-family: ${props => props.theme.fonts.montserrat};
-    color: ${props => props.theme.colors["gray-900"]};
+    color: ${props => props.theme.colors.black};
     font-weight: 700;
     font-size: 0.75rem;
     letter-spacing: .3rem;

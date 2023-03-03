@@ -47,7 +47,7 @@ export const defaultTheme = {
     'gray-600': '#323238',
     'gray-700': '#29292E',
     'gray-800': '#202024',
-    'gray-900': '#121214',
+    'gra-900': '#121214',
     'gray-900-opacity-20%': 'rgba(18,18,18,0.2)',
     'gray-900-opacity-90%': 'rgba(18,18,18,0.95)',
   
@@ -61,8 +61,8 @@ export const defaultTheme = {
   },
 
   fonts: {
-    montserrat: '"Montserrat", sans-serif',
-    roboto: '"Roboto", sans-serif',
+    montserrat: 'Montserrat, sans-serif',
+    roboto: 'Roboto, sans-serif',
   }
 
 } as const

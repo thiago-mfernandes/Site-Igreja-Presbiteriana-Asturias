@@ -6,7 +6,7 @@ export const PageHeaderContainer = styled.header<PageHeaderContainerProps>`
   padding: 15rem 1.25rem 15rem;
   min-height: 25rem;
   text-align: center;
-  background-color: ${props => props.theme.colors["gray-900"]};
+  background-color: ${props => props.theme.colors.black};
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

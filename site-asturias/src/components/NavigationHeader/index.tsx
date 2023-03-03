@@ -15,7 +15,6 @@ export function NavigationHeader() {
   const { showMenu, handleNavigationMenu, setShowMenu } = useMenuHamburguer();
   const { width } = useWindowSize();
   let { pathname } = useRouter();
-  console.log(pathname);
 
   return (
     <>
@@ -29,8 +28,8 @@ export function NavigationHeader() {
               ? 
                 <Image 
                   src={logoBlack} alt="Logotipo da Igreja Presbiteriana Astúrias" 
-                  height={78}
                   width={195} 
+                  height={78}
                 />
               :
                 <Image 

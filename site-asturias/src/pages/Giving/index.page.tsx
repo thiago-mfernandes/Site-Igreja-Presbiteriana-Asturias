@@ -8,11 +8,16 @@ import { GivingContainer } from "./styles";
 import { motion } from "framer-motion"
 import { useRouter } from "next/router";
 import Link from "next/link";
+import Head from "next/head";
 
 export default function Giving() {
   const { pathname } = useRouter();
 
   return(
+    <>
+      <Head>
+        <title>Astúrias | Ofertas</title>
+      </Head>
       <motion.div      
         initial={{ opacity: 0}}
         animate={{ opacity: 1 }}
@@ -52,5 +57,6 @@ export default function Giving() {
           </Text>
         </GivingContainer>      
       </motion.div>
+    </>
   );
 }

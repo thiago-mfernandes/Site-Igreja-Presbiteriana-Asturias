@@ -103,10 +103,10 @@ export const TitleContainer = styled.div<TitleContainerProps>`
   }
 
   h1 {
-    font-family: ${props => props.theme.fonts.montserrat};
+    font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 3rem;
-    color: ${props => props.theme.colors["gray-900"]};
+    color: black;
     text-align: center;
     text-transform: uppercase;
     margin: 3.5rem 0 2.5rem;
@@ -118,7 +118,7 @@ export const TitleContainer = styled.div<TitleContainerProps>`
       content: "";
       height: 2px;
       width: 90%;
-      background-color: ${props => props.theme.colors["gray-900"]};
+      background-color: ${props => props.theme.colors.black};
       position: absolute;
       top: 0;
       left: 5%;
