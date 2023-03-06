@@ -9,8 +9,8 @@ export const StyledAnchor = styled.button<StyledAnchorProps>`
   width: 100%;
   margin: 1rem 0;
 
-  font-family: ${props => props.theme.fonts.montserrat};
-  color: ${props => props.theme.colors.black};
+  font-family: ${({theme}) => theme.fonts?.montserrat};
+  color: ${({theme}) => theme.colors?.black};
   font-weight: 700;
   font-size: 0.75rem;
   letter-spacing: .3rem;
@@ -23,23 +23,23 @@ export const StyledAnchor = styled.button<StyledAnchorProps>`
   transition: all .3s ease-in-out;
 
   &:hover {
-    background-color: ${props => props.theme.colors["gray-900-opacity-20%"]};
+    background-color: ${({theme}) => theme.colors?.["gray-900-opacity-20%"]};
   }
 
   //for background-color changes:
 
   ${props => props.bgColor === 'gray' && css`
-    background-color: ${props => props.theme.colors["gray-900-opacity-20%"]};
+    background-color: ${({theme}) => theme.colors?.["gray-900-opacity-20%"]};
   `}
 
   ${props => props.bgColor === 'green' && css`
-    background-color: ${props => props.theme.colors["green-100"]};
+    background-color: ${({theme}) => theme.colors?.["green-100"]};
   `}
 
   //for border change:
 
   ${props => props.applyBorder && css`
-    border: 1px solid ${props => props.theme.colors.black};
+    border: 1px solid ${({theme}) => theme.colors?.black};
   `}
 
   //for page Giving, button to make a offer

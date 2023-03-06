@@ -9,7 +9,7 @@ export const MinistriesContainer = styled(SectionContainer)`
   }
   
   p {
-    color: ${props => props.theme.colors.black};
+    color: ${({theme}) => theme.colors?.black};
   }
 
   img {

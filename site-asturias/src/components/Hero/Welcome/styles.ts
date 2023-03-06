@@ -65,15 +65,15 @@ export const FollowUs = styled.div`
         }
 
         a {
-          font-family: ${props => props.theme.fonts.montserrat};
+          font-family: ${({theme}) => theme.fonts?.montserrat};
           font-size: .8rem;
           line-height: 0.8rem;
           letter-spacing: .4rem;
           text-transform: uppercase;
-          color: ${props => props.theme.colors["white-opacity-40%"]};
+          color: ${({theme}) => theme.colors?.["white-opacity-40%"]};
           transition: all 0.3s ease-in-out;
           &:hover {
-            color: ${props => props.theme.colors.white};
+            color: ${({theme}) => theme.colors?.white};
           }
 
           @media ${device.laptop} {
@@ -103,7 +103,7 @@ export const TitleContainer = styled.div<TitleContainerProps>`
   }
 
   h1 {
-    font-family: "Montserrat", sans-serif;
+    font-family: ${({theme}) => theme.fonts?.montserrat};
     font-weight: 700;
     font-size: 3rem;
     color: black;
@@ -118,7 +118,7 @@ export const TitleContainer = styled.div<TitleContainerProps>`
       content: "";
       height: 2px;
       width: 90%;
-      background-color: ${props => props.theme.colors.black};
+      background-color: ${({theme}) => theme.colors?.black};
       position: absolute;
       top: 0;
       left: 5%;

@@ -6,12 +6,12 @@ export const PageHeaderContainer = styled.header<PageHeaderContainerProps>`
   padding: 15rem 1.25rem 15rem;
   min-height: 25rem;
   text-align: center;
-  background-color: ${props => props.theme.colors.black};
+  background-color: ${({theme}) => theme.colors?.black};
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
-  color: ${props => props.theme.colors.white};
+  color: ${({theme}) => theme.colors?.white};
 
   ${({ path }) => handleBackroundImage(path)}
 
@@ -23,7 +23,7 @@ export const PageHeaderContainer = styled.header<PageHeaderContainerProps>`
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: ${props => props.theme.colors.black};
+    background-color: ${({theme}) => theme.colors?.black};
     opacity: .7;
   }
 `;

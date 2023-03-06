@@ -10,11 +10,11 @@ export const StyledText = styled.p<StyledTextProps>`
   text-align: justify;
   font-weight: 500;
   
-  ${props => props.textColor === 'white' && css`
-    color: ${props => props.theme.colors.white}
+  ${(props) => props.textColor === 'white' && css`
+    color: ${({theme}) => theme.colors?.white}
   `}
 
-  ${props => props.textColor === 'black' && css`
-    color: ${props => props.theme.colors.black}
+  ${(props) => props.textColor === 'black' && css`
+    color: ${({theme}) => theme.colors?.black}
   `}
 `;
