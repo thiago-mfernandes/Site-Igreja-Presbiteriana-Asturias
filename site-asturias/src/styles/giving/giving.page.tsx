@@ -4,11 +4,11 @@ import { PageHeader } from "@/components/PageHeader";
 import { Subtitle } from "@/components/Subtitle";
 import { Text } from "@/components/Text";
 import { Verse } from "@/components/Verse";
-import { GivingContainer } from "./styles";
 import { motion } from "framer-motion"
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Head from "next/head";
+import { GivingContainer } from "@/styles/giving/styles";
 
 export default function Giving() {
   const { pathname } = useRouter();

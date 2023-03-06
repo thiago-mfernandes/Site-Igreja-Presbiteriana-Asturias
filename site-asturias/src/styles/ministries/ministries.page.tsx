@@ -1,7 +1,6 @@
 import { Subtitle } from "@/components/Subtitle";
 import { Title } from "@/components/Title";
 import { Text } from "@/components/Text";
-import { MinistriesContainer } from "./styles";
 import { TextBlock } from "@/components/TextBlock/styles";
 import { PageHeader } from "@/components/PageHeader";
 import { motion } from "framer-motion"
@@ -13,6 +12,7 @@ import logoRecepcao from "public/assets/logo/logo_recepcao.webp"
 import logoLouvor from "public//assets/logo/logo_louvor.webp"
 import logoComunicacao from "public//assets/logo/logo_comunicacao.webp"
 import Head from "next/head";
+import { MinistriesContainer } from "@/styles/ministries/styles";
 
 export default function Ministries() {
   return(

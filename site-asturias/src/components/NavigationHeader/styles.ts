@@ -28,7 +28,7 @@ export const LogoContainer = styled.div<LogoContainerProps>`
       content: "";
       height: 2px;
       width: 50%;
-      background-color: ${props => props.theme.colors.black};
+      background-color: ${({theme}) => theme.colors?.black};
       position: absolute;
       top: 25px;
       left: -30%;
@@ -37,7 +37,7 @@ export const LogoContainer = styled.div<LogoContainerProps>`
         width: 40%;
         left: -35%;
         ${({ path }) => path !== '/' && css`
-          background-color: ${props => props.theme.colors.white};
+          background-color: ${({theme}) => theme.colors?.white};
         `}
       }
     }
@@ -77,7 +77,7 @@ export const MenuHamburguer = styled.button<MenuHamburguerProps>`
   position: absolute;
   right: 1.25rem;
   top: 1.5rem;
-  color: ${props => props.theme.colors.black};
+  color: ${({theme}) => theme.colors?.black};
 
   @media ${device.tablet} {
       width: 3rem;
@@ -90,10 +90,10 @@ export const MenuHamburguer = styled.button<MenuHamburguerProps>`
     opacity: 0.8;
 
     ${(props) => props.showMenu && css`
-      color: ${props => props.theme.colors["green-300-d"]}
+      color: ${({theme}) => theme.colors?.["green-300-d"]}
     ` };
     ${(props) => props.inShowMenuChangeColor != '/' && css`
-      color: ${props => props.theme.colors.white}
+      color: ${({theme}) => theme.colors?.white}
     ` };
 
     @media ${device.tablet} {
@@ -104,9 +104,9 @@ export const MenuHamburguer = styled.button<MenuHamburguerProps>`
 `;
 
 export const NavigationLinks = styled.nav<ShowMenuProps>`
-  font-family: ${props => props.theme.fonts.montserrat};
+  font-family: ${({theme}) => theme.fonts?.montserrat};
   display: ${({ showMenu }) => showMenu ? 'block' : 'none'};
-  background-color: ${props => props.theme.colors["gray-900-opacity-90%"]};
+  background-color: ${({theme}) => theme.colors?.["gray-900-opacity-90%"]};
   height: auto;
   width: 100%;
   padding: 10rem 2.5rem 2.5rem;
@@ -139,7 +139,7 @@ export const NavigationLinks = styled.nav<ShowMenuProps>`
     text-transform: uppercase;
     line-height: 3rem;
     margin: 0 0 1rem 0;
-    border-top: 1px solid ${props => props.theme.colors["black-opacity-60%"]};
+    border-top: 1px solid ${({theme}) => theme.colors?.["black-opacity-60%"]};
 
     @media ${device.laptop} {
       flex-direction: row;
@@ -150,7 +150,7 @@ export const NavigationLinks = styled.nav<ShowMenuProps>`
     li {
       margin: 0;
       padding: 0;
-      border-bottom: 1px solid ${props => props.theme.colors["white-opacity-005%"]};
+      border-bottom: 1px solid ${({theme}) => theme.colors?.["white-opacity-005%"]};
       
       @media ${device.tablet} {
         display: flex;
@@ -165,7 +165,7 @@ export const NavigationLinks = styled.nav<ShowMenuProps>`
       a {
         padding: 1px 0;
         line-height: 16px;
-        color: ${props => props.theme.colors.white};
+        color: ${({theme}) => theme.colors?.white};
         opacity: 0.8;
         transition: all 0.3s ease-in-out;
 
@@ -174,17 +174,17 @@ export const NavigationLinks = styled.nav<ShowMenuProps>`
           font-size: 0.65rem;
           cursor: pointer;
           ${({ isHomePage }) => isHomePage === '/' && css`
-            color: ${props => props.theme.colors.black};          
+            color: ${({theme}) => theme.colors?.black};          
           `}
 
         }
 
         &:hover {
-          color: ${props => props.theme.colors.black};
+          color: ${({theme}) => theme.colors?.black};
           opacity: 1;
 
           @media ${device.laptop} {
-            color: ${props => props.theme.colors["green-300-d"]};
+            color: ${({theme}) => theme.colors?.["green-300-d"]};
           }
         }
       }

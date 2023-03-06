@@ -12,11 +12,11 @@ export const StyledSubtitle = styled.h3<StyledTextProps>`
   position: relative;
 
   ${(props) => props.textColor === 'white' && css`
-    color: ${props => props.theme.colors.white}
+    color: ${({theme}) => theme.colors?.white}
   `}
 
   ${(props) => props.textColor === 'black' && css`
-    color: ${props => props.theme.colors.black}
+    color: ${({theme}) => theme.colors?.black}
   `}
 
   ${(props) => props.textColor === 'green' && css`

@@ -1,12 +1,12 @@
 import { Accordion } from "@/components/Accordion";
 import { PageHeader } from "@/components/PageHeader";
-import { FaqContainer } from "./styles";
 import dataFaq from '@/data/faq.json'
 import { Subtitle } from "@/components/Subtitle";
 import { Text } from "@/components/Text";
 import { SocialMedia } from "@/components/SocialMedia";
 import { motion } from "framer-motion"
 import Head from "next/head";
+import { FaqContainer } from "@/styles/faq/styles";
 
 export default function Faq() {
   return (

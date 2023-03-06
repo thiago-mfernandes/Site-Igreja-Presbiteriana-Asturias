@@ -2,9 +2,9 @@ import { PageHeader } from "@/components/PageHeader";
 import { Subtitle } from "@/components/Subtitle";
 import { Text } from "@/components/Text";
 import { Verse } from "@/components/Verse";
+import { LoginContainer } from "@/styles/login/styles";
 import { motion } from "framer-motion"
 import Head from "next/head";
-import { LoginContainer } from "./styles";
 
 export default function Login(){
   return (

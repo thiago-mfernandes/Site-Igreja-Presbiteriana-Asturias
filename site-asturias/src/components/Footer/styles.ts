@@ -9,10 +9,10 @@ export const GenericContainer = styled.div`
 
 export const ContainerFooter = styled.footer`
   padding: 8rem 1.25rem 3rem;
-  background-color: ${props => props.theme.colors["green-300-d"]};
+  background-color: ${({theme}) => theme.colors?.["green-300-d"]};
   display: flex;
   flex-direction: column;
-  color: ${props => props.theme.colors.white};
+  color: ${({theme}) => theme.colors?.white};
 
   @media ${device.tablet} {
     padding: 8rem 4rem 3rem;
@@ -73,8 +73,8 @@ export const AddressContainer = styled(GenericContainer)`
   width: 100%;
   margin: 1rem 0;
 
-  font-family: ${props => props.theme.fonts.montserrat};
-  color: ${props => props.theme.colors.black};
+  font-family: ${({theme}) => theme.fonts?.montserrat};
+  color: ${({theme}) => theme.colors?.black};
   font-weight: 700;
   font-size: 0.75rem;
   letter-spacing: .3rem;
@@ -84,13 +84,13 @@ export const AddressContainer = styled(GenericContainer)`
   white-space: nowrap;
 
   border: 0;
-  background-color: ${props => props.theme.colors["gray-900-opacity-20%"]};
+  background-color: ${({theme}) => theme.colors?.["gray-900-opacity-20%"]};
 
   transition: all .3s ease-in-out;
 
   &:hover {
-    background-color: ${props => props.theme.colors["green-600"]};
-    color: ${props => props.theme.colors.white}
+    background-color: ${({theme}) => theme.colors?.["green-600"]};
+    color: ${({theme}) => theme.colors?.white}
   }
 
     svg {
@@ -109,7 +109,7 @@ export const ContactContainer = styled(GenericContainer)`
     display: flex;
     align-items: center;
     font-size: 1.3rem;
-    color: ${props => props.theme.colors["white-opacity-80%"]};
+    color: ${({theme}) => theme.colors?.["white-opacity-80%"]};
     @media ${device.tablet} {
       margin-bottom: 2rem;
     }
@@ -121,7 +121,7 @@ export const ContactContainer = styled(GenericContainer)`
       display: flex;
 
       svg {
-        color: ${props => props.theme.colors["green-700"]};
+        color: ${({theme}) => theme.colors?.["green-700"]};
         margin-right: 16px;
       }
     }
@@ -146,7 +146,7 @@ export const ReservedRights = styled(GenericContainer)`
   align-items: center;
   margin-bottom: 0;
   padding-top: 1rem;
-  border-top: 1px solid ${props => props.theme.colors["white-opacity-40%"]};
+  border-top: 1px solid ${({theme}) => theme.colors?.["white-opacity-40%"]};
   
   p {
     font-size: 0.75rem;
@@ -159,11 +159,11 @@ export const ReservedRights = styled(GenericContainer)`
 
     svg {
       margin: 0 5px;
-      color: ${props => props.theme.colors["red-500"]};
+      color: ${({theme}) => theme.colors?.["red-500"]};
     }
 
     a {
-      color: ${props => props.theme.colors["red-700"]};
+      color: ${({theme}) => theme.colors?.["red-700"]};
     }
   }
 

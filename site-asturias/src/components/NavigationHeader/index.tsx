@@ -11,6 +11,7 @@ import logoWhite from "public/assets/logo/logo-white.png"
 
 
 export function NavigationHeader() {
+  console.log("renderizando na home")
 
   const { showMenu, handleNavigationMenu, setShowMenu } = useMenuHamburguer();
   const { width } = useWindowSize();
