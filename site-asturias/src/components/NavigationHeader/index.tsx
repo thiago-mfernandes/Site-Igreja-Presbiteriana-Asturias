@@ -11,7 +11,6 @@ import logoWhite from "public/assets/logo/logo-white.png"
 
 
 export function NavigationHeader() {
-  console.log("renderizando na home")
 
   const { showMenu, handleNavigationMenu, setShowMenu } = useMenuHamburguer();
   const { width } = useWindowSize();
@@ -28,12 +27,14 @@ export function NavigationHeader() {
             pathname === '/' 
               ? 
                 <Image 
+                priority
                   src={logoBlack} alt="Logotipo da Igreja Presbiteriana Astúrias" 
                   width={195} 
                   height={78}
                 />
               :
                 <Image 
+                priority
                   src={logoWhite} alt="Logotipo da Igreja Presbiteriana Astúrias" 
                   height={78}
                   width={195} 

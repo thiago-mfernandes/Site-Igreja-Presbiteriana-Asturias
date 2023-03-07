@@ -58,6 +58,7 @@ export default function About() {
 
           <SectionTextBlock>
             <Image 
+              priority
               src={logoIpb} 
               alt="Logotipo da Igreja Presbiteriana do Brasil" 
               width={156}

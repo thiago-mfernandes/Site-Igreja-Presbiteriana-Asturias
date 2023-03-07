@@ -1,13 +1,13 @@
 
+import { About } from "@/components/About";
 import { BibleStudy } from "@/components/BibleStudy";
 import { Hero } from "@/components/Hero";
 import { JoinUs } from "@/components/JoinUs";
 import { MapLocation } from "@/components/MapLocation";
 import { SocialMedia } from "@/components/SocialMedia";
 import { UpComingEvents } from "@/components/UpComingEvents";
-import { motion } from "framer-motion"
-import Head from "next/head";
-import About from "../styles/about/about.page";
+import { motion } from "framer-motion";
+import Head from "next/head"
 
 export default function Home() {
   return(

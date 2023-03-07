@@ -15,7 +15,7 @@
     "@types/react-dom": "18.0.11",
     "@types/styled-components": "^5.1.26",
     "babel-preset-next": "^1.4.0",
-    "framer-motion": "^10.0.0",
+    "framer-motion": "^10.2.3",
     "next": "13.2.3",
     "phosphor-react": "^1.4.1",
     "react": "18.2.0",

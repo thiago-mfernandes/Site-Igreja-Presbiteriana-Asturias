@@ -8,7 +8,6 @@ import { GlobalStyle } from '@/styles/global'
 import Head from 'next/head'
 
 export default function App({ Component, pageProps }: AppProps): JSX.Element {
-  console.log("passou pelo arquivo _app.tsx")
   return (
     <>
       <Head>
