@@ -12,7 +12,8 @@ import { TextBlock } from "@/components/TextBlock/styles";
 import preacher from "public/assets/preacher.webp";
 import logoIpb from "public/assets/logo/logo_ipb.png";
 
-import { AboutContainer, SectionTextBlock } from "./styles";
+import SectionTextBlock from "./stylesTextBlock";
+import AboutContainer from './stylesAboutContainer';
 
 export default function About() {
   return (

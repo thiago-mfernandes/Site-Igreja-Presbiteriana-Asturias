@@ -6,7 +6,7 @@ import { Text } from "@/components/Text";
 import { SocialMedia } from "@/components/SocialMedia";
 import { motion } from "framer-motion";
 import Head from "next/head";
-import { FaqContainer } from "@/pages/faq/styles";
+import FaqContainer from "@/pages/faq/styles";
 
 export default function Faq() {
   return (

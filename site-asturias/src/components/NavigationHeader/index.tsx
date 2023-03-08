@@ -2,12 +2,12 @@ import Link from "next/link";
 import Image from "next/image";
 import { useMenuHamburguer } from "@/hooks/useMenuHamburguer"
 import { useWindowSize } from "@/hooks/useWindowSize";
-import { LogoContainer, MenuHamburguer, NavigationLinks } from "./styles"
+import { LogoContainer, MenuHamburguer } from "./styles"
 import { List, X } from "phosphor-react";
-import data from "@/data/navlinks.json";
 import { useRouter } from "next/router";
 import logoBlack from "public/assets/logo/logo-black.png"
 import logoWhite from "public/assets/logo/logo-white.png"
+import { NavigationLinks } from "./NavigationLinks";
 
 
 export function NavigationHeader() {
@@ -61,22 +61,10 @@ export function NavigationHeader() {
           
       {width >= 768 || showMenu
         ?
-          <NavigationLinks showMenu={showMenu} isHomePage={pathname}>
-            <ul>
-              {
-                data.map((link) => (
-                  <li key={link.id}>
-                    <Link 
-                      href={link.href} 
-                      onClick={() => setShowMenu(false)}
-                    >
-                      {link.title}
-                    </Link>
-                  </li>
-                ))
-              }
-            </ul>
-          </NavigationLinks>
+          <NavigationLinks 
+            showMenu={showMenu} 
+            isHomePage={pathname} 
+            handleOnClick={setShowMenu} />
         : 
           <></>
       }    

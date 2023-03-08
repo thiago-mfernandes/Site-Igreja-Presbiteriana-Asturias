@@ -3,7 +3,7 @@ import { LinkButton } from "@/components/LinkButton";
 import { PageHeader } from "@/components/PageHeader";
 import { Subtitle } from "@/components/Subtitle";
 import { Text } from "@/components/Text";
-import { NotFoundContainer } from "@/pages/404/styles";
+import NotFoundContainer from "@/pages/404/styles";
 import { motion } from "framer-motion";
 import Head from "next/head";
 import Link from "next/link";

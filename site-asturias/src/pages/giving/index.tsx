@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Head from "next/head";
-import { GivingContainer } from "@/pages/giving/styles";
+import GivingContainer from "@/pages/giving/styles";
 
 export default function Giving() {
   const { pathname } = useRouter();

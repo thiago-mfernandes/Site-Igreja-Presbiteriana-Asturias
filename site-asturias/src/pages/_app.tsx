@@ -1,5 +1,4 @@
 import { AppProps } from 'next/app';
-import { AnimatePresence } from 'framer-motion';
 import { ThemeProvider } from 'styled-components';
 import { Footer } from '@/components/Footer';
 import { NavigationHeader } from '@/components/NavigationHeader';
@@ -27,14 +26,10 @@ export default function App({ Component, pageProps }: AppProps): JSX.Element {
       </Head>
       
       <ThemeProvider theme={defaultTheme}>
-        <GlobalStyle />
-        <AnimatePresence>
-
-          <NavigationHeader />
-          <Component {...pageProps} />
-          <Footer />
-
-        </AnimatePresence>
+        <GlobalStyle /> 
+        <NavigationHeader />
+        <Component {...pageProps} />
+        <Footer />
       </ThemeProvider>
     </>
   )

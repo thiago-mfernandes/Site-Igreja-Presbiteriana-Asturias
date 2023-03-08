@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { SectionContainer } from "@/components/Section/styles";
 import { device } from "@/styles/default";
 
-export const FaqContainer = styled(SectionContainer)`
+const FaqContainer = styled(SectionContainer)`
   
   @media ${device.laptop} {
     flex-direction: column;
@@ -12,3 +12,5 @@ export const FaqContainer = styled(SectionContainer)`
     margin-top: 3rem;
   }
 `;
+
+export default FaqContainer

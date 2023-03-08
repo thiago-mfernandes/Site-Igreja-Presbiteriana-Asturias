@@ -2,7 +2,7 @@ import { PageHeader } from "@/components/PageHeader";
 import { Subtitle } from "@/components/Subtitle";
 import { Text } from "@/components/Text";
 import { Verse } from "@/components/Verse";
-import { LoginContainer } from "@/pages/login/styles";
+import LoginContainer from "@/pages/login/styles";
 import { motion } from "framer-motion";
 import Head from "next/head";
 

@@ -12,7 +12,7 @@ import logoRecepcao from "public/assets/logo/logo_recepcao.webp";
 import logoLouvor from "public//assets/logo/logo_louvor.webp";
 import logoComunicacao from "public//assets/logo/logo_comunicacao.webp";
 import Head from "next/head";
-import { MinistriesContainer } from "@/pages/ministries/styles";
+import MinistriesContainer from "@/pages/ministries/styles";
 
 export default function Ministries() {
   return(

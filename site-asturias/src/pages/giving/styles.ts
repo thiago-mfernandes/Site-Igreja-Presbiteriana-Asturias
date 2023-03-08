@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { SectionContainer } from "@/components/Section/styles";
 import { device } from "@/styles/default";
 
-export const GivingContainer = styled(SectionContainer)`
+const GivingContainer = styled(SectionContainer)`
   position: relative;
 
   @media ${device.laptop} {
@@ -21,3 +21,5 @@ export const GivingContainer = styled(SectionContainer)`
     margin-left: 10px;
   }
 `;
+
+export default GivingContainer

@@ -3,21 +3,6 @@ import { SectionContainer } from "@/components/Section/styles";
 import { TextBlock } from "@/components/TextBlock/styles";
 import { device } from "@/styles/default";
 
-export const AboutContainer = styled(SectionContainer)`
-  
-  p {
-    color: ${({theme}) => theme.colors.black};
-  }
-
-  @media ${device.laptop} {
-    flex-direction: column;
-
-    div img {
-      width: 50%;
-    }
-  }
-`;
-
 
 export const SectionTextBlock = styled(TextBlock)`
   &:last-child {
@@ -83,3 +68,5 @@ export const SectionTextBlock = styled(TextBlock)`
     }
   }
 `;
+
+export default SectionTextBlock;

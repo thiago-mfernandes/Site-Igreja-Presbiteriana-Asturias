@@ -1,17 +1,20 @@
-import styled from "styled-components";
 import { SectionContainer } from "@/components/Section/styles";
 import { device } from "@/styles/default";
+import styled from "styled-components";
 
-const NotFoundContainer = styled(SectionContainer)`
-  @media ${device.laptop} {
-    flex-direction: column;
+const AboutContainer = styled(SectionContainer)`
+  
+  p {
+    color: ${({theme}) => theme.colors.black};
   }
 
-  button {
-    @media ${device.laptop} {
+  @media ${device.laptop} {
+    flex-direction: column;
+
+    div img {
       width: 50%;
     }
   }
 `;
 
-export default NotFoundContainer;
+export default AboutContainer;
