@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 import { device } from "@/styles/default";
 import { SectionContainer } from "@/components/Section/styles";
 
@@ -22,7 +22,7 @@ export const ContainerReactPaginate = styled.div`
     justify-content: flex-start;
     align-items: center;
     
-    font-family: ${({theme}) => theme.fonts?.montserrat};
+    font-family: ${({theme}) => theme.fonts.montserrat};
     font-size: 1rem;
     padding: 10px;
     width: 100%;
@@ -33,7 +33,7 @@ export const ContainerReactPaginate = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: ${({theme}) => theme.colors?.["gray-300"]};
+      background-color: ${({theme}) => theme.colors["gray-300"]};
       border: 0;
       border-radius: 4px;
       padding: 6px;
@@ -47,7 +47,7 @@ export const ContainerReactPaginate = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: ${({theme}) => theme.colors?.["gray-400"]};
+    background-color: ${({theme}) => theme.colors["gray-400"]};
     border: 0;
     border-radius: 4px;
     padding: 6px;
@@ -62,12 +62,12 @@ export const ContainerReactPaginate = styled.div`
 
   .paginationsButtons > .paginationActive {
     
-    background-color: ${({theme}) => theme.colors?.["green-300-d"]};    
-    color: ${({theme}) => theme.colors?.white};
+    background-color: ${({theme}) => theme.colors["green-300-d"]};    
+    color: ${({theme}) => theme.colors.white};
   }
 
   .paginationDisabled {
-    background-color: ${({theme}) => theme.colors?.["gray-300"]};
+    background-color: ${({theme}) => theme.colors["gray-300"]};
   }
 
 `;

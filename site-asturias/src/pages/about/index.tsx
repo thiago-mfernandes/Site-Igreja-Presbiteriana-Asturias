@@ -1,7 +1,7 @@
-import Image from 'next/image'
+import Image from 'next/image';
 import Head from "next/head";
 import { FileArrowDown } from "phosphor-react";
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 
 import { PageHeader } from "@/components/PageHeader";
 import { Subtitle } from "@/components/Subtitle";
@@ -9,8 +9,8 @@ import { Text } from "@/components/Text";
 import { Title } from "@/components/Title";
 import { TextBlock } from "@/components/TextBlock/styles";
 
-import preacher from "public/assets/preacher.webp"
-import logoIpb from "public/assets/logo/logo_ipb.png"
+import preacher from "public/assets/preacher.webp";
+import logoIpb from "public/assets/logo/logo_ipb.png";
 
 import { AboutContainer, SectionTextBlock } from "./styles";
 

@@ -14,7 +14,7 @@ export const WelcomeWords = styled.div`
 
   a {
     font-size: 1rem;
-    color: ${({theme}) => theme.colors?.black};
+    color: ${({theme}) => theme.colors.black};
   }
 `;
 
@@ -28,12 +28,12 @@ export const MainServices = styled.div`
   ul {
     display: flex;
     flex-direction: column;
-    border-top: 1px solid ${({theme}) => theme.colors?.["white-opacity-40%"]};
+    border-top: 1px solid ${({theme}) => theme.colors["white-opacity-40%"]};
   }
 `;
 
 export const Service = styled.li`
-  border-bottom: 1px solid ${({theme}) => theme.colors?.["white-opacity-40%"]};
+  border-bottom: 1px solid ${({theme}) => theme.colors["white-opacity-40%"]};
   padding-top: 2rem;
   padding-bottom: 2rem;
 
@@ -44,7 +44,7 @@ export const Service = styled.li`
   }
 
   span {
-    color: ${({theme}) => theme.colors?.["white-opacity-80%"]};
+    color: ${({theme}) => theme.colors["white-opacity-80%"]};
     line-height: 1.8;
     font-size: 1.35rem;
     &:last-child {

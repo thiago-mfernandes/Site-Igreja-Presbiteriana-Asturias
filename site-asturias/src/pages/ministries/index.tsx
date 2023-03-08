@@ -3,16 +3,16 @@ import { Title } from "@/components/Title";
 import { Text } from "@/components/Text";
 import { TextBlock } from "@/components/TextBlock/styles";
 import { PageHeader } from "@/components/PageHeader";
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 import Image from "next/image";
-import logoUpc from "public/assets/logo/ucp_logo.webp"
-import logoSaf from "public/assets/logo/logo_saf.png"
-import logoUph from "public/assets/logo/logo_uph.png"
-import logoRecepcao from "public/assets/logo/logo_recepcao.webp"
-import logoLouvor from "public//assets/logo/logo_louvor.webp"
-import logoComunicacao from "public//assets/logo/logo_comunicacao.webp"
+import logoUpc from "public/assets/logo/ucp_logo.webp";
+import logoSaf from "public/assets/logo/logo_saf.png";
+import logoUph from "public/assets/logo/logo_uph.png";
+import logoRecepcao from "public/assets/logo/logo_recepcao.webp";
+import logoLouvor from "public//assets/logo/logo_louvor.webp";
+import logoComunicacao from "public//assets/logo/logo_comunicacao.webp";
 import Head from "next/head";
-import { MinistriesContainer } from "@/styles/ministries/styles";
+import { MinistriesContainer } from "@/pages/ministries/styles";
 
 export default function Ministries() {
   return(

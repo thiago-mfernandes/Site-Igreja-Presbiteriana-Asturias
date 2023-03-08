@@ -21,7 +21,7 @@ export function usePageHeaderTitle() {
       case '/login':
         return 'Em breve';
       default:
-        return 'Página não encontrada!'
+        return 'Página não encontrada!';
     }
   }
   

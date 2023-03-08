@@ -6,5 +6,5 @@ export const TextBlock = styled.div`
   width: 100%;
   margin-bottom: 5rem;
   padding-bottom: 2rem;
-  border-bottom: 1px solid ${({theme}) => theme.colors?.["gray-900-opacity-20%"]};
+  border-bottom: 1px solid ${({theme}) => theme.colors["gray-900-opacity-20%"]};
 `;

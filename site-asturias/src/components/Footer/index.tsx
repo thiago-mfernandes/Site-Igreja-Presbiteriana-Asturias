@@ -1,11 +1,11 @@
 import { AddressContainer, ContactContainer, ContainerFooter, ContainerLogo, PreacherContainer, ReservedRights, TheChurchContainer } from "./styles";
+import { FacebookLogo, InstagramLogo, WhatsappLogo, Heart, ArrowSquareOut } from "phosphor-react";
 import { Subtitle } from "@/components/Subtitle";
 import { Text } from "@/components/Text";
-import { FacebookLogo, InstagramLogo, WhatsappLogo, Heart, ArrowSquareOut } from "phosphor-react";
-import logoWhite from "public/assets/logo/logo-white.png"
+import logoWhite from "public/assets/logo/logo-white.png";
 import { Verse } from "@/components/Verse";
 import Link from "next/link";
-import Image from 'next/image'
+import Image from 'next/image';
 
 export function Footer() {
   return (

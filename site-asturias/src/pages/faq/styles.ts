@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 import { SectionContainer } from "@/components/Section/styles";
 import { device } from "@/styles/default";
 

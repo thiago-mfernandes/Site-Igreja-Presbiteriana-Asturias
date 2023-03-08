@@ -9,10 +9,10 @@ export const FormContainer = styled.form`
     padding: 10px;
     border: 0;
     outline: none;
-    color: ${({theme}) => theme.colors?.black};
+    color: ${({theme}) => theme.colors.black};
     font-size: 1.25rem;
     line-height: 3.2rem;
-    border-bottom: 1px solid ${({theme}) => theme.colors?.["black-opacity-40%"]};
+    border-bottom: 1px solid ${({theme}) => theme.colors["black-opacity-40%"]};
     transition: all .3s ease-in-out;
   }
 
@@ -27,8 +27,8 @@ export const FormContainer = styled.form`
     height: 3.5rem;
     width: 100%;
     margin: 1rem 0;
-    font-family: ${({theme}) => theme.fonts?.montserrat};
-    color: ${({theme}) => theme.colors?.black};
+    font-family: ${({theme}) => theme.fonts.montserrat};
+    color: ${({theme}) => theme.colors.black};
     font-weight: 700;
     font-size: 0.75rem;
     letter-spacing: .3rem;
@@ -37,7 +37,7 @@ export const FormContainer = styled.form`
     text-align: center;
     white-space: nowrap;
     border: 0;
-    background-color: ${({theme}) => theme.colors?.["green-100"]};
+    background-color: ${({theme}) => theme.colors["green-100"]};
     transition: all .3s ease-in-out;
   }
 `;

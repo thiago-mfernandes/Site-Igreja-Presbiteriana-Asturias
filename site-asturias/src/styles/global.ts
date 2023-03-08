@@ -25,7 +25,7 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     background-color: ${({theme}) => theme.colors.white};
-    color: ${({theme}) => theme.colors?.black};
+    color: ${({theme}) => theme.colors.black};
     -webkit-font-smoothing: antialiased;
     word-wrap: break-word;
     @media (min-width: 1024px) {

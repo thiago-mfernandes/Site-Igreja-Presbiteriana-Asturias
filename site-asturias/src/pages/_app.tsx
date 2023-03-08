@@ -1,11 +1,11 @@
-import { AppProps } from 'next/app'
-import { AnimatePresence } from 'framer-motion'
-import { ThemeProvider } from 'styled-components'
-import { Footer } from '@/components/Footer'
-import { NavigationHeader } from '@/components/NavigationHeader'
-import { defaultTheme } from '@/styles/default'
-import { GlobalStyle } from '@/styles/global'
-import Head from 'next/head'
+import { AppProps } from 'next/app';
+import { AnimatePresence } from 'framer-motion';
+import { ThemeProvider } from 'styled-components';
+import { Footer } from '@/components/Footer';
+import { NavigationHeader } from '@/components/NavigationHeader';
+import { defaultTheme } from '@/styles/default';
+import { GlobalStyle } from '@/styles/global';
+import Head from 'next/head';
 
 export default function App({ Component, pageProps }: AppProps): JSX.Element {
   return (

@@ -1,5 +1,5 @@
 import { PageHeader } from "@/components/PageHeader";
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 import { Pagination } from "@/components/Pagination";
 import Head from "next/head";
 

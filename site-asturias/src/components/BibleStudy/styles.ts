@@ -16,7 +16,7 @@ export const StudyContainer = styled(SectionContainer)`
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: ${({theme}) => theme.colors?.["black-opacity-60%"]};
+    background-color: ${({theme}) => theme.colors["black-opacity-60%"]};
   }
 
   @media ${device.laptop} {

@@ -5,7 +5,7 @@ import { Text } from "@/components/Text";
 
 
 export function Form() {
-  //endpoint ipasturias: 
+  // endpoint ipasturias: 
   // https://formspree.io/f/mlekbqeg
 
   const [state, handleSubmit] = useForm("mlekbqeg");

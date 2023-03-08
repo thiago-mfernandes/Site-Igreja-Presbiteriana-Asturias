@@ -11,10 +11,10 @@ export const StyledText = styled.p<StyledTextProps>`
   font-weight: 500;
   
   ${(props) => props.textColor === 'white' && css`
-    color: ${({theme}) => theme.colors?.white}
+    color: ${({theme}) => theme.colors.white}
   `}
 
   ${(props) => props.textColor === 'black' && css`
-    color: ${({theme}) => theme.colors?.black}
+    color: ${({theme}) => theme.colors.black}
   `}
 `;

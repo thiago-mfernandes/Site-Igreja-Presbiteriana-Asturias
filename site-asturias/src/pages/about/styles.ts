@@ -6,7 +6,7 @@ import { device } from "@/styles/default";
 export const AboutContainer = styled(SectionContainer)`
   
   p {
-    color: ${({theme}) => theme.colors?.black};
+    color: ${({theme}) => theme.colors.black};
   }
 
   @media ${device.laptop} {
@@ -47,8 +47,8 @@ export const SectionTextBlock = styled(TextBlock)`
     padding: 0 1rem;
     margin: 1rem 0;
 
-    font-family: ${({theme}) => theme.fonts?.montserrat};
-    color: ${({theme}) => theme.colors?.["gray-800"]};
+    font-family: ${({theme}) => theme.fonts.montserrat};
+    color: ${({theme}) => theme.colors["gray-800"]};
     font-weight: 700;
     font-size: 0.75rem;
     letter-spacing: .3rem;
@@ -58,7 +58,7 @@ export const SectionTextBlock = styled(TextBlock)`
     white-space: wrap;
 
     border: 0;
-    background-color: ${({theme}) => theme.colors?.["green-300-d"]};
+    background-color: ${({theme}) => theme.colors["green-300-d"]};
 
     transition: all .3s ease-in-out;
 

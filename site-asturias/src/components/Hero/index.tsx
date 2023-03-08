@@ -1,4 +1,4 @@
-import { BackgroundVideo } from './BackgroundVideo'
+import { BackgroundVideo } from './BackgroundVideo';
 import { HeaderContainer } from './styles';
 import { Welcome } from './Welcome';
 import { useMenuHamburguer } from "@/hooks/useMenuHamburguer";

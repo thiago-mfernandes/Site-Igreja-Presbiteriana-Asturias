@@ -1,18 +1,18 @@
 
-import { LinkButton } from "@/components/LinkButton"
-import { PageHeader } from "@/components/PageHeader"
-import { Subtitle } from "@/components/Subtitle"
-import { Text } from "@/components/Text"
-import { NotFoundContainer } from "@/styles/notfound/styles"
-import { motion } from "framer-motion"
-import Head from "next/head"
-import Link from "next/link"
+import { LinkButton } from "@/components/LinkButton";
+import { PageHeader } from "@/components/PageHeader";
+import { Subtitle } from "@/components/Subtitle";
+import { Text } from "@/components/Text";
+import { NotFoundContainer } from "@/pages/404/styles";
+import { motion } from "framer-motion";
+import Head from "next/head";
+import Link from "next/link";
 
 export default function NotFound() {
   return (
     <>
       <Head>
-        <title>Astúrias | Não Encontrada</title>
+        <title>Astúrias | Página Não Encontrada</title>
       </Head>
       <motion.div
         initial={{ opacity: 0}}

@@ -7,7 +7,7 @@ import { MapLocation } from "@/components/MapLocation";
 import { SocialMedia } from "@/components/SocialMedia";
 import { UpComingEvents } from "@/components/UpComingEvents";
 import { motion } from "framer-motion";
-import Head from "next/head"
+import Head from "next/head";
 
 export default function Home() {
   return(

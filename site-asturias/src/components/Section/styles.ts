@@ -25,8 +25,8 @@ export const SectionContainer = styled.section<SectionContainerProps>`
 
   ${({pathname}) => pathname === '/' && css`
     padding: 40rem 1.25rem 10rem;
-    background-color: ${({theme}) => theme.colors?.["green-300-d"]};
-    color: ${({theme}) => theme.colors?.white};  
+    background-color: ${({theme}) => theme.colors["green-300-d"]};
+    color: ${({theme}) => theme.colors.white};  
 
     @media ${device.tablet} {
       padding: 55rem 4rem 10rem;

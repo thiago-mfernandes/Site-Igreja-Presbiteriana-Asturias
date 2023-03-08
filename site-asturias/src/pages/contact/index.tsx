@@ -6,8 +6,8 @@ import { Subtitle } from "@/components/Subtitle";
 import { Text } from "@/components/Text";
 import { TextBlock } from "@/components/TextBlock/styles";
 import { Title } from "@/components/Title";
-import { ContactContainer } from "@/styles/contact/styles";
-import { motion } from "framer-motion"
+import { ContactContainer } from "@/pages/contact/styles";
+import { motion } from "framer-motion";
 import Head from "next/head";
 
 export default function Contact(){

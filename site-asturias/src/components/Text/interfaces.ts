@@ -6,5 +6,5 @@ export interface StyledTextProps {
 
 export interface TextProps {
   children: ReactNode;
-  textColor?: 'white' | 'black'
+  textColor?: 'white' | 'black';
 }

@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 
 export interface SubtitleProps {
   children: ReactNode;
-  textColor?: 'white' | 'black' | 'green'
+  textColor?: 'white' | 'black' | 'green';
 }
 
 export interface StyledTextProps {

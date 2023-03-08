@@ -2,7 +2,7 @@ import { LinkButton } from "@/components/LinkButton";
 import { Subtitle } from "@/components/Subtitle";
 import { Text } from "@/components/Text";
 import { MainServices, Service, WelcomeWords } from "./styles";
-import Link from "next/link"
+import Link from "next/link";
 import { SectionContainer } from "@/components/Section/styles";
 import { useRouter } from "next/router";
 
