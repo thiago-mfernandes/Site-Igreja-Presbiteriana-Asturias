@@ -54,7 +54,7 @@ export default function About() {
               Ordenado a Pastor Presbiteriano, exerceu durante 2 anos seu ministério em Campinas; no ano de 2016 chegou na Igreja Presbiteriana Astúrias e hoje exerce suas funções em nossa comunidade que receptivamente os acolheu.
               Agradecemos a Deus por essa família que muito nos alegra com sua presença.
             </Text>
-            <Image src={preacher} alt="Foto da esposa, filho e do Pastor Robson Binnoto" />
+            <Image src={preacher} alt="Foto da esposa, filho e do Pastor Robson Binnoto" data-preacher-img />
           </TextBlock>     
 
           <SectionTextBlock>

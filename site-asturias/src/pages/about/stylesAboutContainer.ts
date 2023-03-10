@@ -15,6 +15,21 @@ const AboutContainer = styled(SectionContainer)`
       width: 50%;
     }
   }
+
+  img[data-preacher-img] {
+    width: 100%;
+    height: 100%;
+
+    @media ${device.tablet} {
+      width: 75%;
+      align-self: center;
+    }
+
+    @media ${device.laptop} {
+      width: 40%;
+      align-self: center;
+    }
+  }
 `;
 
 export default AboutContainer;
