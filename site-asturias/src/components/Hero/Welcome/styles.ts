@@ -103,7 +103,7 @@ export const TitleContainer = styled.div<TitleContainerProps>`
   }
 
   h1 {
-    font-family: ${({theme}) => theme.fonts.montserrat};
+    font-family: ${({theme}) => theme.fonts.gloock};
     font-weight: 700;
     font-size: 3rem;
     color: black;
@@ -127,6 +127,11 @@ export const TitleContainer = styled.div<TitleContainerProps>`
         display: none;
       }
     }
+  }
+
+  span {
+    text-transform: none;
+    font-family: ${({theme}) => theme.fonts.birthstone};
   }
 `;
 

@@ -55,8 +55,7 @@ export const defaultTheme = {
 
   fonts: {
     montserrat: 'Montserrat, sans-serif',
-    roboto: 'Roboto, sans-serif',
+    gloock: 'Gloock, serif',
   }
-
 }
 

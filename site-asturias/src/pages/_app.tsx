@@ -22,7 +22,7 @@ export default function App({ Component, pageProps }: AppProps): JSX.Element {
           name="keywords"
           content="Igreja, Presbiteriana, Piracicaba, Igreja Reformada" 
         />
-        <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,700;1,400;1,700&family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" />
+        <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
       </Head>
       
       <ThemeProvider theme={defaultTheme}>

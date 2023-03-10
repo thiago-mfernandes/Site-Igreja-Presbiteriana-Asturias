@@ -3,11 +3,11 @@ import { StyledTextProps } from "./interfaces";
 
 export const StyledSubtitle = styled.h3<StyledTextProps>`
   font-size: 1rem;
-  font-family: ${({theme}) => theme.fonts.montserrat};
+  font-family: ${({theme}) => theme.fonts.gloock};
   font-weight: 700;
   line-height: 1.5;
   text-transform: uppercase;
-  letter-spacing: 0.15rem;
+  letter-spacing: 0.25rem;
   margin-bottom: 1.5rem;
   position: relative;
 
