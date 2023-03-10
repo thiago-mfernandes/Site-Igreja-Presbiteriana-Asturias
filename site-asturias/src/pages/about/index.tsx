@@ -167,19 +167,19 @@ export default function About() {
             </TextBlock>
 
             <button>
-              <a href="public/assets/books/westminster_catecism.pdf" download >
+              <a href="/Confissao-de-Fe-Westminster.pdf" download>
               Confissão de Fé de Westimenter
               <FileArrowDown size={40} />
               </a>            
             </button>
             <button>
-              <a href="public/assets/books/larger_catecism.pdf" download>
+              <a href="/Catecismo-Maior-de-Westminster.pdf" download>
                 Catecismo Maior de Westimenter
                 <FileArrowDown size={40} />
               </a>
             </button>
             <button>
-              <a href="public/assets/books/shorter_catecism.pdf" download>
+              <a href="/Catecismo-Menor-de-Westminster.pdf" download>
                 Breve Catecismo de Westimenter
                 <FileArrowDown size={40} />
               </a>
