@@ -67,10 +67,11 @@ export const ContainerNavigationLinks = styled.nav<ShowMenuProps>`
         color: ${({theme}) => theme.colors.white};
         opacity: 0.8;
         transition: all 0.3s ease-in-out;
+        word-wrap: break-word;
 
         @media ${device.laptop} {
           font-weight: 700;
-          font-size: 0.65rem;
+          font-size: 0.5rem;
           cursor: pointer;
           ${({ isHomePage }) => isHomePage === '/' && css`
             color: ${({theme}) => theme.colors.black};          

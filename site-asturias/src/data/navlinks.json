@@ -21,21 +21,26 @@
   },
   {
     "id": 5,
+    "title": "Devocional",
+    "href": "/devotional"
+  },
+  {
+    "id": 6,
     "title": "Ministérios",
     "href": "/ministries"
   },
   {
-    "id": 6,
+    "id": 7,
     "title": "FAQ",
     "href": "/faq"
   },
   {
-    "id": 7,
+    "id": 8,
     "title": "Contato",
     "href": "/contact"
   },
   {
-    "id": 8,
+    "id": 9,
     "title": "Login",
     "href": "/login"
   }

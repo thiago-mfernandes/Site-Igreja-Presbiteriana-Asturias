@@ -16,6 +16,8 @@ export function handleBackroundImage(pathname: string) {
       return css`background-image: url("/assets/background/contact.jpg");`
     case '/login':
       return css`background-image: url("/assets/background/login.jpg");`
+    case '/devotional':
+      return css`background-image: url("/assets/background/devotional.jpg");`
     default:
       return css`background-image: url("/assets/background/lost.jpg");`
   }

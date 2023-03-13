@@ -20,6 +20,8 @@ export function usePageHeaderTitle() {
         return 'Fale Conosco';
       case '/login':
         return 'Em breve';
+      case '/devotional':
+        return 'Devocionais';
       default:
         return 'Página não encontrada!';
     }
