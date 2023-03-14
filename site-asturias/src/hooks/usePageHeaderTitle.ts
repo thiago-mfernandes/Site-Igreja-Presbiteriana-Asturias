@@ -20,6 +20,8 @@ export function usePageHeaderTitle() {
         return 'Perguntas Frequentes';
       case '/contact':
         return 'Fale Conosco';
+      case '/contact/[id]':
+        return 'Como podemos te ajudá-lo?'
       case '/login':
         return 'Em breve';
       case '/devotional':

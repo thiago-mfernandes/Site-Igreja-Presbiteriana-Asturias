@@ -1,4 +1,4 @@
-import { Form } from "@/components/Form";
+import { LinkButton } from "@/components/LinkButton";
 import { MapLocation } from "@/components/MapLocation";
 import { PageHeader } from "@/components/PageHeader";
 import { SocialMedia } from "@/components/SocialMedia";
@@ -6,18 +6,19 @@ import { Subtitle } from "@/components/Subtitle";
 import { Text } from "@/components/Text";
 import { TextBlock } from "@/components/TextBlock/styles";
 import { Title } from "@/components/Title";
-import ContactContainer from "@/pages/contact/styles";
+import ContactContainer, { ContainerButtons } from "@/pages/contact/styles";
 import { motion } from "framer-motion";
 import Head from "next/head";
+import Link from "next/link";
 
-export default function Contact(){
+export default function Contact() {
   return (
     <>
       <Head>
         <title>Astúrias | Contato</title>
       </Head>
       <motion.div
-        initial={{ opacity: 0}}
+        initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 1 }}
@@ -38,7 +39,7 @@ export default function Contact(){
               Atendimento Pastoral
             </Title>
             <Text>
-              Pr. Robson Leandro Binotto 
+              Pr. Robson Leandro Binotto
               <br />
               (19)&nbsp;98107-4353
               <br />
@@ -54,8 +55,34 @@ export default function Contact(){
             </Text>
           </TextBlock>
 
+          <ContainerButtons>
+            <Subtitle>
+              Clique para receber
+            </Subtitle>
 
-          <Form />
+
+            <LinkButton>
+              <Link href={`/contact/prayer`}>
+                Pedido de Oração
+              </Link>
+            </LinkButton>
+            <LinkButton>
+              <Link href={`/contact/counseling`}>
+                Aconselhamento
+              </Link>
+            </LinkButton>
+            <LinkButton>
+              <Link href={`/contact/contact`}>
+                Contato
+              </Link>
+            </LinkButton>
+            <LinkButton>
+              <Link href={`/contact/more`}>
+                Saber mais sobre Jesus
+              </Link>
+            </LinkButton>
+          </ContainerButtons>
+
         </ContactContainer>
         <MapLocation />
         <SocialMedia />

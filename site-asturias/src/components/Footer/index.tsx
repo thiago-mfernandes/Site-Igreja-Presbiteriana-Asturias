@@ -79,7 +79,7 @@ export function Footer() {
           Todos os Direitos Reservados
         </Text>
         <Text>
-          Feito com <Heart size={22} weight="fill" /> por <Link href="https://wa.me/5519984009105" target="_blank">&nbsp;Thiago Fernandes</Link>
+          Feito com <Heart size={22} weight="fill" /> pelo <Link href="https://wa.me/5519984009105" target="_blank">&nbsp;Ministério de Comunicação</Link>
         </Text>
       </ReservedRights>
 
