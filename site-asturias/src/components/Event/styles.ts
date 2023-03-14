@@ -1,9 +1,14 @@
+import { device } from "@/styles/default";
 import styled from "styled-components"
 
 export const EventContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin-bottom: 5rem;
+  
+  @media ${device.laptop} {
+    width: 47.5%;
+  }
 
   ul {
     font-family: ${({theme}) => theme.fonts.montserrat};

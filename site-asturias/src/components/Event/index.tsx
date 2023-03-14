@@ -3,15 +3,18 @@ import { Title } from "@/components/Title";
 import { Text } from "@/components/Text";
 import { EventContainer } from "./styles";
 import { EventProps } from "./interfaces";
+import Link from "next/link";
 
 
 export function Event({ address, date, description, id, time, title }: EventProps) {
   return(
     <EventContainer>
       <div key={id}>
-        <Title >
-          {title}
-        </Title>
+        <Link href={`/schedule/${id}`}>
+          <Title >
+            {title}
+          </Title>
+        </Link>
         <Text>
           {description}
         </Text>

@@ -6,13 +6,19 @@ import { SectionContainer } from "@/components/Section/styles";
 export const SectionContainerPagination = styled(SectionContainer)`
 
   @media ${device.laptop} {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    h3 {
+      width: 100%;
+    }
   }
 `;
 
 export const ContainerReactPaginate = styled.div`
   width: 100%;
   display: flex;
+
 
   
   .paginationsButtons {

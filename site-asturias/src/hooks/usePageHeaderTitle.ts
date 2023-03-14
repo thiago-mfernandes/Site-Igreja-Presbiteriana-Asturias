@@ -12,6 +12,8 @@ export function usePageHeaderTitle() {
         return 'Junte-se a nós';
       case '/schedule':
         return 'Nossa Agenda';
+      case '/schedule/[id]':
+        return 'Detalhes do Evento';
       case '/giving':
         return 'Oferte a casa do Senhor';
       case '/faq':

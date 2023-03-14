@@ -12,7 +12,7 @@ export default function Devotional() {
 
   const { query } = useRouter();
   const devotionalId = query.id;
-  const devotionalItem = devotionalList.filter(item => item.id === Number(devotionalId))
+  const devotionalItem = devotionalList.filter(item => item.id === Number(devotionalId));
 
   return (
     <>

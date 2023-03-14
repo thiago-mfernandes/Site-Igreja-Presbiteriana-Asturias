@@ -6,6 +6,8 @@ export function handleBackroundImage(pathname: string) {
       return css`background-image: url("/assets/background/bible.jpg");`
     case '/schedule':
       return css`background-image: url("/assets/background/calendar.jpg");`
+    case '/schedule/[id]':
+      return css`background-image: url("/assets/background/calendar.jpg");`
     case '/giving':
       return css`background-image: url("/assets/background/offering.jpg");`
     case '/ministries':

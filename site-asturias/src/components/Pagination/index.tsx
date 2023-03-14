@@ -56,7 +56,7 @@ export function Pagination({ itemsPerPage }) {
           breakLabel="..."
           nextLabel={ <CaretRight /> }
           onPageChange={handlePageClick}
-          pageRangeDisplayed={5}
+          pageRangeDisplayed={6}
           pageCount={pageCount}
           previousLabel={ <CaretLeft /> }
           renderOnZeroPageCount={null}

@@ -16,7 +16,7 @@ export default function Schedule() {
         transition={{ duration: 1 }}
       >
         <PageHeader />
-        <Pagination itemsPerPage={5}/>
+        <Pagination itemsPerPage={6}/>
       </motion.div>
     </>
   );
