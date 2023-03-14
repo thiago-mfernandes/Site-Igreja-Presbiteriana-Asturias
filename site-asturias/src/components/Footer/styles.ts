@@ -59,7 +59,11 @@ export const ContainerLogo = styled.div`
 export const TheChurchContainer = styled(GenericContainer)`
 
   @media ${device.laptop} {
-    width: 47.5%;
+    width: 22.5%;
+
+    blockquote {
+      margin: 0;
+    }
   }
 `;
 
@@ -99,7 +103,7 @@ export const AddressContainer = styled(GenericContainer)`
   }
 
   @media ${device.laptop} {
-    width: 47.5%;
+    width: 22.5%;
   }
 `;
 
@@ -110,8 +114,13 @@ export const ContactContainer = styled(GenericContainer)`
     align-items: center;
     font-size: 1.3rem;
     color: ${({theme}) => theme.colors["white-opacity-80%"]};
+
     @media ${device.tablet} {
       margin-bottom: 2rem;
+    }
+
+    @media ${device.laptop} {
+      width: 22.5%;
     }
 
     a {
@@ -139,6 +148,10 @@ export const PreacherContainer = styled(GenericContainer)`
 
   @media ${device.tablet} {
     width: 47.5%;
+  }
+
+  @media ${device.laptop} {
+    width: 22.5%;
   }
 `;
 
