@@ -23,4 +23,21 @@ export const DevotionalContainer = styled(SectionContainer)`
 
 export const SingleDevotionalContainer = styled(SectionContainer)`
   flex-direction: column;
+
+  button {
+    background-color: ${({ theme }) => theme.colors["green-300-d"]};
+    width: 100%;
+    margin-bottom: 5rem;
+
+    @media ${device.laptop} {
+      width: 500px;
+    }
+  }
+`;
+
+export const DevotionalIntroductionContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 5rem;
 `;

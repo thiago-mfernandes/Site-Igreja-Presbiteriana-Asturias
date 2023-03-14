@@ -77,7 +77,7 @@ export const FollowUs = styled.div`
           }
 
           @media ${device.laptop} {
-            font-size: .5rem;
+            font-size: .7rem;
           }
         }
       }

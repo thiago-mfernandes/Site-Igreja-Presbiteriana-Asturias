@@ -71,7 +71,7 @@ export const ContainerNavigationLinks = styled.nav<ShowMenuProps>`
 
         @media ${device.laptop} {
           font-weight: 700;
-          font-size: 0.5rem;
+          font-size: 0.85rem;
           cursor: pointer;
           ${({ isHomePage }) => isHomePage === '/' && css`
             color: ${({theme}) => theme.colors.black};          

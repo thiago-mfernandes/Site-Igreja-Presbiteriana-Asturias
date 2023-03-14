@@ -22,6 +22,8 @@ export function usePageHeaderTitle() {
         return 'Em breve';
       case '/devotional':
         return 'Devocionais';
+      case '/devotional/[id]':
+        return 'Devocional Diário';
       default:
         return 'Página não encontrada!';
     }

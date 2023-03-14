@@ -1,7 +1,7 @@
 import { PageHeader } from "@/components/PageHeader";
 import { motion } from "framer-motion";
 import Head from "next/head";
-import { DevotionalContainer } from "./styles";
+import { DevotionalContainer, DevotionalIntroductionContainer } from "./styles";
 import DevotionalCard from "@/components/DevotionalCard";
 import { Title } from "@/components/Title";
 import { useState } from "react";
@@ -9,6 +9,7 @@ import { ContainerReactPaginate } from "@/components/Pagination/styles";
 import ReactPaginate from "react-paginate";
 import dataDevotionals from "@/data/devotional.json";
 import { CaretRight, CaretLeft } from "phosphor-react";
+import { Text } from "@/components/Text";
 
 const newestData = dataDevotionals.reverse();
 
@@ -28,7 +29,7 @@ export default function Devotionals() {
   return (
     <>
       <Head>
-        <title>Astúrias | Devocional</title>
+        <title>Astúrias | Devocionais</title>
       </Head>
       <motion.div
         initial={{ opacity: 0}}
@@ -39,9 +40,14 @@ export default function Devotionals() {
         <PageHeader />
         <DevotionalContainer>
 
-          <Title>
-            nossos devocionais
-          </Title>
+          <DevotionalIntroductionContainer>
+            <Title>
+              Acompanhe nossa série
+            </Title>
+            <Text>
+              A cada dia um devocional para fortalecer nosso relacionamento com Deus.
+            </Text>
+          </DevotionalIntroductionContainer>
           {
             currentItems.map((item) => (
               <DevotionalCard 

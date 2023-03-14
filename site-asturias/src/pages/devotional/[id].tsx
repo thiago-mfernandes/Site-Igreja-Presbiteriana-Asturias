@@ -1,9 +1,12 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import devotionalList from "@/data/devotional.json"
-import DevotionalCard from "@/components/DevotionalCard";
+import devotionalList from "@/data/devotional.json";
 import { PageHeader } from "@/components/PageHeader";
 import { SingleDevotionalContainer } from "./styles";
+import { LinkButton } from "@/components/LinkButton";
+import { DevotionalItem } from "@/components/DevotionalItem";
+import devotionalThumbnailItem from "../../../public/assets/background/bible.jpg";
+import Head from "next/head";
 
 export default function Devotional() {
 
@@ -13,26 +16,27 @@ export default function Devotional() {
 
   return (
     <>
+      <Head>
+        <title>{`Devocional Diário | ${devotionalId}`}</title>
+      </Head>
+
       <PageHeader />
       <SingleDevotionalContainer>
-        <Link href="/devotional">Voltar</Link> 
-        
-        <span>aqui na verdade eu preciso mostrar o texto por completo com a imagem</span>
-        <p>imagem</p>
-        <p>titulo</p>
-        <p>data</p>
-        <p>referencia/texto biblico por extenso</p>
-        <p>texto</p>
+        <LinkButton>
+          <Link href="/devotional">Voltar</Link> 
+        </LinkButton>
         {
           devotionalItem.map((item) => (
-            <DevotionalCard 
+            <DevotionalItem 
               key={item.id}
-              id={item.id}
+              img_src={devotionalThumbnailItem} 
               title={item.title} 
-            />   
+              date_publication={item.date_publication} 
+              citation={item.citation} 
+              text={item.text}        
+            />
           ))
-        } 
-
+        }        
       </SingleDevotionalContainer>
     </>
   )
