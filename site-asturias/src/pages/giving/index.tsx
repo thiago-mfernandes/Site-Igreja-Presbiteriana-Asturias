@@ -8,7 +8,8 @@ import { motion } from "framer-motion";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Head from "next/head";
-import GivingContainer from "@/pages/giving/styles";
+import GivingContainer from "@/pages/giving/GivingContainerStyles";
+import CardTransferInfo from "./CardTransferInfoStyles";
 
 export default function Giving() {
   const { pathname } = useRouter();
@@ -47,14 +48,31 @@ export default function Giving() {
             </Link>
             <ArrowSquareOut size={24} />
           </LinkButton>
-          <Subtitle>
-            TRANSFERÊNCIA POR PIX
-          </Subtitle>
-          <Text>
-            Se preferir, contamos com a opção de transferência por PIX:
-            <br />
-            32.085.197/0001-03
-          </Text>
+
+          <div data-container-transferInfos>
+            <CardTransferInfo>
+              <Subtitle>
+                TRANSFERÊNCIA POR PIX
+              </Subtitle>
+              <Text>
+                Se preferir, contamos com a opção de transferência por PIX:
+                <br />
+                32.085.197/0001-03
+              </Text>
+            </CardTransferInfo>
+            <CardTransferInfo>
+            <Subtitle>
+                Conta Oficial
+              </Subtitle>
+              <Text>
+                PagSeguro<br />
+                Agência: 0001<br />
+                Conta Corrente: 23728407-0<br />
+                Banco: 290
+              </Text>
+            </CardTransferInfo>
+          </div>
+
         </GivingContainer>      
       </motion.div>
     </>

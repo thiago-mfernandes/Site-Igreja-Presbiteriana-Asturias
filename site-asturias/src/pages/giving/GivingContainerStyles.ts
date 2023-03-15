@@ -20,6 +20,13 @@ const GivingContainer = styled(SectionContainer)`
   button svg {
     margin-left: 10px;
   }
+
+  div[data-container-transferInfos] {
+    @media ${device.laptop} {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
 `;
 
 export default GivingContainer
