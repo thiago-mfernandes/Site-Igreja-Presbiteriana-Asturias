@@ -10,6 +10,7 @@ import ContactContainer, { ContainerButtons } from "@/pages/contact/styles";
 import { motion } from "framer-motion";
 import Head from "next/head";
 import Link from "next/link";
+import { ArrowSquareOut } from "phosphor-react";
 
 export default function Contact() {
   return (
@@ -64,21 +65,25 @@ export default function Contact() {
             <LinkButton>
               <Link href={`/contact/prayer`}>
                 Pedido de Oração
+                <ArrowSquareOut size={20} />
               </Link>
             </LinkButton>
             <LinkButton>
               <Link href={`/contact/counseling`}>
                 Aconselhamento
+                <ArrowSquareOut size={20} />
               </Link>
             </LinkButton>
             <LinkButton>
               <Link href={`/contact/contact`}>
                 Contato
+                <ArrowSquareOut size={20} />
               </Link>
             </LinkButton>
             <LinkButton>
               <Link href={`/contact/more`}>
                 Saber mais sobre Jesus
+                <ArrowSquareOut size={20} />
               </Link>
             </LinkButton>
           </ContainerButtons>

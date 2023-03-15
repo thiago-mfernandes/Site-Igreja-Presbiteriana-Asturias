@@ -40,6 +40,17 @@ export const ContainerButtons = styled.div`
     @media ${device.laptop} {
       width: 22.5%;
     }
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      svg {
+        margin-left: 10px;
+        margin-bottom: 5px;
+      }
+    }
   }
 `;
 
