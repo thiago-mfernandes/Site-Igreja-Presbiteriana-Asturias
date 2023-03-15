@@ -245,7 +245,7 @@ export default function About() {
               <Text>
                 Como igreja, acreditamos na importância de estudar as Escrituras juntos.              
                 <br /><br />
-                Este encontro é aberto a todos os interessados, e geralamente, acontece as Quintas-Feiras as 19:30. Se você ama o Senhor e deseja que Deus mostre misericórdia junte-se a nós na igreja.
+                Este encontro é aberto a todos os interessados, e geralmente, acontece as Quintas-Feiras as 19:30. Se você ama o Senhor e deseja que Deus mostre misericórdia junte-se a nós na igreja.
               </Text>
             </TextBlock>
           </SectionTextBlock>

@@ -13,6 +13,7 @@ const AboutContainer = styled(SectionContainer)`
 
     div img {
       width: 50%;
+      height: auto;
     }
   }
 
