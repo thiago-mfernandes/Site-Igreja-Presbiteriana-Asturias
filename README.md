@@ -1,7 +1,6 @@
 <h1 align="center">
 
-  <video autplay infinite mute src='./site-asturias/public/desktop-home.mp4' width="180" >
-
+  <img alt="" src="./site-asturias/public/desktop-home.jpg">
 
 </h1>
 
@@ -40,6 +39,7 @@ Projeto desenvolvido com o intuito de expandir os canais de comunicação, posic
 ## ⚙️ Funcionalidades
 
 - [x] Sobre
+- - [x] Download das confissões de fé
 - [x] Agenda
 - - [x] Paginação
 - [x] Dizimo Online
@@ -55,7 +55,7 @@ Projeto desenvolvido com o intuito de expandir os canais de comunicação, posic
 - - [x] Saber mais sobre Jesus
 - [x] Login
 
-- [] Próximas Funcionalidades
+- Próximas Funcionalidades
 - [] Acesso ao painel administrativo
 - [] Consumo de dados (Devocionais, Agenda) via API
 ---
@@ -69,33 +69,51 @@ Como ficou o layout da aplicação:
 ## 📱 Mobile
 
 <p align="center">
-  <img alt="Imagem da pagina home" src="./site-asturias/src/assets/homePage.png" width="200px">
-  <img alt="Imagem da tela de filtro de produtos" src="./site-asturias/src/assets/mobile-products-filter.png" width="200px">
-  <img alt="Imagem da tela de exibindo produto" src="./site-asturias/src/assets/product-item.png" width="200px">
-  <img alt="Imagem da tela de depoimentos em modo carrousel" src="./site-asturias/src/assets/mobile-depoiments.png" width="200px">
+
+  <img alt="" src="./site-asturias/public/mobile-home.png" width="200px">
+
+  <img alt="" src="./site-asturias/public/mobile-hamburguer.png" width="200px">
+
+  <img alt="" src="./site-asturias/public/mobile-bemvindo-2.png" width="200px">
+
+  <img alt="" src="./site-asturias/public/mobile-quem-somos.png" width="200px">
+
+  <img alt="" src="./site-asturias/public/mobile-eventos.png" width="200px">
+
+  <img alt="" src="./site-asturias/public/mobile-estudo.png" width="200px">
+
+  <img alt="" src="./site-asturias/public/mobile-mapa-redes.png" width="200px">
+
+  <img alt="" src="./site-asturias/public/mobile-nos.png" width="200px">
+
+  <img alt="" src="./site-asturias/public/mobile-igreja.png" width="200px">
+
+  <img alt="" src="./site-asturias/public/mobile-doutrina.png" width="200px">
+
+  <img alt="" src="./site-asturias/public/mobile-devocionais.png" width="200px">
 </p>
 
 ### 💻 Web
 
 <p align="center">
 
-  <img alt="Imagem da pagina home" src="./site-asturias/public/desktop-home.jpg" width="300px">
+  <img alt="" src="./site-asturias/public/desktop-home.jpg" width="300px">
 
-  <img alt="Imagem da pagina home" src="./site-asturias/public/desktop-sobre.jpg" width="300px">
+  <img alt="" src="./site-asturias/public/desktop-sobre.jpg" width="300px">
 
-  <img alt="Imagem da pagina home" src="./site-asturias/public/desktop-quem-somos.jpg" width="300px">
+  <img alt="" src="./site-asturias/public/desktop-quem-somos.jpg" width="300px">
 
-  <img alt="Imagem da pagina home" src="./site-asturias/public/desktop-eventos.jpg" width="300px">
+  <img alt="" src="./site-asturias/public/desktop-eventos.jpg" width="300px">
 
-  <img alt="Imagem da pagina home" src="./site-asturias/public/desktop-estudo.jpg" width="300px">
+  <img alt="" src="./site-asturias/public/desktop-estudo.jpg" width="300px">
 
-  <img alt="Imagem da pagina home" src="./site-asturias/public/desktop-local.jpg" width="300px">
+  <img alt="" src="./site-asturias/public/desktop-local.jpg" width="300px">
 
-  <img alt="Imagem da pagina home" src="./site-asturias/public/desktop-devocional.jpg" width="300px">
+  <img alt="" src="./site-asturias/public/desktop-devocional.jpg" width="300px">
 
-  <img alt="Imagem da pagina home" src="./site-asturias/public/desktop-cuidado.jpg" width="300px">
+  <img alt="" src="./site-asturias/public/desktop-cuidado.jpg" width="300px">
 
-  <img alt="Imagem da pagina home" src="./site-asturias/public/desktop-login.jpg" width="300px">
+  <img alt="" src="./site-asturias/public/desktop-login.jpg" width="300px">
   
 </p>
 
@@ -123,7 +141,7 @@ $ git clone git@github.com:thiago-mfernandes/Asturias.git
 $ cd Asturias
 
 #Acesse a subpasta
-$ cd dsite-asturias
+$ cd site-asturias
 
 #Instale as dependências do projeto
 $ npm install
