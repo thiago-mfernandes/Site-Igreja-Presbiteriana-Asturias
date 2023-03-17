@@ -36,7 +36,7 @@ Projeto desenvolvido com o intuito de expandir os canais de comunicação, posic
 
 ---
 
-## ⚙️ Funcionalidades
+## ⚙ Funcionalidades
 
 - [x] Sobre
 - - [x] Download das confissões de fé
