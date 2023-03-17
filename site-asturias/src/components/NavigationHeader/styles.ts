@@ -22,27 +22,6 @@ export const LogoContainer = styled.div<LogoContainerProps>`
     justify-content: flex-start;
   }
 
-  @media ${device.laptop} {
-    &::before {
-      display: block;
-      content: "";
-      height: 2px;
-      width: 50%;
-      background-color: ${({theme}) => theme.colors.black};
-      position: absolute;
-      top: 25px;
-      left: -30%;
-
-      @media ${device.laptop} {
-        width: 40%;
-        left: -35%;
-        ${({ path }) => path !== '/' && css`
-          background-color: ${({theme}) => theme.colors.white};
-        `}
-      }
-    }
-  }
-
   a {
     width: 100%;
     @media ${device.tablet} {
