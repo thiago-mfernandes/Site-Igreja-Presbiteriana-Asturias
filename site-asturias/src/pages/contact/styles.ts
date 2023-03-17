@@ -39,6 +39,8 @@ export const ContainerButtons = styled.div`
     background-color: ${({ theme }) => theme.colors["green-300-d"]};
     @media ${device.laptop} {
       width: 22.5%;
+      font-size: 0.55rem;
+      letter-spacing: 0.20rem;
     }
 
     a {
