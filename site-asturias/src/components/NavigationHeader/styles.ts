@@ -20,6 +20,7 @@ export const LogoContainer = styled.div<LogoContainerProps>`
   @media ${device.laptop} {
     width: 10%;
     justify-content: flex-start;
+    //
   }
 
   a {
