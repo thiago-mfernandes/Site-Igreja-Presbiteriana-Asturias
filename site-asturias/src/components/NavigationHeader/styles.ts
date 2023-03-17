@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 import { device } from "../../styles/default";
-import { LogoContainerProps, MenuHamburguerProps, ShowMenuProps } from "./interfaces";
+import { LogoContainerProps, MenuHamburguerProps } from "./interfaces";
 
 
 export const LogoContainer = styled.div<LogoContainerProps>`
@@ -14,11 +14,11 @@ export const LogoContainer = styled.div<LogoContainerProps>`
 
   @media ${device.tablet} {
     left: 4.25rem;
-    top: 2.25rem;  
+    top: 1.75rem;  
   }
 
   @media ${device.laptop} {
-    width: 20%;
+    width: 10%;
     justify-content: flex-start;
   }
 
@@ -63,6 +63,10 @@ export const LogoContainer = styled.div<LogoContainerProps>`
     
     @media ${device.laptop} {
       width: 40%;
+    }
+
+    @media ${device.laptop} {
+      width: 100%;
     }
   }
 `;
