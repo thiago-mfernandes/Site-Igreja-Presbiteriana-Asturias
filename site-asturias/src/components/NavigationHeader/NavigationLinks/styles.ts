@@ -43,13 +43,16 @@ export const ContainerNavigationLinks = styled.nav<ShowMenuProps>`
     }
 
     li {
+      display: flex;
+        align-items: center;
       margin: 0;
       border-bottom: 1px solid ${({theme}) => theme.colors["white-opacity-005%"]};
+      height: 5rem;
       
       @media ${device.tablet} {
         display: flex;
         align-items: center;
-        //height: 5rem;
+        height: auto;
       }
       
       @media ${device.laptop} {
