@@ -56,8 +56,8 @@ Projeto desenvolvido com o intuito de expandir os canais de comunicação, posic
 - [x] Login
 
 - Próximas Funcionalidades
-- [] Acesso ao painel administrativo
-- [] Consumo de dados (Devocionais, Agenda) via API
+- [ ] Acesso ao painel administrativo
+- [ ] Consumo de dados (Devocionais, Agenda) via API
 ---
 
 ## 🎨 Layout 
