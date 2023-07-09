@@ -4,7 +4,7 @@ import Link from "next/link";
 import { WelcomeProps } from "./interfaces";
 import { WelcomeContainer, FollowUs, TitleContainer, CallToAction } from "./styles";
 
-export function Welcome({ onShowMenu} : WelcomeProps){
+export function Welcome({ onShowMenu } : WelcomeProps){
 
   const { width } = useWindowSize();
   

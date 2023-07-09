@@ -24,8 +24,8 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: white;
     color: black;
+    background-color: white;
     -webkit-font-smoothing: antialiased;
     word-wrap: break-word;
     @media (min-width: 1024px) {
